@@ -1,0 +1,85 @@
+{
+    "title": "Category",
+    "description": "A Category for the website",
+    "_parent": "n:node",
+    "type": "object",
+    "_qname": "ers:category",
+    "properties": {
+        "title": {
+            "title": "Title",
+            "type": "string",
+            "required": true
+        },
+        "subTitle": {
+            "title": "Sub Title",
+            "type": "string",
+            "required": true
+        },
+        "leadParagraph": {
+            "title": "Lead Paragraph",
+            "type": "string",
+            "required": false
+        },
+        "body": {
+            "title": "Body",
+            "type": "string",
+            "required": false
+        },
+        "image": {
+            "title": "Image",
+            "type": "string",
+            "required": false
+        },
+        "video": {
+            "title": "Video",
+            "type": "string",
+            "required": false
+        },
+        "applicationDeadline": {
+            "title": "Application Deadline",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
+        "startDate": {
+            "title": "Start Date",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
+        "sponsors": {
+            "type": "array",
+            "title": "Sponsor",
+            "items": {
+                "type": "object",
+                "title": "Sponsor",
+                "properties": {
+                    "text": {
+                        "title": "Text",
+                        "type": "string",
+                        "required": true
+                    },
+                    "image": {
+                        "title": "Image",
+                        "type": "string",
+                        "required": false,
+                        "_relator": {
+                            "associationType": "ers:sponsor-image-association",
+                            "nodeType": "n:node"
+                        }
+                    }
+                }
+            }
+        },
+        "registerButton": {
+            "title": "Register Button",
+            "type": "object",
+            "properties": {
+                "text": {
+                    "title": "Text",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

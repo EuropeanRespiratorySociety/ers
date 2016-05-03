@@ -205,12 +205,17 @@
             "type": "array",
             "required": false,
             "items": {
-                "related": {
-                    "type": "string",
-                    "required": true,
-                    "_relator": {
-                        "associationType": "ers:programme-association",
-                        "nodeType": "n:node"
+                "type": "object",
+                "title": "Document",
+                "properties": {
+                    "document": {
+                        "title": "Document",
+                        "type": "string",
+                        "required": false,
+                        "_relator": {
+                            "associationType": "ers:programme-association",
+                            "nodeType": "n:node"
+                        }
                     }
                 }
             }
@@ -317,6 +322,11 @@
                     "type": "string"
                 }
             }
+        }
+    },
+    "mandatoryFeatures": {
+        "ers:homePageAvailable": {
+            "enabled": true
         }
     }
 }

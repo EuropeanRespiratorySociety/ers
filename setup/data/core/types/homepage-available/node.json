@@ -1,0 +1,18 @@
+{
+    "_qname": "ers:homePageAvailable",
+    "_type": "d:feature",
+    "type": "object",
+    "title": "Homepage Availability",
+    "description": "Makes website content available on the home page",
+    "properties": {
+        "available": {
+            "type": "boolean",
+            "title": "Manage this content's availability on the website home page",
+            "default": false
+        },
+        "displayOrder": {
+            "type": "integer",
+            "title": "Display Order"
+        }
+    }
+}
