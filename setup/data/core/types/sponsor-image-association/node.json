@@ -1,0 +1,8 @@
+{
+    "title": "Sponsor Image Association",
+    "description": "Associates website content Sponsor with an image",
+    "_qname": "ers:sponsor-image-association",
+    "_type": "d:association",
+    "type": "object",
+    "properties": {}
+}

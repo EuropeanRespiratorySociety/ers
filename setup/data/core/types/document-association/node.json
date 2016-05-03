@@ -1,0 +1,8 @@
+{
+    "title": "Document Association",
+    "description": "Associates website content with a document",
+    "_qname": "ers:document-association",
+    "_type": "d:association",
+    "type": "object",
+    "properties": {}
+}

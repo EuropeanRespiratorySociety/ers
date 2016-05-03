@@ -1,0 +1,8 @@
+{
+    "title": "Disclosure Association",
+    "description": "Associates website content with a disclosure document",
+    "_qname": "ers:disclosure-association",
+    "_type": "d:association",
+    "type": "object",
+    "properties": {}
+}

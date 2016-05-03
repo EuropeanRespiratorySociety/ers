@@ -1,0 +1,8 @@
+{
+    "title": "Article, Practical Info document Association",
+    "description": "Associates website content with a Practical Info document",
+    "_qname": "ers:practicalInfo-association",
+    "_type": "d:association",
+    "type": "object",
+    "properties": {}
+}

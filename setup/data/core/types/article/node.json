@@ -1,0 +1,322 @@
+{
+    "title": "Article",
+    "description": "An Article / Blog or Event for display on the website",
+    "_parent": "n:node",
+    "type": "object",
+    "_qname": "ers:article",
+    "properties": {
+        "title": {
+            "title": "Title",
+            "type": "string",
+            "required": true
+        },
+        "subTitle": {
+            "title": "Sub Title",
+            "type": "string",
+            "required": true
+        },
+        "slug": {
+            "title": "Slug / Alias",
+            "type": "string",
+            "required": true
+        },
+        "contentType": {
+            "title": "Content Type",
+            "type": "string",
+            "required": true,
+            "enum": [
+                "article",
+                "event_course",
+                "event_seminar",
+                "event_fellowship",
+                "event_award",
+                "event_grant",
+                "event_crc"
+            ],
+            "default": "article"
+        },
+        "type": {
+            "title": "Type",
+            "type": "string",
+            "required": false,
+            "enum": [
+                "ERS Course",
+                "ERS Online Course",
+                "Short Term Fellowship",
+                "e-learning"
+            ],
+            "default": ""
+        },
+        "flags": {
+            "type": "array",
+            "title": "Flags",
+            "items": {
+                "type": "object",
+                "title": "Flag",
+                "properties": {
+                    "text": {
+                        "title": "Text",
+                        "type": "string",
+                        "required": true
+                    },
+                    "color": {
+                        "title": "Color",
+                        "type": "string",
+                        "enum": [
+                            "notification",
+                            "warning",
+                            "danger"
+                        ],
+                        "default": "notification",
+                        "required": true
+                    }
+                }
+            }
+        },
+        "eventDate": {
+            "title": "Event Date",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
+        "eventLocation": {
+            "title": "Event Location",
+            "type": "string",
+            "required": false
+        },
+        "leadParagraph": {
+            "title": "Lead Paragraph",
+            "type": "string",
+            "required": false
+        },
+        "body": {
+            "title": "Body",
+            "type": "string",
+            "required": false
+        },
+        "image": {
+            "title": "Image",
+            "type": "string",
+            "required": false
+        },
+        "video": {
+            "title": "Video",
+            "type": "string",
+            "required": false
+        },
+        "map": {
+            "title": "Map",
+            "type": "string",
+            "required": false
+        },
+        "category": {
+            "title": "Category",
+            "type": "string",
+            "required": false,
+            "_relator": {
+                "associationType": "ers:category-association",
+                "nodeType": "ers:category"
+            }
+        },
+        "deadline": {
+            "title": "Deadline",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
+        "earlybirdDeadline": {
+            "title": "Earlybird Deadline",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
+        "applicationDeadline": {
+            "title": "Application Deadline",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
+        "startDate": {
+            "title": "Start Date",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
+        "extendedDeadline": {
+            "title": "Extended Deadline",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
+        "openingDate": {
+            "title": "Opening Date",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
+        "programme": {
+            "title": "Programme",
+            "type": "string",
+            "required": false,
+            "_relator": {
+                "associationType": "ers:programme-association",
+                "nodeType": "n:node"
+            }
+        },
+        "practicalInfo": {
+            "title": "Practical Info",
+            "type": "string",
+            "required": false,
+            "_relator": {
+                "associationType": "ers:practicalInfo-association",
+                "nodeType": "n:node"
+            }
+        },
+        "feeList": {
+            "title": "Fee list",
+            "type": "object",
+            "properties": {
+                "junior": {
+                    "title": "Junior",
+                    "type": "integer"
+                },
+                "ersMember": {
+                    "title": "ERS Member",
+                    "type": "integer"
+                },
+                "nonErsMember": {
+                    "title": "Non-ERS Member",
+                    "type": "integer"
+                },
+                "industry": {
+                    "title": "Industry",
+                    "type": "integer"
+                }
+            }
+        },
+        "cancellationPolicy": {
+            "title": "Cancellation Policy",
+            "type": "string",
+            "default": "Default Cancellation Policy goes here ...",
+            "required": false
+        },
+        "related": {
+            "title": "Related Article / Course",
+            "type": "array",
+            "required": false,
+            "items": {
+                "related": {
+                    "type": "string",
+                    "required": true,
+                    "_relator": {
+                        "associationType": "ers:programme-association",
+                        "nodeType": "n:node"
+                    }
+                }
+            }
+        },
+        "organisers": {
+            "title": "Organisers",
+            "type": "string",
+            "required": false
+        },
+        "sponsors": {
+            "type": "array",
+            "title": "Sponsor",
+            "items": {
+                "type": "object",
+                "title": "Sponsor",
+                "properties": {
+                    "text": {
+                        "title": "Text",
+                        "type": "string",
+                        "required": true
+                    },
+                    "image": {
+                        "title": "Image",
+                        "type": "string",
+                        "required": false,
+                        "_relator": {
+                            "associationType": "ers:sponsor-image-association",
+                            "nodeType": "n:node"
+                        }
+                    }
+                }
+            }
+        },
+        "documents": {
+            "type": "array",
+            "title": "List of Documents",
+            "items": {
+                "type": "object",
+                "title": "Document",
+                "properties": {
+                    "document": {
+                        "type": "string",
+                        "required": false,
+                        "_relator": {
+                            "associationType": "ers:document-association",
+                            "nodeType": "n:node"
+                        }
+                    }
+                }
+            }
+        },
+        "disclosure": {
+            "title": "Conflict of Interest Disclosure",
+            "type": "string",
+            "required": false,
+            "_relator": {
+                "associationType": "ers:disclosure-association",
+                "nodeType": "n:node"
+            }
+        },
+        "venue": {
+            "title": "Venue",
+            "type": "string",
+            "required": false
+        },
+        "suggestedAccomodation": {
+            "title": "Suggested Accomodation",
+            "type": "string",
+            "required": false
+        },
+        "registerButton": {
+            "title": "Register Button",
+            "type": "object",
+            "properties": {
+                "link": {
+                    "title": "Link",
+                    "type": "string"
+                },
+                "text": {
+                    "title": "Text",
+                    "type": "string"
+                }
+            }
+        },
+        "bursaryApplication": {
+            "title": "Bursary Application",
+            "type": "object",
+            "properties": {
+                "text": {
+                    "title": "Text",
+                    "type": "string"
+                },
+                "deadline": {
+                    "title": "Deadline",
+                    "type": "string",
+                    "format": "date"
+                },
+                "notificationOfResults": {
+                    "title": "Text",
+                    "type": "string"
+                },
+                "applyButton": {
+                    "title": "Apply Button URL",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

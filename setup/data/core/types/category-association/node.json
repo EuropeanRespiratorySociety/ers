@@ -1,0 +1,8 @@
+{
+    "title": "Article Category Association",
+    "description": "Associates website content with a Category",
+    "_qname": "ers:category-association",
+    "_type": "d:association",
+    "type": "object",
+    "properties": {}
+}
