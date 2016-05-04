@@ -305,7 +305,7 @@
                     "title": "Notification of Results",
                     "type": "string"
                 },
-                "applyButton": {
+                "applyButtonUrl": {
                     "title": "Apply Button URL",
                     "type": "string"
                 }

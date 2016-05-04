@@ -59,7 +59,9 @@
                 }
             },
             "dependencies": {
-                "contentType": "event_course"
+                "contentType": [
+                    "event_course"
+                ]
             }
         },
         "eventDate": {
@@ -67,7 +69,14 @@
             "label": "Event Date",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course",
+                    "event_seminar",
+                    "event_fellowship",
+                    "event_award",
+                    "event_grant",
+                    "event_crc"
+                ]
             }
         },
         "eventLocation": {
@@ -75,7 +84,10 @@
             "label": "Event Location",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course",
+                    "event_seminar"
+                ]
             }
         },
         "leadParagraph": {
@@ -83,44 +95,29 @@
             "aceMode": "ace/mode/markdown",
             "aceFitContentHeight": true,
             "label": "Lead Paragraph",
-            "required": false,
-            "dependencies": {
-                "contentType": "event_article"
-            }
+            "required": false
         },
         "body": {
             "type": "editor",
             "aceMode": "ace/mode/markdown",
             "aceFitContentHeight": true,
             "label": "Body",
-            "required": false,
-            "dependencies": {
-                "contentType": "event_article"
-            }
+            "required": false
         },
         "image": {
             "type": "text",
             "label": "Image",
-            "required": false,
-            "dependencies": {
-                "contentType": "event_article"
-            }
+            "required": false
         },
         "video": {
             "type": "text",
             "label": "Video",
-            "required": false,
-            "dependencies": {
-                "contentType": "event_article"
-            }
+            "required": false
         },
         "map": {
             "type": "text",
             "label": "Map",
-            "required": false,
-            "dependencies": {
-                "contentType": "event_article"
-            }
+            "required": false
         },
         "category": {
             "type": "node-picker",
@@ -132,7 +129,14 @@
             "label": "Deadline",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course",
+                    "event_seminar",
+                    "event_fellowship",
+                    "event_award",
+                    "event_grant",
+                    "event_crc"
+                ]
             }
         },
         "earlybirdDeadline": {
@@ -140,7 +144,7 @@
             "label": "Earlybird Deadline",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": "event_course"
             }
         },
         "extendedDeadline": {
@@ -148,7 +152,14 @@
             "label": "Extended Deadline",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course",
+                    "event_seminar",
+                    "event_fellowship",
+                    "event_award",
+                    "event_grant",
+                    "event_crc"
+                ]
             }
         },
         "openingDate": {
@@ -156,7 +167,14 @@
             "label": "Opening Date",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course",
+                    "event_seminar",
+                    "event_fellowship",
+                    "event_award",
+                    "event_grant",
+                    "event_crc"
+                ]
             }
         },
         "programme": {
@@ -164,7 +182,9 @@
             "label": "Programme",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course"
+                ]
             }
         },
         "practicalInfo": {
@@ -172,14 +192,16 @@
             "label": "Practical Info",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course"
+                ]
             }
         },
         "feeList": {
             "type": "object",
             "label": "Fee list",
             "required": false,
-            "fileds": {
+            "fields": {
                 "junior": {
                     "type": "integer",
                     "minimum": 0
@@ -198,7 +220,9 @@
                 }
             },
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course"
+                ]
             }
         },
         "cancellationPolicy": {
@@ -207,23 +231,24 @@
             "label": "Cancellation Policy",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course"
+                ]
             }
         },
         "related": {
             "type": "node-picker",
             "label": "Related Article / Course",
-            "required": false,
-            "dependencies": {
-                "contentType": "event_article"
-            }
+            "required": false
         },
         "organisers": {
             "type": "text",
             "label": "Organisers",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course"
+                ]
             }
         },
         "sponsors": {
@@ -245,7 +270,14 @@
                 }
             },
             "dependencies": {
-                "contentType": "event_course"
+                "contentType": [
+                    "event_course",
+                    "event_seminar",
+                    "event_fellowship",
+                    "event_award",
+                    "event_grant",
+                    "event_crc"
+                ]
             }
         },
         "documents": {
@@ -262,7 +294,14 @@
                 }
             },
             "dependencies": {
-                "contentType": "event_course"
+                "contentType": [
+                    "event_course",
+                    "event_seminar",
+                    "event_fellowship",
+                    "event_award",
+                    "event_grant",
+                    "event_crc"
+                ]
             }
         },
         "disclosure": {
@@ -270,7 +309,7 @@
             "label": "Conflict of Interest Disclosure",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": "event_course"
             }
         },
         "venue": {
@@ -278,7 +317,10 @@
             "label": "Venue",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course",
+                    "event_seminar"
+                ]
             }
         },
         "suggestedAccomodation": {
@@ -286,14 +328,14 @@
             "label": "Suggested Accomodation",
             "required": false,
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": "event_course"
             }
         },
         "registerButton": {
             "type": "object",
             "label": "Register Button",
             "required": false,
-            "fileds": {
+            "fields": {
                 "link": {
                     "type": "text",
                     "label": "Link"
@@ -304,14 +346,21 @@
                 }
             },
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": [
+                    "event_course",
+                    "event_seminar",
+                    "event_fellowship",
+                    "event_award",
+                    "event_grant",
+                    "event_crc"
+                ]
             }
         },
         "bursaryApplication": {
             "type": "object",
             "label": "Bursary Application",
             "required": false,
-            "fileds": {
+            "fields": {
                 "text": {
                     "type": "text",
                     "label": "Text"
@@ -330,7 +379,7 @@
                 }
             },
             "dependencies": {
-                "contentType": "event_article"
+                "contentType": "event_course"
             }
         },
         "available": {
