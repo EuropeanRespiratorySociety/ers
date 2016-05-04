@@ -1,0 +1,349 @@
+{
+    "engineId": "alpaca1",
+    "title": "Blog / Article",
+    "fields": {
+        "title": {
+            "type": "text",
+            "label": "Title",
+            "required": true
+        },
+        "subTitle": {
+            "type": "text",
+            "label": "Sub Title",
+            "required": true
+        },
+        "slug": {
+            "type": "text",
+            "label": "Slug / Alias",
+            "required": true
+        },
+        "contentType": {
+            "type": "select",
+            "required": true,
+            "optionLabels": [
+                "Article / Blog",
+                "Course Event",
+                "Seminars Event",
+                "Fellowships Event",
+                "Awards Event",
+                "Grants Event",
+                "Clinical Research Collaboration Event"
+            ]
+        },
+        "type": {
+            "type": "select",
+            "label": "Type",
+            "required": false
+        },
+        "flags": {
+            "type": "array",
+            "toolbarSticky": true,
+            "items": {
+                "fields": {
+                    "text": {
+                        "type": "textarea",
+                        "label": "Text",
+                        "required": true
+                    },
+                    "color": {
+                        "type": "radio",
+                        "default": "notification",
+                        "rightLabel": "Color",
+                        "label": "",
+                        "optionLabels": [
+                            "Notification",
+                            "Warning",
+                            "Danger"
+                        ]
+                    }
+                }
+            },
+            "dependencies": {
+                "contentType": "event_course"
+            }
+        },
+        "eventDate": {
+            "type": "text",
+            "label": "Event Date",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "eventLocation": {
+            "type": "text",
+            "label": "Event Location",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "leadParagraph": {
+            "type": "editor",
+            "aceMode": "ace/mode/markdown",
+            "aceFitContentHeight": true,
+            "label": "Lead Paragraph",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "body": {
+            "type": "editor",
+            "aceMode": "ace/mode/markdown",
+            "aceFitContentHeight": true,
+            "label": "Body",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "image": {
+            "type": "text",
+            "label": "Image",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "video": {
+            "type": "text",
+            "label": "Video",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "map": {
+            "type": "text",
+            "label": "Map",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "category": {
+            "type": "node-picker",
+            "label": "",
+            "required": false
+        },
+        "deadline": {
+            "type": "date",
+            "label": "Deadline",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "earlybirdDeadline": {
+            "type": "date",
+            "label": "Earlybird Deadline",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "extendedDeadline": {
+            "type": "date",
+            "label": "Extended Deadline",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "openingDate": {
+            "type": "date",
+            "label": "Opening Date",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "programme": {
+            "type": "node-picker",
+            "label": "Programme",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "practicalInfo": {
+            "type": "node-picker",
+            "label": "Practical Info",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "feeList": {
+            "type": "object",
+            "label": "Fee list",
+            "required": false,
+            "fileds": {
+                "junior": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "ersMember": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "nonErsMember": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "industry": {
+                    "type": "integer",
+                    "minimum": 0
+                }
+            },
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "cancellationPolicy": {
+            "type": "editor",
+            "aceMode": "ace/mode/markdown",
+            "label": "Cancellation Policy",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "related": {
+            "type": "node-picker",
+            "label": "Related Article / Course",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "organisers": {
+            "type": "text",
+            "label": "Organisers",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "sponsors": {
+            "type": "array",
+            "label": "",
+            "toolbarSticky": true,
+            "items": {
+                "fields": {
+                    "text": {
+                        "type": "textarea",
+                        "label": "Text",
+                        "required": true
+                    },
+                    "image": {
+                        "type": "node-picker",
+                        "label": "Image",
+                        "required": false
+                    }
+                }
+            },
+            "dependencies": {
+                "contentType": "event_course"
+            }
+        },
+        "documents": {
+            "type": "array",
+            "label": "List of Documents",
+            "toolbarSticky": true,
+            "items": {
+                "fields": {
+                    "image": {
+                        "type": "node-picker",
+                        "label": "Document",
+                        "required": false
+                    }
+                }
+            },
+            "dependencies": {
+                "contentType": "event_course"
+            }
+        },
+        "disclosure": {
+            "type": "node-picker",
+            "label": "Conflict of Interest Disclosure",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "venue": {
+            "type": "text",
+            "label": "Venue",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "suggestedAccomodation": {
+            "type": "text",
+            "label": "Suggested Accomodation",
+            "required": false,
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "registerButton": {
+            "type": "object",
+            "label": "Register Button",
+            "required": false,
+            "fileds": {
+                "link": {
+                    "type": "text",
+                    "label": "Link"
+                },
+                "text": {
+                    "type": "text",
+                    "label": "Text"
+                }
+            },
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "bursaryApplication": {
+            "type": "object",
+            "label": "Bursary Application",
+            "required": false,
+            "fileds": {
+                "text": {
+                    "type": "text",
+                    "label": "Text"
+                },
+                "deadline": {
+                    "type": "text",
+                    "label": "Deadline"
+                },
+                "notificationOfResults": {
+                    "type": "text",
+                    "label": "Notification of Results"
+                },
+                "applyButtonUrl": {
+                    "type": "text",
+                    "label": "Apply Button URL"
+                }
+            },
+            "dependencies": {
+                "contentType": "event_article"
+            }
+        },
+        "available": {
+            "type": "checkbox",
+            "label": "",
+            "rightLabel": "Suggested Accomodation",
+            "required": false
+        },
+        "displayOrder": {
+            "type": "integer",
+            "label": "Display Order",
+            "required": false
+        }        
+    },
+    "_form_key": "master"
+}

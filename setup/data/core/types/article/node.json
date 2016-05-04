@@ -130,18 +130,6 @@
             "format": "date",
             "required": false
         },
-        "applicationDeadline": {
-            "title": "Application Deadline",
-            "type": "string",
-            "format": "date",
-            "required": false
-        },
-        "startDate": {
-            "title": "Start Date",
-            "type": "string",
-            "format": "date",
-            "required": false
-        },
         "extendedDeadline": {
             "title": "Extended Deadline",
             "type": "string",
@@ -314,7 +302,7 @@
                     "format": "date"
                 },
                 "notificationOfResults": {
-                    "title": "Text",
+                    "title": "Notification of Results",
                     "type": "string"
                 },
                 "applyButton": {
@@ -323,6 +311,68 @@
                 }
             }
         }
+    },
+    "dependencies": {
+        "flags": [
+            "contentType"
+        ],
+        "eventDate": [
+            "contentType"
+        ],
+        "eventLocation": [
+            "contentType"
+        ],
+        "leadParagraph": [
+            "contentType"
+        ],
+        "deadline": [
+            "contentType"
+        ],
+        "earlybirdDeadline": [
+            "contentType"
+        ],
+        "extendedDeadline": [
+            "contentType"
+        ],
+        "openingDate": [
+            "contentType"
+        ],
+        "programme": [
+            "contentType"
+        ],
+        "practicalInfo": [
+            "contentType"
+        ],
+        "feeList": [
+            "contentType"
+        ],
+        "cancellationPolicy": [
+            "contentType"
+        ],
+        "organisers": [
+            "contentType"
+        ],
+        "sponsors": [
+            "contentType"
+        ],
+        "documents": [
+            "contentType"
+        ],
+        "disclosure": [
+            "contentType"
+        ],
+        "venue": [
+            "contentType"
+        ],
+        "suggestedAccomodation": [
+            "contentType"
+        ],
+        "registerButton": [
+            "contentType"
+        ],
+        "bursaryApplication": [
+            "contentType"
+        ]
     },
     "mandatoryFeatures": {
         "ers:homePageAvailable": {
