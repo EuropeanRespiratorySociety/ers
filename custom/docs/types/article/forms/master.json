@@ -93,20 +93,27 @@
         "leadParagraph": {
             "type": "editor",
             "aceMode": "ace/mode/markdown",
-            "aceFitContentHeight": true,
-            "label": "Lead Paragraph",
+            "aceFitContentHeight": false,
+            "label": "Lead Paragraph (markdown)",
             "required": false
         },
         "body": {
             "type": "editor",
             "aceMode": "ace/mode/markdown",
-            "aceFitContentHeight": true,
-            "label": "Body",
+            "aceFitContentHeight": false,
+            "label": "Body (markdown)",
             "required": false
         },
         "image": {
-            "type": "text",
+            "type": "related-content",
             "label": "Image",
+            "required": false,
+            "uploadPath": "/images",
+            "maxNumberOfFiles": 1
+        },
+        "imageDescription": {
+            "type": "text",
+            "label": "Image Description",
             "required": false
         },
         "video": {
@@ -178,9 +185,11 @@
             }
         },
         "programme": {
-            "type": "node-picker",
+            "type": "related-content",
             "label": "Programme",
             "required": false,
+            "uploadPath": "/documents/programme",
+            "maxNumberOfFiles": 1,
             "dependencies": {
                 "contentType": [
                     "event_course"
@@ -188,9 +197,11 @@
             }
         },
         "practicalInfo": {
-            "type": "node-picker",
+            "type": "related-content",
             "label": "Practical Info",
             "required": false,
+            "uploadPath": "/documents/practical_info",
+            "maxNumberOfFiles": 1,
             "dependencies": {
                 "contentType": [
                     "event_course"
@@ -228,7 +239,7 @@
         "cancellationPolicy": {
             "type": "editor",
             "aceMode": "ace/mode/markdown",
-            "label": "Cancellation Policy",
+            "label": "Cancellation Policy (markdown)",
             "required": false,
             "dependencies": {
                 "contentType": [
@@ -281,18 +292,10 @@
             }
         },
         "documents": {
-            "type": "array",
+            "type": "related-content",
             "label": "List of Documents",
-            "toolbarSticky": true,
-            "items": {
-                "fields": {
-                    "image": {
-                        "type": "node-picker",
-                        "label": "Document",
-                        "required": false
-                    }
-                }
-            },
+            "required": false,
+            "uploadPath": "/documents/documents",
             "dependencies": {
                 "contentType": [
                     "event_course",
@@ -305,9 +308,10 @@
             }
         },
         "disclosure": {
-            "type": "node-picker",
+            "type": "related-content",
             "label": "Conflict of Interest Disclosure",
             "required": false,
+            "uploadPath": "/documents/disclosures",
             "dependencies": {
                 "contentType": "event_course"
             }
@@ -385,7 +389,7 @@
         "available": {
             "type": "checkbox",
             "label": "",
-            "rightLabel": "Suggested Accomodation",
+            "rightLabel": "Make Available on Homepage",
             "required": false
         },
         "displayOrder": {

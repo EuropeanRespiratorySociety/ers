@@ -1,0 +1,9 @@
+{
+    "title": "Image Association",
+    "description": "Associates website content with an image",
+    "_qname": "ers:image-association",
+    "_type": "d:association",
+    "type": "object",
+    "_parent": "a:linked",
+    "properties": {}
+}

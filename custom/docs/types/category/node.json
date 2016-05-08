@@ -15,10 +15,10 @@
             "type": "string",
             "required": true
         },
-        "leadParagraph": {
-            "title": "Lead Paragraph",
+        "slug": {
+            "title": "Slug / Alias",
             "type": "string",
-            "required": false
+            "required": true
         },
         "body": {
             "title": "Body",
@@ -27,6 +27,15 @@
         },
         "image": {
             "title": "Image",
+            "type": "object",
+            "required": false,
+            "_relator": {
+                "associationType": "ers:image-association",
+                "nodeType": "n:node"
+            }
+        },
+        "imageDescription": {
+            "title": "Image Description",
             "type": "string",
             "required": false
         },
@@ -35,16 +44,9 @@
             "type": "string",
             "required": false
         },
-        "applicationDeadline": {
-            "title": "Application Deadline",
+        "map": {
+            "title": "Map",
             "type": "string",
-            "format": "date",
-            "required": false
-        },
-        "startDate": {
-            "title": "Start Date",
-            "type": "string",
-            "format": "date",
             "required": false
         },
         "sponsors": {
@@ -61,7 +63,7 @@
                     },
                     "image": {
                         "title": "Image",
-                        "type": "string",
+                        "type": "object",
                         "required": false,
                         "_relator": {
                             "associationType": "ers:sponsor-image-association",
@@ -80,6 +82,11 @@
                     "type": "string"
                 }
             }
+        }
+    },
+    "mandatoryFeatures": {
+        "ers:homePageAvailable": {
+            "enabled": true
         }
     }
 }

@@ -1,0 +1,92 @@
+{
+    "engineId": "alpaca1",
+    "title": "Category",
+    "fields": {
+        "title": {
+            "type": "text",
+            "label": "Title",
+            "required": true
+        },
+        "subTitle": {
+            "type": "text",
+            "label": "Sub Title",
+            "required": true
+        },
+        "slug": {
+            "type": "text",
+            "label": "Slug / Alias",
+            "required": true
+        },
+        "body": {
+            "type": "editor",
+            "aceMode": "ace/mode/markdown",
+            "aceFitContentHeight": false,
+            "label": "Body (markdown)",
+            "required": false
+        },
+        "image": {
+            "type": "related-content",
+            "label": "Image",
+            "required": false,
+            "uploadPath": "/images",
+            "maxNumberOfFiles": 1
+        },
+        "imageDescription": {
+            "type": "text",
+            "label": "Image Description",
+            "required": false
+        },
+        "video": {
+            "type": "text",
+            "label": "Video",
+            "required": false
+        },
+        "map": {
+            "type": "text",
+            "label": "Map",
+            "required": false
+        },
+        "sponsors": {
+            "type": "array",
+            "label": "",
+            "toolbarSticky": true,
+            "items": {
+                "fields": {
+                    "text": {
+                        "type": "textarea",
+                        "label": "Text",
+                        "required": true
+                    },
+                    "image": {
+                        "type": "node-picker",
+                        "label": "Image",
+                        "required": false
+                    }
+                }
+            }
+        },
+        "registerButton": {
+            "type": "object",
+            "label": "Register Button",
+            "required": false,
+            "fields": {
+                "text": {
+                    "type": "text",
+                    "label": "Text"
+                }
+            }
+        },
+        "available": {
+            "type": "checkbox",
+            "label": "",
+            "rightLabel": "Make Available on Homepage",
+            "required": false
+        },
+        "displayOrder": {
+            "type": "integer",
+            "label": "Display Order",
+            "required": false
+        }        
+    },
+    "_form_key": "master"
+}

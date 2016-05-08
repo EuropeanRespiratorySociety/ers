@@ -3,6 +3,7 @@
     "description": "Associates website content with a Category",
     "_qname": "ers:category-association",
     "_type": "d:association",
+    "_parent": "a:linked",
     "type": "object",
     "properties": {}
 }

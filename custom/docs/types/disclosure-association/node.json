@@ -4,5 +4,6 @@
     "_qname": "ers:disclosure-association",
     "_type": "d:association",
     "type": "object",
+    "_parent": "a:linked",
     "properties": {}
 }

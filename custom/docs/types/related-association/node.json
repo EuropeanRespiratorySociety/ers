@@ -1,0 +1,9 @@
+{
+    "title": "Related article/course Association",
+    "description": "Associates website content items with each other",
+    "_qname": "ers:related-association",
+    "_type": "d:association",
+    "type": "object",
+    "_parent": "a:linked",
+    "properties": {}
+}

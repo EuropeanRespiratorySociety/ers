@@ -96,6 +96,15 @@
         },
         "image": {
             "title": "Image",
+            "type": "object",
+            "required": false,
+            "_relator": {
+                "associationType": "ers:image-association",
+                "nodeType": "n:node"
+            }
+        },
+        "imageDescription": {
+            "title": "Image Description",
             "type": "string",
             "required": false
         },
@@ -111,7 +120,7 @@
         },
         "category": {
             "title": "Category",
-            "type": "string",
+            "type": "object",
             "required": false,
             "_relator": {
                 "associationType": "ers:category-association",
@@ -144,7 +153,7 @@
         },
         "programme": {
             "title": "Programme",
-            "type": "string",
+            "type": "object",
             "required": false,
             "_relator": {
                 "associationType": "ers:programme-association",
@@ -153,7 +162,7 @@
         },
         "practicalInfo": {
             "title": "Practical Info",
-            "type": "string",
+            "type": "object",
             "required": false,
             "_relator": {
                 "associationType": "ers:practicalInfo-association",
@@ -194,17 +203,9 @@
             "required": false,
             "items": {
                 "type": "object",
-                "title": "Document",
-                "properties": {
-                    "document": {
-                        "title": "Document",
-                        "type": "string",
-                        "required": false,
-                        "_relator": {
-                            "associationType": "ers:programme-association",
-                            "nodeType": "n:node"
-                        }
-                    }
+                "_relator": {
+                    "associationType": "ers:related-association",
+                    "nodeType": "ers:article"
                 }
             }
         },
@@ -227,7 +228,7 @@
                     },
                     "image": {
                         "title": "Image",
-                        "type": "string",
+                        "type": "object",
                         "required": false,
                         "_relator": {
                             "associationType": "ers:sponsor-image-association",
@@ -238,27 +239,20 @@
             }
         },
         "documents": {
-            "type": "array",
             "title": "List of Documents",
+            "type": "array",
+            "required": false,
             "items": {
                 "type": "object",
-                "title": "Document",
-                "properties": {
-                    "document": {
-                        "type": "string",
-                        "required": false,
-                        "_relator": {
-                            "associationType": "ers:document-association",
-                            "nodeType": "n:node"
-                        }
-                    }
+                "_relator": {
+                    "associationType": "ers:document-association",
+                    "nodeType": "n:node"
                 }
             }
         },
         "disclosure": {
             "title": "Conflict of Interest Disclosure",
-            "type": "string",
-            "required": false,
+            "type": "object",
             "_relator": {
                 "associationType": "ers:disclosure-association",
                 "nodeType": "n:node"

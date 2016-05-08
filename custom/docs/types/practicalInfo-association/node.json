@@ -4,5 +4,6 @@
     "_qname": "ers:practicalInfo-association",
     "_type": "d:association",
     "type": "object",
+    "_parent": "a:linked",
     "properties": {}
 }

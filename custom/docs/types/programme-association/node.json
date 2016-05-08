@@ -1,8 +1,9 @@
 {
     "title": "Article, Programme document Association",
     "description": "Associates website content with a Programme document",
-    "_qname": "ers:practicalInfo-association",
+    "_qname": "ers:programme-association",
     "_type": "d:association",
     "type": "object",
+    "_parent": "a:linked",
     "properties": {}
 }
