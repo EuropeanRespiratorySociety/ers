@@ -13,12 +13,20 @@
         "subTitle": {
             "title": "Sub Title",
             "type": "string",
-            "required": true
+            "required": false
         },
         "slug": {
             "title": "Slug / Alias",
             "type": "string",
             "required": true
+        },
+        "tags": {
+            "title": "Tags",
+            "type": "array",
+            "items": { 
+                "type": "string" 
+            },
+            "uniqueItems": true
         },
         "contentType": {
             "title": "Content Type",
@@ -202,11 +210,11 @@
             "type": "array",
             "required": false,
             "items": {
-                "type": "object",
-                "_relator": {
-                    "associationType": "ers:related-association",
-                    "nodeType": "ers:article"
-                }
+                "type": "object"
+            },
+            "_relator": {
+                "associationType": "ers:related-association",
+                "nodeType": "ers:article"
             }
         },
         "organisers": {
@@ -243,11 +251,11 @@
             "type": "array",
             "required": false,
             "items": {
-                "type": "object",
-                "_relator": {
-                    "associationType": "ers:document-association",
-                    "nodeType": "n:node"
-                }
+                "type": "object"
+            },
+            "_relator": {
+                "associationType": "ers:document-association",
+                "nodeType": "n:node"
             }
         },
         "disclosure": {

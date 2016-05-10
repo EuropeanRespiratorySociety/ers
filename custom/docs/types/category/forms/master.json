@@ -10,16 +10,22 @@
         "subTitle": {
             "type": "text",
             "label": "Sub Title",
-            "required": true
+            "required": false
         },
         "slug": {
             "type": "text",
             "label": "Slug / Alias",
             "required": true
         },
+        "tags": {
+            "type": "text",
+            "label": "tags",
+            "required": false
+        },
         "body": {
             "type": "editor",
             "aceMode": "ace/mode/markdown",
+            "aceHeight": 300,
             "aceFitContentHeight": false,
             "label": "Body (markdown)",
             "required": false

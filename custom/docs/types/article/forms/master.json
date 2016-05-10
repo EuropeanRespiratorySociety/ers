@@ -10,12 +10,26 @@
         "subTitle": {
             "type": "text",
             "label": "Sub Title",
-            "required": true
+            "required": false
         },
         "slug": {
             "type": "text",
             "label": "Slug / Alias",
             "required": true
+        },
+        "tags": {
+            "type": "array",
+            "label": "Tags",
+            "required": false,
+            "items": {
+                "fields": {
+                    "text": {
+                        "type": "text",
+                        "label": "Tag",
+                        "required": true
+                    }
+                }
+            }
         },
         "contentType": {
             "type": "select",
@@ -93,14 +107,14 @@
         "leadParagraph": {
             "type": "editor",
             "aceMode": "ace/mode/markdown",
-            "aceFitContentHeight": false,
+            "aceHeight": 300,
             "label": "Lead Paragraph (markdown)",
             "required": false
         },
         "body": {
             "type": "editor",
             "aceMode": "ace/mode/markdown",
-            "aceFitContentHeight": false,
+            "aceHeight": 300,
             "label": "Body (markdown)",
             "required": false
         },
