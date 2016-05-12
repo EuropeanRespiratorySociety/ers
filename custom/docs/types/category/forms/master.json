@@ -18,9 +18,18 @@
             "required": true
         },
         "tags": {
-            "type": "text",
-            "label": "tags",
-            "required": false
+            "type": "array",
+            "label": "Tags",
+            "required": false,
+            "items": {
+                "fields": {
+                    "text": {
+                        "type": "text",
+                        "label": "Tag",
+                        "required": true
+                    }
+                }
+            }
         },
         "body": {
             "type": "editor",
@@ -61,7 +70,7 @@
                     "text": {
                         "type": "textarea",
                         "label": "Text",
-                        "required": true
+                        "required": false
                     },
                     "image": {
                         "type": "node-picker",
