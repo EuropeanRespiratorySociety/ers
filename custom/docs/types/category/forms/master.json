@@ -9,6 +9,7 @@
         },
         "slug": {
             "type": "slug",
+            "emptyOnly": true,
             "label": "Slug / Alias",
             "required": true
         },
