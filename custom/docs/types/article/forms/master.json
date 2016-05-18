@@ -80,7 +80,7 @@
             }
         },
         "eventDate": {
-            "type": "text",
+            "type": "date",
             "label": "Event Date",
             "required": false,
             "dependencies": {
@@ -136,10 +136,18 @@
             "label": "Video",
             "required": false
         },
-        "map": {
-            "type": "text",
-            "label": "Map",
-            "required": false
+        "loc": {
+            "type": "object",
+            "label": "Map Coordinates",
+            "required": false,
+            "fields": {
+                "lat": {
+                    "type": "number"
+                },
+                "long": {
+                    "type": "number"
+                }
+            }
         },
         "category": {
             "type": "node-picker",
@@ -332,9 +340,27 @@
             }
         },
         "venue": {
-            "type": "text",
-            "label": "Venue",
+            "type": "object",
+            "label": "Venue Address",
             "required": false,
+            "fields": {
+                "streetAddress": {
+                    "type": "text",
+                    "label": "Street Address"
+                },
+                "city": {
+                    "type": "text",
+                    "label": "City"
+                },
+                "postalCode": {
+                    "type": "text",
+                    "label": "Postal Code"
+                },
+                "country": {
+                    "type": "text",
+                    "label": "Country"
+                }
+            },
             "dependencies": {
                 "contentType": [
                     "event_course",
@@ -343,9 +369,27 @@
             }
         },
         "suggestedAccomodation": {
-            "type": "text",
+            "type": "object",
             "label": "Suggested Accomodation",
             "required": false,
+            "fields": {
+                "streetAddress": {
+                    "type": "text",
+                    "label": "Street Address"
+                },
+                "city": {
+                    "type": "text",
+                    "label": "City"
+                },
+                "postalCode": {
+                    "type": "text",
+                    "label": "Postal Code"
+                },
+                "country": {
+                    "type": "text",
+                    "label": "Country"
+                }
+            },
             "dependencies": {
                 "contentType": "event_course"
             }

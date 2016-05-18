@@ -121,11 +121,6 @@
             "type": "string",
             "required": false
         },
-        "map": {
-            "title": "Map",
-            "type": "string",
-            "required": false
-        },
         "category": {
             "title": "Category",
             "type": "object",
@@ -268,13 +263,41 @@
         },
         "venue": {
             "title": "Venue",
-            "type": "string",
-            "required": false
+            "type": "object",
+            "required": false,
+            "properties": {
+                "streetAddress": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "postalCode": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                }
+            }
         },
         "suggestedAccomodation": {
             "title": "Suggested Accomodation",
-            "type": "string",
-            "required": false
+            "type": "object",
+            "required": false,
+            "properties": {
+                "streetAddress": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "postalCode": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                }
+            }
         },
         "registerButton": {
             "title": "Register Button",
@@ -378,6 +401,9 @@
     },
     "mandatoryFeatures": {
         "ers:homePageAvailable": {
+            "enabled": true
+        },
+        "f:geolocation": {
             "enabled": true
         }
     }
