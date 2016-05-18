@@ -13,7 +13,8 @@
             "required": false
         },
         "slug": {
-            "type": "text",
+            "type": "slug",
+            "emptyOnly": true,
             "label": "Slug / Alias",
             "required": true
         },

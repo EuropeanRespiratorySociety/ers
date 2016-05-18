@@ -3,6 +3,7 @@
     "description": "An Article / Blog or Event for display on the website",
     "_parent": "n:node",
     "type": "object",
+    "_type": "d:type",
     "_qname": "ers:article",
     "properties": {
         "title": {

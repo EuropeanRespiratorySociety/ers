@@ -7,13 +7,8 @@
             "label": "Title",
             "required": true
         },
-        "subTitle": {
-            "type": "text",
-            "label": "Sub Title",
-            "required": false
-        },
         "slug": {
-            "type": "text",
+            "type": "slug",
             "label": "Slug / Alias",
             "required": true
         },

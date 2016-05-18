@@ -3,17 +3,13 @@
     "description": "A Category for the website",
     "_parent": "n:node",
     "type": "object",
+    "_type": "d:type",
     "_qname": "ers:category",
     "properties": {
         "title": {
             "title": "Title",
             "type": "string",
             "required": true
-        },
-        "subTitle": {
-            "title": "Sub Title",
-            "type": "string",
-            "required": false
         },
         "slug": {
             "title": "Slug / Alias",
