@@ -280,8 +280,8 @@
                 }
             }
         },
-        "suggestedAccomodation": {
-            "title": "Suggested Accomodation",
+        "suggestedAccommodation": {
+            "title": "Suggested Accommodation",
             "type": "object",
             "required": false,
             "properties": {

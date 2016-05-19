@@ -368,9 +368,9 @@
                 ]
             }
         },
-        "suggestedAccomodation": {
+        "suggestedAccommodation": {
             "type": "object",
-            "label": "Suggested Accomodation",
+            "label": "Suggested Accommodation",
             "required": false,
             "fields": {
                 "streetAddress": {
