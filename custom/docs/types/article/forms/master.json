@@ -23,6 +23,7 @@
             "label": "Tags",
             "required": false,
             "items": {
+                "type": "object",
                 "fields": {
                     "text": {
                         "type": "text",
@@ -54,6 +55,7 @@
             "type": "array",
             "toolbarSticky": true,
             "items": {
+                "type": "object",
                 "fields": {
                     "text": {
                         "type": "textarea",
@@ -124,7 +126,8 @@
             "label": "Image",
             "required": false,
             "uploadPath": "/images",
-            "maxNumberOfFiles": 1
+            "maxNumberOfFiles": 1,
+            "fileTypes": "/(\\.|\\/)(gif|jpe?g|png)$/i"
         },
         "imageDescription": {
             "type": "text",
@@ -290,6 +293,7 @@
             "label": "",
             "toolbarSticky": true,
             "items": {
+                "type": "object",
                 "fields": {
                     "text": {
                         "type": "textarea",
@@ -344,6 +348,10 @@
             "label": "Venue Address",
             "required": false,
             "fields": {
+                "phoneNumber": {
+                    "type": "text",
+                    "label": "Phone #"
+                },
                 "streetAddress": {
                     "type": "text",
                     "label": "Street Address"
@@ -369,25 +377,32 @@
             }
         },
         "suggestedAccommodation": {
-            "type": "object",
+            "type": "array",
             "label": "Suggested Accommodation",
-            "required": false,
-            "fields": {
-                "streetAddress": {
-                    "type": "text",
-                    "label": "Street Address"
-                },
-                "city": {
-                    "type": "text",
-                    "label": "City"
-                },
-                "postalCode": {
-                    "type": "text",
-                    "label": "Postal Code"
-                },
-                "country": {
-                    "type": "text",
-                    "label": "Country"
+            "toolbarSticky": true,
+            "items": {
+                "type": "object",
+                "fields": {
+                    "phoneNumber": {
+                        "type": "text",
+                        "label": "Phone #"
+                    },
+                    "streetAddress": {
+                        "type": "text",
+                        "label": "Street Address"
+                    },
+                    "city": {
+                        "type": "text",
+                        "label": "City"
+                    },
+                    "postalCode": {
+                        "type": "text",
+                        "label": "Postal Code"
+                    },
+                    "country": {
+                        "type": "text",
+                        "label": "Country"
+                    }
                 }
             },
             "dependencies": {

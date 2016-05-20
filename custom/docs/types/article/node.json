@@ -266,6 +266,9 @@
             "type": "object",
             "required": false,
             "properties": {
+                "phoneNumber": {
+                    "type": "string"
+                },
                 "streetAddress": {
                     "type": "string"
                 },
@@ -282,20 +285,31 @@
         },
         "suggestedAccommodation": {
             "title": "Suggested Accommodation",
-            "type": "object",
+            "type": "array",
             "required": false,
-            "properties": {
-                "streetAddress": {
-                    "type": "string"
-                },
-                "city": {
-                    "type": "string"
-                },
-                "postalCode": {
-                    "type": "string"
-                },
-                "country": {
-                    "type": "string"
+            "items": {
+                "type": "object",
+                "properties": {
+                    "phoneNumber": {
+                        "type": "string",
+                        "title": "Phone #"
+                    },
+                    "streetAddress": {
+                        "type": "string",
+                        "title": "Street Address"
+                    },
+                    "city": {
+                        "type": "string",
+                        "title": "City"
+                    },
+                    "postalCode": {
+                        "type": "string",
+                        "title": "Postal Code"
+                    },
+                    "country": {
+                        "type": "string",
+                        "title": "Country"
+                    }
                 }
             }
         },
