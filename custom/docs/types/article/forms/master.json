@@ -96,6 +96,21 @@
                 ]
             }
         },
+        "eventEndDate": {
+            "type": "date",
+            "label": "Event End Date (Required for multi-day events)",
+            "required": false,
+            "dependencies": {
+                "contentType": [
+                    "event_course",
+                    "event_seminar",
+                    "event_fellowship",
+                    "event_award",
+                    "event_grant",
+                    "event_crc"
+                ]
+            }
+        },
         "eventLocation": {
             "type": "text",
             "label": "Event Location",
@@ -127,7 +142,7 @@
             "required": false,
             "uploadPath": "/images",
             "maxNumberOfFiles": 1,
-            "fileTypes": "/(\\.|\\/)(gif|jpe?g|png)$/i"
+            "fileTypes": "(\\.|\/)(gif|jpe?g|png)$"
         },
         "imageDescription": {
             "type": "text",
@@ -288,6 +303,16 @@
                 ]
             }
         },
+        "faculty": {
+            "type": "text",
+            "label": "Faculty",
+            "required": false,
+            "dependencies": {
+                "contentType": [
+                    "event_course"
+                ]
+            }
+        },
         "sponsors": {
             "type": "array",
             "label": "",
@@ -348,6 +373,14 @@
             "label": "Venue Address",
             "required": false,
             "fields": {
+                "name": {
+                    "type": "text",
+                    "label": "Name"
+                },
+                "url": {
+                    "type": "url",
+                    "label": "URL"
+                },
                 "phoneNumber": {
                     "type": "text",
                     "label": "Phone #"
@@ -367,6 +400,12 @@
                 "country": {
                     "type": "text",
                     "label": "Country"
+                },
+                "info": {
+                    "type": "editor",
+                    "aceMode": "ace/mode/markdown",
+                    "aceHeight": 300,
+                    "label": "Additional Information (markdown)"
                 }
             },
             "dependencies": {
@@ -383,6 +422,14 @@
             "items": {
                 "type": "object",
                 "fields": {
+                    "name": {
+                        "type": "text",
+                        "label": "Name"
+                    },
+                    "url": {
+                        "type": "url",
+                        "label": "URL"
+                    },
                     "phoneNumber": {
                         "type": "text",
                         "label": "Phone #"
@@ -402,6 +449,12 @@
                     "country": {
                         "type": "text",
                         "label": "Country"
+                    },
+                    "info": {
+                        "type": "editor",
+                        "aceMode": "ace/mode/markdown",
+                        "aceHeight": 300,
+                        "label": "Additional Information (markdown)"
                     }
                 }
             },
@@ -444,11 +497,11 @@
                     "label": "Text"
                 },
                 "deadline": {
-                    "type": "text",
+                    "type": "date",
                     "label": "Deadline"
                 },
                 "notificationOfResults": {
-                    "type": "text",
+                    "type": "date",
                     "label": "Notification of Results"
                 },
                 "applyButtonUrl": {

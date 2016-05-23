@@ -87,6 +87,12 @@
             "format": "date",
             "required": false
         },
+        "eventEndDate": {
+            "title": "Event End Date",
+            "type": "string",
+            "format": "date",
+            "required": false
+        },
         "eventLocation": {
             "title": "Event Location",
             "type": "string",
@@ -217,6 +223,11 @@
             "type": "string",
             "required": false
         },
+        "faculty": {
+            "title": "Faculty",
+            "type": "string",
+            "required": false
+        },
         "sponsors": {
             "type": "array",
             "title": "Sponsor",
@@ -266,6 +277,12 @@
             "type": "object",
             "required": false,
             "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
                 "phoneNumber": {
                     "type": "string"
                 },
@@ -280,6 +297,9 @@
                 },
                 "country": {
                     "type": "string"
+                },
+                "info": {
+                    "type": "string"
                 }
             }
         },
@@ -290,25 +310,30 @@
             "items": {
                 "type": "object",
                 "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
                     "phoneNumber": {
                         "type": "string",
                         "title": "Phone #"
                     },
                     "streetAddress": {
-                        "type": "string",
-                        "title": "Street Address"
+                        "type": "string"
                     },
                     "city": {
-                        "type": "string",
-                        "title": "City"
+                        "type": "string"
                     },
                     "postalCode": {
-                        "type": "string",
-                        "title": "Postal Code"
+                        "type": "string"
                     },
                     "country": {
-                        "type": "string",
-                        "title": "Country"
+                        "type": "string"
+                    },
+                    "info": {
+                        "type": "string"
                     }
                 }
             }
@@ -342,7 +367,8 @@
                 },
                 "notificationOfResults": {
                     "title": "Notification of Results",
-                    "type": "string"
+                    "type": "string",
+                    "format": "date"
                 },
                 "applyButtonUrl": {
                     "title": "Apply Button URL",
@@ -356,6 +382,9 @@
             "contentType"
         ],
         "eventDate": [
+            "contentType"
+        ],
+        "eventEndDate": [
             "contentType"
         ],
         "eventLocation": [
@@ -389,6 +418,9 @@
             "contentType"
         ],
         "organisers": [
+            "contentType"
+        ],
+        "faculty": [
             "contentType"
         ],
         "sponsors": [
