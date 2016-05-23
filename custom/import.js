@@ -12,6 +12,8 @@ var cli = cli_args([
     {name: 'list-types', alias: 'l', type: Boolean, description: 'list local type definitions'},
     {name: 'type-name', alias: 't', type: String, description: '_qname of the type definition to import'},
     {name: 'csv-path', alias: 'c', type: String, description: 'path to content csv file to import'},
+    {name: 'property-name', alias: 'p', type: String, description: 'name of an extra property to set ex.: -p contentType"'},
+    {name: 'property-value', alias: 'v', type: String, description: 'value of the extra property ex.: -v article"'},
     {name: 'replace', alias: 'r', type: Boolean, description: 'replace type definitions if found'},
     {name: 'branch', alias: 'b', type: String, description: 'branch to write content to. branch id or "master". Default is "master"'}
 ]);
@@ -27,10 +29,47 @@ if(options.help || (!options["csv-path"] && !options["type-name"] && !options["l
 
 var branchId = options["branch"] || "master";
 var csvPath = options["csv-path"];
-
 var typeDefinitions = listTypeDefinitions();
+var importTypeName = options["type-name"];
+var importType = typeDefinitions[importTypeName];
+var propertyName = options["property-name"];
+var propertyValue = options["property-value"];
 
-if(options["list-types"])
+if (csvPath && importType) {
+    var nodes = [];
+    var headers = [];
+    var csvContent = util.loadCsvFile(csvPath, function(err, data){
+        if (err) {
+            console.log("error loading csv " + err);
+            return;
+        }
+
+        if (data.length < 2) {
+            console.log("array too small. 1st row should be header row");
+            return;
+        }
+
+        for(var i = 0; i < data[0].length; i++) {
+            headers.push(data[0][i]);
+        }
+
+        for(var i = 1; i < data.length; i++) {
+            var node = {};
+            node["_type"] = importTypeName;
+            
+            if (propertyName) {
+                node[propertyName] = propertyValue;
+            }
+            
+            for(var j = 0; j < headers.length; j++) {
+                node[headers[j]] = data[i][j];
+            }
+            nodes.push(node);
+        }
+        console.log(JSON.stringify(nodes));
+    });
+}
+else if(options["list-types"])
 {
     for(var type in typeDefinitions) {
         // console.log(JSON.stringify(typeDefinitions[type]));
@@ -38,64 +77,70 @@ if(options["list-types"])
     }
     return;
 }
-
-var importType = typeDefinitions[options["type-name"]];
-if(!importType)
+else if(!importType)
 {
     console.log("No type found with _qname \"" + options["type-name"] + "\"");
     return;
 }
-console.log("Importing " + importType.json._qname);
+else if (importType)
+{
+    console.log("Importing " + importType.json._qname);
 
-var gitanaConfig = JSON.parse("" + fs.readFileSync("../gitana.json"));
-Gitana.connect(gitanaConfig, function(err) {
-    var node;
+    var gitanaConfig = JSON.parse("" + fs.readFileSync("../gitana.json"));
+    Gitana.connect(gitanaConfig, function(err) {
+        var node;
 
-    if (err) {
-        console.log("Failed to connect: " + JSON.stringify(err));
-        return;
-    }
+        if (err) {
+            console.log("Failed to connect: " + JSON.stringify(err));
+            return;
+        }
 
-    var self = this;
+        var self = this;
 
-    self.datastore("content").trap(function(err) {
-        console.log(err);
-        return false;
-    }).readBranch(branchId).then(function () {
-        var branch = this;
+        self.datastore("content").trap(function(err) {
+            console.log(err);
+            return false;
+        }).readBranch(branchId).then(function () {
+            var branch = this;
 
-        this.queryNodes({
-            "_type": importType.json._type,
-            "_qname": importType.json._qname
-        }).count(function(c) {
-            if(c>0) {
-                console.log("Can't import. Node already exists: " + importType.json.id);
-                return;
-            }
-
-            // console.log(JSON.stringify(this));
-            node = this;
-            console.log("Node not found. Creating...");
-
-            async.waterfall([
-                async.apply(createContext, importType, branch),
-                writeNode,
-                uploadAttachments
-            ], function (err, context) {
-                if(err)
-                {
-                    console.log("Error creating node " + err);
+            this.queryNodes({
+                "_type": importType.json._type,
+                "_qname": importType.json._qname
+            }).count(function(c) {
+                if(c>0) {
+                    console.log("Can't import. Node already exists: " + importType.json.id);
+                    return;
                 }
-                else {
-                    console.log("Node has been imported succesfully");
-                }
+
+                // console.log(JSON.stringify(this));
+                node = this;
+                console.log("Node not found. Creating...");
+
+                async.waterfall([
+                    async.apply(createContext, importType, branch),
+                    writeNode,
+                    uploadAttachments
+                ], function (err, context) {
+                    if(err)
+                    {
+                        console.log("Error creating node " + err);
+                    }
+                    else {
+                        console.log("Node has been imported succesfully");
+                    }
+                    return;
+                });
                 return;
             });
-            return;
         });
-    });
 
-});
+    });
+}
+else
+{
+    console.log(cli.getUsage(options));
+    return;    
+}
 
 function writeNode(context, callback) {
     context.branch.createNode(context.node).trap(function(err){
