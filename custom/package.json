@@ -1,0 +1,18 @@
+{
+  "name": "dennison-convert",
+  "version": "0.0.1",
+  "description": "Converts Moen XLS files to objects.json",
+  "dependencies": {
+    "async": "*",
+    "csv": "*",
+    "mkdirp": "*",
+    "request": "*",
+    "temp": "*",
+    "wrench": "*",
+    "gitana": "*",
+    "command-line-args": "*",
+    "mime-types": "*"
+  },
+  "optionalDependencies": {},
+  "private": true
+}
