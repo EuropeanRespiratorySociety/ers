@@ -38,12 +38,12 @@
             "required": true,
             "optionLabels": [
                 "Article / Blog",
-                "Course Event",
-                "Seminars Event",
-                "Fellowships Event",
-                "Awards Event",
-                "Grants Event",
-                "Clinical Research Collaboration Event"
+                "Course",
+                "Seminars",
+                "Fellowships",
+                "Awards",
+                "Grants",
+                "Clinical Research Collaboration"
             ]
         },
         "type": {
@@ -142,7 +142,7 @@
             "required": false,
             "uploadPath": "/images",
             "maxNumberOfFiles": 1,
-            "fileTypes": "(\\.|\/)(gif|jpe?g|png)$"
+            "fileTypes": "(\\.|/)(gif|jpe?g|png)$"
         },
         "imageDescription": {
             "type": "text",
@@ -381,13 +381,13 @@
                     "type": "url",
                     "label": "URL"
                 },
-                "phoneNumber": {
-                    "type": "text",
-                    "label": "Phone #"
-                },
                 "streetAddress": {
                     "type": "text",
                     "label": "Street Address"
+                },
+                "streetAddress2": {
+                    "type": "text",
+                    "label": "Street Address (second line)"
                 },
                 "city": {
                     "type": "text",
@@ -400,6 +400,10 @@
                 "country": {
                     "type": "text",
                     "label": "Country"
+                },
+                "phoneNumber": {
+                    "type": "text",
+                    "label": "Phone #"
                 },
                 "info": {
                     "type": "editor",
@@ -430,13 +434,13 @@
                         "type": "url",
                         "label": "URL"
                     },
-                    "phoneNumber": {
-                        "type": "text",
-                        "label": "Phone #"
-                    },
                     "streetAddress": {
                         "type": "text",
                         "label": "Street Address"
+                    },
+                    "streetAddress2": {
+                        "type": "text",
+                        "label": "Street Address (second line)"
                     },
                     "city": {
                         "type": "text",
@@ -449,6 +453,10 @@
                     "country": {
                         "type": "text",
                         "label": "Country"
+                    },
+                    "phoneNumber": {
+                        "type": "text",
+                        "label": "Phone #"
                     },
                     "info": {
                         "type": "editor",
@@ -493,8 +501,10 @@
             "required": false,
             "fields": {
                 "text": {
-                    "type": "text",
-                    "label": "Text"
+                    "type": "editor",
+                    "aceMode": "ace/mode/markdown",
+                    "aceHeight": 300,
+                    "label": "Bursary text (markdown)"
                 },
                 "deadline": {
                     "type": "date",
@@ -523,7 +533,7 @@
             "type": "integer",
             "label": "Display Order",
             "required": false
-        }        
+        }
     },
     "_form_key": "master"
 }
