@@ -5,7 +5,6 @@ var mime = require('mime-types')
 var async = require("async");
 var cli_args = require('command-line-args');
 var util = require("./lib/util");
-var csv2markdown = require("./lib/csv2markdown");
 
 var cli = cli_args([
     {name: 'help', alias: 'h', type: Boolean},
@@ -34,6 +33,8 @@ var importTypeName = options["type-name"];
 var importType = typeDefinitions[importTypeName];
 var propertyName = options["property-name"];
 var propertyValue = options["property-value"];
+
+var gitanaConfig = JSON.parse("" + fs.readFileSync("../gitana.json"));
 
 if (csvPath && importType) {
     var nodes = [];
@@ -66,7 +67,40 @@ if (csvPath && importType) {
             }
             nodes.push(node);
         }
-        console.log(JSON.stringify(nodes));
+        // console.log(JSON.stringify(nodes));
+        console.log("creating nodes. count: " + nodes.length);
+        
+        // connect and import content
+        util.getBranch(gitanaConfig, branchId, function(err, branch) {
+
+            branch.createNode(nodes[0]).trap(function(err){
+                return callback(err);
+            }).then(function(){
+                if(!this || !this._doc)
+                {
+                    return callback("Node not created");
+                }
+
+                console.log("created a node: " + JSON.parse(JSON.stringify(nodes[0])));
+
+                // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                //     if (err) {
+                //         console.log("error loading csv " + err);
+                //     }
+                //     return;
+                // });
+
+            });
+
+            
+            // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+            //     if (err) {
+            //         console.log("error loading csv " + err);
+            //     }
+            //     return;
+            // });
+        });
+        
     });
 }
 else if(options["list-types"])
@@ -85,55 +119,39 @@ else if(!importType)
 else if (importType)
 {
     console.log("Importing " + importType.json._qname);
+    
+    util.getBranch(gitanaConfig, branchId, function(err, branch) {
+        var branch = this;
 
-    var gitanaConfig = JSON.parse("" + fs.readFileSync("../gitana.json"));
-    Gitana.connect(gitanaConfig, function(err) {
-        var node;
+        this.queryNodes({
+            "_type": importType.json._type,
+            "_qname": importType.json._qname
+        }).count(function(c) {
+            if(c>0) {
+                console.log("Can't import. Node already exists: " + importType.json.id);
+                return;
+            }
 
-        if (err) {
-            console.log("Failed to connect: " + JSON.stringify(err));
-            return;
-        }
+            // console.log(JSON.stringify(this));
+            node = this;
+            console.log("Node not found. Creating...");
 
-        var self = this;
-
-        self.datastore("content").trap(function(err) {
-            console.log(err);
-            return false;
-        }).readBranch(branchId).then(function () {
-            var branch = this;
-
-            this.queryNodes({
-                "_type": importType.json._type,
-                "_qname": importType.json._qname
-            }).count(function(c) {
-                if(c>0) {
-                    console.log("Can't import. Node already exists: " + importType.json.id);
-                    return;
+            async.waterfall([
+                async.apply(createContext, importType, branch),
+                writeNode,
+                uploadAttachments
+            ], function (err, context) {
+                if(err)
+                {
+                    console.log("Error creating node " + err);
                 }
-
-                // console.log(JSON.stringify(this));
-                node = this;
-                console.log("Node not found. Creating...");
-
-                async.waterfall([
-                    async.apply(createContext, importType, branch),
-                    writeNode,
-                    uploadAttachments
-                ], function (err, context) {
-                    if(err)
-                    {
-                        console.log("Error creating node " + err);
-                    }
-                    else {
-                        console.log("Node has been imported succesfully");
-                    }
-                    return;
-                });
+                else {
+                    console.log("Node has been imported succesfully");
+                }
                 return;
             });
+            return;
         });
-
     });
 }
 else

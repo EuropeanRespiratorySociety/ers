@@ -1,18 +1,60 @@
+var Gitana = require("gitana");
 var wrench = require("wrench");
 var path = require("path");
 var fs = require("fs");
 var csv = require("csv");
 var async = require("async");
-var temp = require("temp");
 
 // var request = require("request").defaults({'proxy':'http://localhost:55137'})
 var request = require("request");
 
-temp.track();
-
 module.exports = function() {
 
     var r = {};
+
+    /**
+     * connect to Cloud CMS and retrieve branch
+     * 
+     */
+    var getBranch = r.getBranch = function(gitanaConfig, branchId, callback)
+    {
+        Gitana.connect(gitanaConfig, function(err) {
+            if (err) {
+                console.log("Failed to connect: " + JSON.stringify(err));
+                return callback(err);
+            }
+
+            this.datastore("content").trap(function(err) {
+                console.log("Failed to retrieve datastore: " + JSON.stringify(err));
+                return callback(err);
+
+            }).readBranch(branchId || "master").trap(function(err) {
+                console.log("Failed to retrieve branch: " + JSON.stringify(err));
+                return callback(err);
+
+            }).then(function () {
+                return callback(null, this);
+            })
+        });
+    };
+    
+    var createNodesInTransaction = r.createNodesInTransaction = function(gitana, branch, nodes, callback)
+    {
+        var transaction = gitana.transactions().create(branch);
+
+        for(var i = 0; i < nodes.length; i++) {
+            console.log("Adding create node call to transaction: " + nodes[i].id);
+            transaction.create(nodes[i]);
+        }
+
+        console.log("Commit nodes. Count: " + nodes.length);
+
+        // commit
+        transaction.commit().then(function(results) {
+            console.log("Created nodes. Count: " + results.successCount);
+            return callback();
+        });
+    };
 
     /**
      * Reads a JSON file from disk.
