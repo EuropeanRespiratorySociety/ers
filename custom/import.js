@@ -4,6 +4,7 @@ var path = require("path");
 var mime = require('mime-types')
 var async = require("async");
 var cli_args = require('command-line-args');
+var camel = require('camel-case');
 var util = require("./lib/util");
 
 var cli = cli_args([
@@ -11,6 +12,7 @@ var cli = cli_args([
     {name: 'list-types', alias: 'l', type: Boolean, description: 'list local type definitions'},
     {name: 'type-name', alias: 't', type: String, description: '_qname of the type definition to import'},
     {name: 'csv-path', alias: 'c', type: String, description: 'path to content csv file to import'},
+    {name: 'xml-path', alias: 'x', type: String, description: 'path to content xml file to import'},
     {name: 'property-name', alias: 'p', type: String, description: 'name of an extra property to set ex.: -p contentType"'},
     {name: 'property-value', alias: 'v', type: String, description: 'value of the extra property ex.: -v article"'},
     {name: 'replace', alias: 'r', type: Boolean, description: 'replace type definitions if found'},
@@ -28,6 +30,7 @@ if(options.help || (!options["csv-path"] && !options["type-name"] && !options["l
 
 var branchId = options["branch"] || "master";
 var csvPath = options["csv-path"];
+var xmlPath = options["xml-path"];
 var typeDefinitions = listTypeDefinitions();
 var importTypeName = options["type-name"];
 var importType = typeDefinitions[importTypeName];
@@ -39,7 +42,9 @@ var gitanaConfig = JSON.parse("" + fs.readFileSync("../gitana.json"));
 if (csvPath && importType) {
     var nodes = [];
     var headers = [];
-    var csvContent = util.loadCsvFile(csvPath, function(err, data){
+    util.loadCsvFile(csvPath, function(err, data){
+        // import records from a CSV file directly into Cloud CMS
+        
         if (err) {
             console.log("error loading csv " + err);
             return;
@@ -50,8 +55,11 @@ if (csvPath && importType) {
             return;
         }
 
+        // prepare node list from csv records
+        
+        // expect the first row to define header names. use these as property names
         for(var i = 0; i < data[0].length; i++) {
-            headers.push(data[0][i]);
+            headers.push(camel(data[0][i]));
         }
 
         for(var i = 1; i < data.length; i++) {
@@ -74,60 +82,127 @@ if (csvPath && importType) {
         
         // connect and import content
         util.getBranch(gitanaConfig, branchId, function(err, branch) {
-            // branch.queryNodes({
-            //     "_type": "ers:article"
-            // },
-            // {
-            //     "limit": 5
-            // }).each(function() {
-            //     console.log("found node: " + JSON.stringify(this));
-            // });
 
-            // branch.createNode(nodes[0]).trap(function(err){
-            //     return callback(err);
-            // }).then(function(){
-            //     if(!this || !this._doc)
-            //     {
-            //         return callback("Node not created");
-            //     }
-
-                // console.log("created a node: " + JSON.parse(JSON.stringify(nodes[0])));
-
-                // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
-                //     if (err) {
-                //         console.log("error loading csv " + err);
-                //     }
-                //     return;
-                // });
-
-            // });
-            
-            var transaction = Gitana.transactions().create(branch);
-
-            for(var i = 0; i < nodes.length; i++) {
-                console.log("Adding create node call to transaction: " + nodes[i].slug);
-                transaction.create(nodes[i]);
-            }
-
-            console.log("Commit nodes. Count: " + nodes.length);
-
-            // commit
-            transaction.commit().then(function(results) {
-                console.log("transaction complete: " + JSON.stringify(results));
-                console.log("Created nodes. Count: " + results.successCount);
+            util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                if (err) {
+                    console.log("error in transaction: " + err);
+                }
+                return;
             });
             
-            // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
-            //     if (err) {
-            //         console.log("error loading csv " + err);
-            //     }
-            //     return;
+            // var transaction = Gitana.transactions().create(branch);
+
+            // for(var i = 0; i < nodes.length; i++) {
+            //     console.log("Adding create node call to transaction: " + nodes[i].slug);
+            //     transaction.create(nodes[i]);
+            // }
+
+            // console.log("Commit nodes. Count: " + nodes.length);
+
+            // // commit
+            // transaction.commit().then(function(results) {
+            //     console.log("transaction complete: " + JSON.stringify(results));
+            //     console.log("Created nodes. Count: " + results.successCount);
             // });
         });
         
     });
 }
-else if(options["list-types"])
+else if (xmlPath && importType)
+{
+    var nodes = [];
+    var headers = [];
+    util.parseXMLFile(xmlPath, function(err, data){
+        if (err) {
+            console.log("error loading xml " + err);
+            return;
+        }
+
+// console.log("data: \n" + JSON.stringify(data));
+        if (Gitana.isArray(data.export.items))
+        {
+            data = data.export.items[0].item
+        }
+        else
+        {
+            data = data.export.items.item
+        }
+        
+        for(var i = 1; i < data.length; i++) {
+            var node = {
+                "title": data[i].name,
+                "slug": data[i].id,
+                "id": data[i].id,
+                "subTitle": "",
+                "leadParagraph": "",
+                "body": ""
+            };
+            node["_type"] = importTypeName;
+            
+            if (propertyName) {
+                node[propertyName] = propertyValue;
+            }
+            
+            if (data[i].data.text && data[i].data.text.name == "Subtitle")
+            {
+                node.subTitle = data[i].data.text.value;
+            }
+
+            if (data[i].data.text && data[i].data.textarea)
+            {
+                if (data[i].data.text && data[i].data.textarea[0])
+                {
+                    node.leadParagraph = data[i].data.textarea[0].value;
+                }
+                if (data[i].data.text && data[i].data.textarea[1])
+                {
+                    node.body = data[i].data.textarea[1].value;
+                }
+            }
+
+            // console.log("adding node: " + JSON.stringify(node));
+            console.log("adding node: " + JSON.stringify(node.id));
+            nodes.push(node);
+        }
+
+        // console.log(JSON.stringify(nodes));
+        if (nodes.length==0)
+        {
+            console.log("No nodes found to import");
+            return;
+        }
+
+        console.log("creating nodes. count: " + nodes.length);
+        
+        // connect and import content
+        util.getBranch(gitanaConfig, branchId, function(err, branch) {
+
+            util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                if (err) {
+                    console.log("error in transaction: " + err);
+                }
+                return;
+            });
+            
+            // var transaction = Gitana.transactions().create(branch);
+
+            // for(var i = 0; i < nodes.length; i++) {
+            //     console.log("Adding create node call to transaction: " + nodes[i].slug);
+            //     transaction.create(nodes[i]);
+            // }
+
+            // console.log("Commit nodes. Count: " + nodes.length);
+
+            // // commit
+            // transaction.commit().then(function(results) {
+            //     console.log("transaction complete: " + JSON.stringify(results));
+            //     console.log("Created nodes. Count: " + results.successCount);
+            // });
+        });
+        
+    });
+}
+else if (options["list-types"])
 {
     for(var type in typeDefinitions) {
         // console.log(JSON.stringify(typeDefinitions[type]));
@@ -135,7 +210,7 @@ else if(options["list-types"])
     }
     return;
 }
-else if(!importType)
+else if (!importType)
 {
     console.log("No type found with _qname \"" + options["type-name"] + "\"");
     return;

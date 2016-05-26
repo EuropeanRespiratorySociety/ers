@@ -4,6 +4,8 @@ var path = require("path");
 var fs = require("fs");
 var csv = require("csv");
 var async = require("async");
+var xml2js = require('xml2js');
+var xml2jsProcessors = require('xml2js/lib/processors');
 
 // var request = require("request").defaults({'proxy':'http://localhost:55137'})
 var request = require("request");
@@ -38,9 +40,9 @@ module.exports = function() {
         });
     };
     
-    var createNodesInTransaction = r.createNodesInTransaction = function(gitana, branch, nodes, callback)
+    var createNodesInTransaction = r.createNodesInTransaction = function(_Gitana, branch, nodes, callback)
     {
-        var transaction = gitana.transactions().create(branch);
+        var transaction = _Gitana.transactions().create(branch);
 
         for(var i = 0; i < nodes.length; i++) {
             console.log("Adding create node call to transaction: " + nodes[i].id);
@@ -51,10 +53,55 @@ module.exports = function() {
 
         // commit
         transaction.commit().then(function(results) {
+            console.log("transaction complete: " + JSON.stringify(results));
             console.log("Created nodes. Count: " + results.successCount);
-            return callback();
+            console.log("Failed nodes. Count: " + results.errorCount);
+            if (results.errorCount>0) {
+                return callback(JSON.stringify(results));
+            }
+            else
+            {
+                return;
+            }
         });
     };
+    /**
+     * Parse an XML file and return an object representation.
+     */
+    var parseXMLFile = r.parseXMLFile = function(inputXMLfilePath, callback)
+    {
+        console.log("parsing xml from " + inputXMLfilePath);
+
+        var xml2jsParser = new xml2js.Parser({
+            "trim": true,
+            "normalize": true,
+            "ignoreAttrs": false,
+            "explicitArray": false,
+            "mergeAttrs": true,
+            "preserveChildrenOrder": true,
+            "normalizeTags": true,
+            // "explicitChildren": true,
+            // "childkey": "$children",
+            // "valueProcessors": [
+            //     function (value){
+            //         return value;
+            //     }
+            // ],
+            // "tagNameProcessors": [xml2jsProcessors.stripPrefix],
+            "async": true
+        });
+
+        fs.readFile(inputXMLfilePath, 'utf8', function(err, data) {
+            xml2jsParser.parseString(data, function (err, result) {
+                if(err)
+                {
+                    return callback(err);
+                }
+
+                return callback(null, result);
+            });
+        });
+    }
 
     /**
      * Reads a JSON file from disk.
