@@ -65,6 +65,8 @@ if (csvPath && importType) {
             for(var j = 0; j < headers.length; j++) {
                 node[headers[j]] = data[i][j];
             }
+
+            // console.log("adding node: " + JSON.stringify(node));
             nodes.push(node);
         }
         // console.log(JSON.stringify(nodes));
@@ -72,16 +74,24 @@ if (csvPath && importType) {
         
         // connect and import content
         util.getBranch(gitanaConfig, branchId, function(err, branch) {
+            // branch.queryNodes({
+            //     "_type": "ers:article"
+            // },
+            // {
+            //     "limit": 5
+            // }).each(function() {
+            //     console.log("found node: " + JSON.stringify(this));
+            // });
 
-            branch.createNode(nodes[0]).trap(function(err){
-                return callback(err);
-            }).then(function(){
-                if(!this || !this._doc)
-                {
-                    return callback("Node not created");
-                }
+            // branch.createNode(nodes[0]).trap(function(err){
+            //     return callback(err);
+            // }).then(function(){
+            //     if(!this || !this._doc)
+            //     {
+            //         return callback("Node not created");
+            //     }
 
-                console.log("created a node: " + JSON.parse(JSON.stringify(nodes[0])));
+                // console.log("created a node: " + JSON.parse(JSON.stringify(nodes[0])));
 
                 // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
                 //     if (err) {
@@ -90,8 +100,22 @@ if (csvPath && importType) {
                 //     return;
                 // });
 
-            });
+            // });
+            
+            var transaction = Gitana.transactions().create(branch);
 
+            for(var i = 0; i < nodes.length; i++) {
+                console.log("Adding create node call to transaction: " + nodes[i].slug);
+                transaction.create(nodes[i]);
+            }
+
+            console.log("Commit nodes. Count: " + nodes.length);
+
+            // commit
+            transaction.commit().then(function(results) {
+                console.log("transaction complete: " + JSON.stringify(results));
+                console.log("Created nodes. Count: " + results.successCount);
+            });
             
             // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
             //     if (err) {
@@ -121,9 +145,7 @@ else if (importType)
     console.log("Importing " + importType.json._qname);
     
     util.getBranch(gitanaConfig, branchId, function(err, branch) {
-        var branch = this;
-
-        this.queryNodes({
+        branch.queryNodes({
             "_type": importType.json._type,
             "_qname": importType.json._qname
         }).count(function(c) {
