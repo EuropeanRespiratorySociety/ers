@@ -6,9 +6,9 @@ var async = require("async");
 var cli_args = require('command-line-args');
 var camel = require('camel-case');
 var sanitizeHtml = require('sanitize-html');
-// var md = require('html-md');
-var md = require('to-markdown');
+// var md = require('html-md'); // ToDo: if to-markdown fails then find out why this module throws an error
 // var md = function(x) {return x;}
+var md = require('to-markdown');
 
 var util = require("./lib/util");
 
@@ -83,6 +83,7 @@ if (csvPath && importType) {
             {
                 // "text" field becomes "body" in the new content model
                 headers.push("body");
+                bodyIndex = i;
             }
             else
             {
@@ -102,7 +103,8 @@ if (csvPath && importType) {
                 if (j === bodyIndex)
                 {
                     // clean up the body field before import
-                    node[headers[j]] = md(sanitizeHtml(data[i][j]));
+                    // node[headers[j]] = md(sanitizeHtml(data[i][j]));
+                    node[headers[j]] = md(data[i][j]);
                 }
                 else
                 {
@@ -121,9 +123,10 @@ if (csvPath && importType) {
             // connect and import content
             util.getBranch(gitanaConfig, branchId, function(err, branch) {
 
-                util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                util.createNodes(branch, nodes, function(err) {
                     if (err) {
-                        console.log("error in transaction: " + err);
+                        console.log("error creating nodes: " + err);
                     }
                     return;
                 });
@@ -177,11 +180,13 @@ else if (xmlPath && importType)
             {
                 if (data[i].data.text && data[i].data.textarea[0])
                 {
-                    node.leadParagraph = md(sanitizeHtml(data[i].data.textarea[0].value));
+                    // node.leadParagraph = md(sanitizeHtml(data[i].data.textarea[0].value));
+                    node.leadParagraph = md(data[i].data.textarea[0].value);
                 }
                 if (data[i].data.text && data[i].data.textarea[1])
                 {
-                    node.body = md(sanitizeHtml(data[i].data.textarea[1].value));
+                    // node.body = md(sanitizeHtml(data[i].data.textarea[1].value));
+                    node.body = md(data[i].data.textarea[1].value);
                 }
             }
 
@@ -211,25 +216,10 @@ else if (xmlPath && importType)
                 // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
                 util.createNodes(branch, nodes, function(err) {
                     if (err) {
-                        console.log("error in transaction: " + err);
+                        console.log("error creating nodes: " + err);
                     }
                     return;
                 });
-                
-                // var transaction = Gitana.transactions().create(branch);
-
-                // for(var i = 0; i < nodes.length; i++) {
-                //     console.log("Adding create node call to transaction: " + nodes[i].slug);
-                //     transaction.create(nodes[i]);
-                // }
-
-                // console.log("Commit nodes. Count: " + nodes.length);
-
-                // // commit
-                // transaction.commit().then(function(results) {
-                //     console.log("transaction complete: " + JSON.stringify(results));
-                //     console.log("Created nodes. Count: " + results.successCount);
-                // });
             });
         }        
     });
