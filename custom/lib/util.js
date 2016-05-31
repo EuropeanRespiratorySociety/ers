@@ -7,7 +7,6 @@ var async = require("async");
 var xml2js = require('xml2js');
 var xml2jsProcessors = require('xml2js/lib/processors');
 
-// var request = require("request").defaults({'proxy':'http://localhost:55137'})
 var request = require("request");
 
 module.exports = function() {
@@ -35,10 +34,39 @@ module.exports = function() {
                 return callback(err);
 
             }).then(function () {
+                console.log("Connected: " + JSON.stringify(this));
                 return callback(null, this);
             })
         });
     };
+    
+    var createNodes = r.createNodes = function(branch, nodes, callback)
+    {
+        // console.log("Creating node " + JSON.stringify(nodes[0]));
+
+        branch.subchain(branch).then(function() {
+            for(var i = 0; i < nodes.length; i++)
+            {
+                branch.createNode(nodes[i]);
+            }
+            
+            callback();
+        });
+
+        // branch.createNode(nodes[0]).trap(function(err){
+        //     console.log("Error creating node " + JSON.stringify(err));
+        //     return callback(err);
+        // }).then(function(){
+        //     if(!this || !this._doc)
+        //     {
+        //         return callback("Node not created");
+        //     }
+
+        //     console.log("Created node " + JSON.stringify(this));
+        //     // console.log("Created node " + this._doc);
+        //     return callback();
+        // });
+    }
     
     var createNodesInTransaction = r.createNodesInTransaction = function(_Gitana, branch, nodes, callback)
     {

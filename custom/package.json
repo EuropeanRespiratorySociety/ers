@@ -11,7 +11,12 @@
     "wrench": "*",
     "gitana": "*",
     "command-line-args": "*",
-    "mime-types": "*"
+    "mime-types": "*",
+    "camel-case": "*",
+		"xml2js": "*",
+    "sanitize-html": "*",
+    "html-md": "*",
+    "to-markdown": "*"
   },
   "optionalDependencies": {},
   "private": true
