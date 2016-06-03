@@ -15,8 +15,8 @@
     "camel-case": "*",
 		"xml2js": "*",
     "sanitize-html": "*",
-    "html-md": "*",
-    "to-markdown": "*"
+    "to-markdown": "*",
+    "marked": "*"
   },
   "optionalDependencies": {},
   "private": true

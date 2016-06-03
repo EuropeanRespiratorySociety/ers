@@ -6,20 +6,21 @@ var async = require("async");
 var cli_args = require('command-line-args');
 var camel = require('camel-case');
 var sanitizeHtml = require('sanitize-html');
-// var md = require('html-md'); // ToDo: if to-markdown fails then find out why this module throws an error
-// var md = function(x) {return x;}
 var md = require('to-markdown');
+var marked = require('marked');
 
 var util = require("./lib/util");
 
+// debug only when using charles proxy ssl proxy when intercepting cloudcms api calls:
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
-var cli = cli_args([
+var options = cli_args([
     {name: 'help', alias: 'h', type: Boolean},
     {name: 'list-types', alias: 'l', type: Boolean, description: 'list local type definitions'},
     {name: 'type-name', alias: 't', type: String, description: '_qname of the type definition to import'},
     {name: 'csv-path', alias: 'c', type: String, description: 'path to content csv file to import'},
     {name: 'xml-path', alias: 'x', type: String, description: 'path to content xml file to import'},
+    {name: 'category', alias: 'a', type: String, description: 'name of category to associate to. ex.: -a "Respiratory World Wide"'},
     {name: 'property-name', alias: 'p', type: String, description: 'name of an extra property to set ex.: -p contentType"'},
     {name: 'property-value', alias: 'v', type: String, description: 'value of the extra property ex.: -v article"'},
     {name: 'replace', alias: 'r', type: Boolean, description: 'replace type definitions if found'},
@@ -28,8 +29,9 @@ var cli = cli_args([
 ]);
 
 var TYPES_PATH = "./docs/types";
+var TYPE_QNAME__CATEGORY = "ers:category";
 
-var options = cli.parse()
+// var options = cli.parse()
 if(options.help || (!options["csv-path"] && !options["type-name"] && !options["list-types"]))
 {
     console.log(cli.getUsage(options));
@@ -45,6 +47,7 @@ var importType = typeDefinitions[importTypeName];
 var propertyName = options["property-name"];
 var propertyValue = options["property-value"];
 var simulate = options["simulate"] || false;
+var category = options["category"];
 
 var homeDirectory = function()
 {
@@ -92,9 +95,8 @@ if (csvPath && importType) {
         }
 
         for(var i = 1; i < data.length; i++) {
-            var node = {};
-            node["_type"] = importTypeName;
-            
+            var node = newArticleNode(importTypeName);
+
             if (propertyName) {
                 node[propertyName] = propertyValue;
             }
@@ -103,8 +105,8 @@ if (csvPath && importType) {
                 if (j === bodyIndex)
                 {
                     // clean up the body field before import
-                    // node[headers[j]] = md(sanitizeHtml(data[i][j]));
-                    node[headers[j]] = md(data[i][j]);
+                    node[headers[j]] = cleanText(data[i][j]);;
+                    // node[headers[j]] = md(data[i][j]);
                 }
                 else
                 {
@@ -157,15 +159,11 @@ else if (xmlPath && importType)
         }
         
         for(var i = 1; i < data.length; i++) {
-            var node = {
+            var node = newArticleNode(importTypeName, {
                 "title": data[i].name,
                 "slug": data[i].id,
-                "id": data[i].id,
-                "subTitle": "",
-                "leadParagraph": "",
-                "body": ""
-            };
-            node["_type"] = importTypeName;
+                "id": data[i].id
+            });
             
             if (propertyName) {
                 node[propertyName] = propertyValue;
@@ -178,15 +176,35 @@ else if (xmlPath && importType)
 
             if (data[i].data.text && data[i].data.textarea)
             {
-                if (data[i].data.text && data[i].data.textarea[0])
+                if (data[i].data.textarea[0])
                 {
+                    // first textarea is the leadParagraph
+
                     // node.leadParagraph = md(sanitizeHtml(data[i].data.textarea[0].value));
-                    node.leadParagraph = md(data[i].data.textarea[0].value);
+                    // node.leadParagraph = md(data[i].data.textarea[0].value);
+                    node.leadParagraph = cleanText(data[i].data.textarea[0].value);
                 }
-                if (data[i].data.text && data[i].data.textarea[1])
+
+                if (data[i].data.textarea[1])
                 {
+                    // second textarea is the body
+
                     // node.body = md(sanitizeHtml(data[i].data.textarea[1].value));
-                    node.body = md(data[i].data.textarea[1].value);
+                    // node.body = md(data[i].data.textarea[1].value);
+                    node.body = cleanText(data[i].data.textarea[1].value);
+                    // node.originalImageURL = extractImagePath(node.body) || "";
+                }
+
+                if (data[i].data.image)
+                {
+                    // grab image path
+                    for(var j = 0; j < data[i].data.image.length; j++)
+                    {
+                        if (data[i].data.image[j] && data[i].data.image[j].name === "Image")
+                        {
+                            node.originalImageURL = data[i].data.image[j].file || "";
+                        }
+                    }
                 }
             }
 
@@ -213,13 +231,69 @@ else if (xmlPath && importType)
                     return;
                 }
 
-                // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
-                util.createNodes(branch, nodes, function(err) {
-                    if (err) {
-                        console.log("error creating nodes: " + err);
-                    }
-                    return;
-                });
+                // if there was a category then find or create the category node
+                if (category)
+                {
+                    var categoryNode = null;
+                    branch.subchain(branch).then(function() {
+                        branch.queryOne({
+                            "_type": TYPE_QNAME__CATEGORY,
+                            "title": category
+                        }).trap(function(err) {
+                            console.log("Could not create category node: " + category + ". err: " + JSON.stringify(err));
+                        }).then(function() {
+                            var categoryNode = this;
+                            if (categoryNode)
+                            {
+                                for(var i = 0; i < nodes.length; i++)
+                                {
+                                    nodes[i]["category"] = referenceFromNode(categoryNode);
+                                }
+
+                                // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                                util.createNodes(branch, nodes, function(err) {
+                                    if (err) {
+                                        console.log("error creating nodes: " + err);
+                                    }
+                                    return;
+                                });
+                            }
+                            else
+                            {
+                                // create category
+                                branch.subchain(branch).then(function() {
+                                    branch.createNode(newCatNode(TYPE_QNAME__CATEGORY, {"title": category}))
+                                    .trap(function(err) {
+                                        console.log("Could not create category node: " + category + ". err: " + JSON.stringify(err));
+                                    }).then(function(categoryNode) {
+                                        for(var i = 0; i < nodes.length; i++)
+                                        {
+                                            nodes[i]["category"] = referenceFromNode(categoryNode);
+                                        }
+
+                                        // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                                        util.createNodes(branch, nodes, function(err) {
+                                            if (err) {
+                                                console.log("error creating nodes: " + err);
+                                            }
+                                            return;
+                                        });
+                                    });
+                                });
+                            }
+                        });
+                    });
+                }
+                else
+                {
+                    // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                    util.createNodes(branch, nodes, function(err) {
+                        if (err) {
+                            console.log("error creating nodes: " + err);
+                        }
+                        return;
+                    });
+                }
             });
         }        
     });
@@ -283,6 +357,74 @@ else
 
     console.log(cli.getUsage(options));
     return;    
+}
+
+function referenceFromNode(node) {
+    return {
+        "id": node._doc,
+        "reference": "node://" + [
+            node.getBranch().getPlatformId(),
+            node.getBranch().getRepositoryId(),
+            node.getBranch().getId(),
+            node._doc,
+        ].join('/')
+    }
+}
+
+function cleanText(text) {
+    var newText = md(sanitizeHtml(text));
+    
+    return newText;
+}
+
+function extractImagePath(markdownText) {
+    var renderer = new marked.Renderer();
+
+    renderer.image = function (href, title, text) {
+        console.log(marked('# heading+', { renderer: renderer }));
+        return "";
+    };
+
+    console.log(marked(markdownText, { renderer: renderer }));
+}
+
+function newArticleNode(typeName, defaults) {
+    var node = {
+        "_type": typeName,
+        "title": "",
+        "slug": "",
+        "id": "",
+        "subTitle": "",
+        "leadParagraph": "",
+        "body": "",
+        "originalImageURL": ""
+    };
+    
+    if (defaults)
+    {
+        for(var key in defaults) {
+            node[key] = defaults[key];
+        }
+    }
+    
+    return node;
+}
+
+function newCatNode(typeName, defaults) {
+    var node = {
+        "_type": typeName,
+        "title": "",
+        "slug": "",
+        "id": "",
+        "body": "",
+        "originalImageURL": ""
+    };
+    
+    for(var key in defaults) {
+        node[key] = defaults[key];
+    }
+    
+    return node;
 }
 
 function writeNode(context, callback) {

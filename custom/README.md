@@ -28,6 +28,14 @@ node import -x ./docs/import/respiratory-worldwide-column.xml -t "ers:article" -
 
 ### Import ERS content from the following files (supplied by ERS):
 
+"news archive" articles
 ./docs/import/news-archive.csv
+node import -c ./docs/import/news-archive.csv -t "ers:article" -p contentType -v article
+
+"leaders" blog:
 ./docs/import/leaders-blog.xml
+node import -x ./docs/import/respiratory-worldwide-column.xml -t "ers:article" -p contentType -v article
+
+"respiratory world wide" articles:
 ./docs/import/respiratory-worldwide-column.xml
+node import -x ./docs/import/respiratory-worldwide-column.xml -t "ers:article" -p contentType -v article -a "Respiratory World Wide"
