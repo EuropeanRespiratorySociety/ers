@@ -523,7 +523,7 @@
                 "contentType": "event_course"
             }
         },
-        "available": {
+        "availableOnHomepage": {
             "type": "checkbox",
             "label": "",
             "rightLabel": "Make Available on Homepage",

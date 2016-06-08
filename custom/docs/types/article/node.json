@@ -382,6 +382,15 @@
                     "type": "string"
                 }
             }
+        },
+        "availableOnHomepage": {
+            "type": "boolean",
+            "title": "Manage this content's availability on the website home page",
+            "default": false
+        },
+        "displayOrder": {
+            "type": "integer",
+            "title": "Display Order"
         }
     },
     "dependencies": {
@@ -453,9 +462,6 @@
         ]
     },
     "mandatoryFeatures": {
-        "ers:homePageAvailable": {
-            "enabled": true
-        },
         "f:geolocation": {
             "enabled": true
         }
