@@ -20,9 +20,9 @@ var options = cli_args([
     {name: 'type-name', alias: 't', type: String, description: '_qname of the type definition to import'},
     {name: 'csv-path', alias: 'c', type: String, description: 'path to content csv file to import'},
     {name: 'xml-path', alias: 'x', type: String, description: 'path to content xml file to import'},
-    {name: 'category', alias: 'a', type: String, description: 'name of category to associate to. ex.: -a "Respiratory World Wide"'},
-    {name: 'property-name', alias: 'p', type: String, description: 'name of an extra property to set ex.: -p contentType"'},
-    {name: 'property-value', alias: 'v', type: String, description: 'value of the extra property ex.: -v article"'},
+    {name: 'category', type: String, description: 'name of category to associate to. ex.: --category "Respiratory World Wide"'},
+    {name: 'property-name', alias: 'p', type: String, multiple: true, description: 'name of an extra property to set ex.: -p contentType"'},
+    {name: 'property-value', alias: 'v', type: String, multiple: true, description: 'value of the extra property ex.: -v article"'},
     {name: 'replace', alias: 'r', type: Boolean, description: 'replace type definitions if found'},
     {name: 'branch', alias: 'b', type: String, description: 'branch to write content to. branch id or "master". Default is "master"'},
     {name: 'simulate', alias: 's', type: Boolean, description: 'don\'t actually send anything to cloud cms'},
@@ -44,8 +44,8 @@ var xmlPath = options["xml-path"];
 var typeDefinitions = listTypeDefinitions();
 var importTypeName = options["type-name"];
 var importType = typeDefinitions[importTypeName];
-var propertyName = options["property-name"];
-var propertyValue = options["property-value"];
+var propertyNames = options["property-name"];
+var propertyValues = options["property-value"];
 var simulate = options["simulate"] || false;
 var category = options["category"];
 
@@ -95,10 +95,14 @@ if (csvPath && importType) {
         }
 
         for(var i = 1; i < data.length; i++) {
-            var node = newArticleNode(importTypeName);
+            var node = newArticleNode(importTypeName, {
+                "importSource": csvPath
+            });
 
-            if (propertyName) {
-                node[propertyName] = propertyValue;
+            if (propertyNames) {
+                for(var j = 0; j < propertyNames.length; j++) {
+                    node[propertyNames[j]] = propertyValues[j] || "";
+                }
             }
             
             for(var j = 0; j < headers.length; j++) {
@@ -162,11 +166,14 @@ else if (xmlPath && importType)
             var node = newArticleNode(importTypeName, {
                 "title": data[i].name,
                 "slug": data[i].id,
-                "id": data[i].id
+                "id": data[i].id,
+                "importSource": xmlPath
             });
             
-            if (propertyName) {
-                node[propertyName] = propertyValue;
+            if (propertyNames) {
+                for(var j = 0; j < propertyNames.length; j++) {
+                    node[propertyNames[j]] = propertyValues[j] || "";
+                }
             }
             
             if (data[i].data.text && data[i].data.text.name == "Subtitle")
@@ -397,7 +404,8 @@ function newArticleNode(typeName, defaults) {
         "subTitle": "",
         "leadParagraph": "",
         "body": "",
-        "originalImageURL": ""
+        "originalImageURL": "",
+        "imported": true
     };
     
     if (defaults)
@@ -417,7 +425,8 @@ function newCatNode(typeName, defaults) {
         "slug": "",
         "id": "",
         "body": "",
-        "originalImageURL": ""
+        "originalImageURL": "",
+        "imported": true
     };
     
     for(var key in defaults) {
