@@ -40,6 +40,27 @@ module.exports = function() {
         });
     };
     
+    var deleteNodes = r.deleteNodes = function(branch, deleteQuery, callback)
+    {
+        console.log("Deleting nodes " + JSON.stringify(deleteQuery));
+
+        branch.subchain(branch).then(function() {
+            var nodes = [];
+            branch.queryNodes(deleteQuery, {"limit": 500}).each(function(){
+                nodes.push(this._doc);
+            }).then(function() {
+                if (nodes.length === 0)
+                {
+                    return callback();
+                }
+
+                branch.subchain(branch).deleteNodes(nodes).then(function(){
+                    callback();
+                })
+            })            
+        });
+    }
+
     var createNodes = r.createNodes = function(branch, nodes, callback)
     {
         // console.log("Creating node " + JSON.stringify(nodes[0]));
@@ -52,20 +73,6 @@ module.exports = function() {
             
             callback();
         });
-
-        // branch.createNode(nodes[0]).trap(function(err){
-        //     console.log("Error creating node " + JSON.stringify(err));
-        //     return callback(err);
-        // }).then(function(){
-        //     if(!this || !this._doc)
-        //     {
-        //         return callback("Node not created");
-        //     }
-
-        //     console.log("Created node " + JSON.stringify(this));
-        //     // console.log("Created node " + this._doc);
-        //     return callback();
-        // });
     }
     
     var createNodesInTransaction = r.createNodesInTransaction = function(_Gitana, branch, nodes, callback)
