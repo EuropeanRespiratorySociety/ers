@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export>
+  <categories>
+    <category id="general">
+      <name><![CDATA[General]]></name>
+      <parent><![CDATA[_root]]></parent>
+      <published><![CDATA[1]]></published>
+      <description/>
+      <ordering><![CDATA[1]]></ordering>
+    </category>
+    <category id="_root">
+      <name><![CDATA[Root]]></name>
+      <description><![CDATA[<p><img style="display: block; margin-left: auto; margin-right: auto;" alt="ERS-column" src="images/stories/flexicontent/People/ERS-column-image_439x257.jpg" height="257" width="439" /></p>
+<h1>Respiratory worldwide column</h1>
+<p><span>Respiratory worldwide is a new platform for leaders from national and regional respiratory organisations.</span></p>
+<p><span>Each month, a new author will share their latest news and views with the aim of ensuring the respiratory community is well-informed about activities and events across the world. </span></p>
+<div style="margin: 10px 0; border: 1px solid #cecece; background: #eee; padding: 10px;">
+<p style="text-align: center; margin: 0;"><a href="index.php?option=com_rsform&amp;view=rsform&amp;Itemid=709"><span>Subscribe to receive the latest updates from Respiratory worldwide </span></a></p>
+</div>]]></description>
+    </category>
+  </categories>
+  <items name="Article">
+    <item id="advancing-towards-a-common-goal">
+      <name><![CDATA[Advancing towards a common goal ]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-10-08 13:35:10]]></created>
+      <modified><![CDATA[2015-10-08 14:29:42]]></modified>
+      <hits><![CDATA[3093]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2015-10-08 13:35:10]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[ERSWebmaster]]></author>
+      <categories>
+        <category primary="true"><![CDATA[general]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value><![CDATA[October 2015: Professor Jørgen Vestbo]]></value>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>I am privileged to be the first writer of this new Respiratory Worldwide Column. In creating this new central space online, we aim to give respiratory leaders from across the globe a new platform to communicate with you. As a reader, you can learn more from key opinion leaders across the globe as they share their thoughts, insights and the latest news from their country or region.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>I have just begun my first term as ERS President after a successful ERS Congress in Amsterdam so this seems a fitting time to reflect on the recent 25<sup>th</sup> ERS International Congress and look to the year ahead.</p>
+<p>The Congress in Amsterdam was another huge success. We had over 23,000 delegates on site making it by far our biggest Congress ever. It was great to bring together so many respiratory professionals. We really believe that by meeting face-to-face in this way we can really extend knowledge in the field, build on our networks and make huge strides towards our goal of improving respiratory health in Europe.</p>
+<p>I would also invite you all to consider how we can take this knowledge further. It is imperative that we all work towards our common goal of alleviating suffering from respiratory disease and I believe that advocacy within our communities is a crucial step towards raising the profile of lung health.</p>
+<p>In addition to advocating within the respiratory arena, our actions can also span disease areas. Respiratory diseases are just one of the four main types of non-communicable diseases along with cardiovascular diseases and diabetes. NCDs account for 63% of all deaths and many occur simultaneously. Non-communicable diseases must be tackled as one burden and I am committed to working with our colleagues at the World Health Organization in Europe to join forces with our colleagues in these disease areas to tackle the challenges ahead of us. I have also just been to WHO Geneva with our colleagues from the Forum of International Respiratory Societies (FIRS) and it was encouraging to experience the real interest in chronic respiratory diseases within WHO.</p>
+<p>The growth in the ERS International Congress is also mirrored in the growth in our membership body. Since January 2015, we have been forging partnerships with national and regional societies across the globe to increase access to our resources and events. National and regional respiratory societies can offer all their members full ERS membership as part of their own membership package. I am proud to see the growth in this worldwide respiratory network and firmly believe that in order to achieve our common goals of reducing the burden of lung disease, we must continue to share knowledge and work together.</p>
+<p>Over the next year, I will continue to oversee the 5-year strategy <a href="http://erj.ersjournals.com/content/43/4/927.full?sid=5338ff7c-92ed-46fe-a982-12f468b4f94f">implemented by ERS in 2013</a>. This includes a number of key areas of expansion, which we will continue to work on as well as offering international membership agreements with more societies across the world.</p>
+<p>It is an honour for me to be working within such a thriving network of respiratory professionals and I look forward to seeing the positive outcomes that this collaboration can bring.</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/respiratory-world-wide/vestbo.png]]></file>
+          <title><![CDATA[Professor Jørgen Vestbo]]></title>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[300]]></width>
+          <height><![CDATA[319]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/respiratory-world-wide/vestbo.png]]></file>
+          <title><![CDATA[Professor Jørgen Vestbo]]></title>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[300]]></width>
+          <height><![CDATA[319]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="year-of-separ">
+      <name><![CDATA[2015/2016 Year of SEPAR]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-11-16 08:48:23]]></created>
+      <modified><![CDATA[2015-11-16 11:37:50]]></modified>
+      <hits><![CDATA[1712]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2015-11-19 00:18:10]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Sylvia]]></author>
+      <categories>
+        <category primary="true"><![CDATA[general]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value><![CDATA[A year to curb COPD and tobacco]]></value>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>COPD, chronic obstructive pulmonary disease, is one of the most prevalent chronic diseases. In fact, given the figures presented it can now be considered one of the leading public health problems. The EPI-SCAN study by the Spanish Society of Pneumology and Thoracic Surgery (SEPAR) estimates that more than 2 million people between 40 and 80 years of age suffer from COPD in Spain. This disease affects 10.2% of the adult population and unfortunately an annual average of 18,000 deaths is recorded.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>COPD accounts for 40% of pneumology consultations in Spain and its diagnosis, management and treatment accounts for 2% of Spanish healthcare costs, a percentage that translates to about 3,000 million euros. And despite the figures that this lung disease produces, it is a silent and unknown pathology. Silent because we have below 70% diagnosis in Spain and unknown because, as indicated by the CONOCEPOC study, only 17% of the population directly knows the term COPD. Without a doubt, herein lies the disproportion between the magnitude of the problem that we as health professionals involved in its approach detect and the low impact on public opinion.</p>
+<p>Most patients do not know that COPD is a degenerative and highly disabling disease with no cure. And the main culprit is tobacco. The Spanish COPD Guide, led by SEPAR, affirms this in its definition. In addition, until recently, COPD had a classic patient profile: male, smoker and over 65. However, the disease has become feminized coinciding with its development in women who started smoking in the 70's and now have reached young adulthood.&nbsp;</p>
+<p>Consequently, we know that a high percentage of COPD is preventable simply by not smoking or quitting smoking. Therefore, there is only one way to slow the progression of the disease and its high mortality: eliminate the use of tobacco and promote anti-tobacco treatments with active policies by pulmonologists and public administrations. This is due to the fact that the alarming figures we are observing now are the result of habits that began twenty or twenty-five years ago.</p>
+<p>At SEPAR we have been working with commitment and clear objectives to address this situation for years. Therefore we considered it appropriate to dedicate a SEPAR year to COPD and tobacco. A year that we presented in a breakfast briefing on 7 October and that will take place between the last quarter of 2015 and throughout 2016 with three objectives: to devote additional efforts to investigate and train professionals in respiratory health to reduce underdiagnosis and educate and inform citizens about COPD and highlighting the close relationship between tobacco and COPD to reduce the consumption of tobacco. Celebrating this 2015/2016 Year of SEPAR and dedicating it to COPD and tobacco is an investment for the future.</p>
+<p>A bet on the future for our youth. We take responsibility for raising awareness of tobacco, which is an addictive drug. People should know. We must tell them and repeat it until they know, until they believe it and listen to us. Young Spanish people try cigarettes at the age of 13. They are children that are still attending secondary school.</p>
+<p>A commitment to all those people who smoke, to convince them to go to their doctor, because if they want, we can help them to quit. A key effort has to do with COPD patients who still smoke. They, more than anyone, must be helped because if we do not speak of the future, we speak of this disease. We talk about how their life depends on leaving tobacco.</p>
+<p>A commitment to the future is the early diagnosis of COPD. Without a doubt, if we build public awareness that COPD exists, we would achieve a diagnose of 73% of the population.Studies tell us that this many people have COPD and do not know it. This could be a million and a half Spaniards. With early diagnosis we would also achieve a more effective monitoring of this disease in our patients and offer them a better quality of life.</p>
+<p>Our commitment to the future is to work for better public health and that the best care of our patients should guide our steps, which is why we are counting on all the respiratory health professionals in Spain.</p>
+<p>Dr Inmaculada Alfageme<br />President of <a href="http://www.separ.es/" target="_blank">SEPAR</a>, Spanish Society of Pneumology and Thoracic Surgery</p>
+<p>&nbsp;</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/respiratory-world-wide/dra. inmaculada alfagemeweb2.jpg]]></file>
+          <title><![CDATA[Professor Jørgen Vestbo]]></title>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[209]]></width>
+          <height><![CDATA[200]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/respiratory-world-wide/dra. inmaculada alfagemeweb2.jpg]]></file>
+          <title><![CDATA[Professor Jørgen Vestbo]]></title>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[209]]></width>
+          <height><![CDATA[200]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="ano-separ">
+      <name><![CDATA[Año SEPAR  2015/2016]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-11-16 08:56:31]]></created>
+      <modified><![CDATA[2015-11-19 10:30:54]]></modified>
+      <hits><![CDATA[1017]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2015-11-19 00:18:10]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Sylvia]]></author>
+      <categories>
+        <category primary="true"><![CDATA[general]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value><![CDATA[Un año para poner coto a la EPOC y el tabaco]]></value>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>La EPOC, enfermedad pulmonar obstructiva crónica, es una de las enfermedades crónicas más prevalentes, de hecho, dadas las cifras que presenta ya podemos considerarla un problema de salud pública de primer orden. El estudio EPI-SCAN de SEPAR calcula que en España hay más de 2 millones de personas entre los 40 y los 80 años que sufren EPOC. Esta enfermedad afecta al 10,2% de la población adulta y, lamentablemente, registra un promedio anual de 18.000 fallecidos.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>La EPOC representa el 40% de las consultas en Neumología en España y su diagnóstico, abordaje y tratamiento supone el 2% del gasto sanitario español, porcentaje que se traduce en alrededor de 3.000 millones de euros. Y a pesar de las cifras que arroja esta enfermedad pulmonar, es una patología silenciosa y desconocida. Silenciosa porque tenemos un 70% de infra diagnóstico en España y desconocida porque, como nos indica el estudio CONOCEPOC, sólo el 17% de la población conoce de un modo directo el término EPOC. Seguramente aquí radica la desproporción entre la magnitud del problema que detectamos todos los profesionales de la salud implicados en su abordaje y el bajo impacto en la opinión pública.</p>
+<p>La mayoría de los pacientes no sabe que la EPOC es una enfermedad sin tratamiento curativo, degenerativa y altamente incapacitante. Y el principal culpable es el tabaco. La Guía Española de la EPOC, liderada por SEPAR, así lo constata en su definición. Además, hasta hace pocos años, la EPOC que tenía un perfil clásico de paciente: varón, fumador y mayor de 65 años, pero la enfermedad se feminiza coincidiendo con el desarrollo de la misma en las mujeres que empezaron a fumar en los años 70 de jóvenes y ahora llega a una edad adulta.</p>
+<p>En consecuencia, sabemos que un alto porcentaje de EPOC es prevenible simplemente no fumando o dejando de fumar. Por lo que sólo hay una forma de frenar el avance de la enfermedad y su alta mortalidad: erradicar el consumo de tabaco e impulsar los tratamientos anti tabáquicos con políticas activas por parte de los neumólogos y de las Administraciones públicas. Dado que las alarmantes cifras que observamos ahora son consecuencia de los hábitos de hace veinte o veinticinco años.</p>
+<p>Desde la Sociedad Española de Neumología y Cirugía Torácica, SEPAR, ya hace años que estamos trabajando con compromiso y objetivos claros para hacer frente a esta situación. Por eso hemos considerado oportuno dedicar un Año SEPAR a la EPOC y el tabaco. Un año que hemos presentado en un desayuno informativo el pasado 7 de octubre y que se desarrollará entre este último trimestre de 2015 y a lo largo del año 2016 con un triple objetivo: dedicar esfuerzos suplementarios a investigar y formar a los profesionales de la salud respiratoria para reducir el infradiagnóstico, y concienciar e informar a los ciudadanos sobre la EPOC poniendo de manifiesto la estrecha relación entre tabaco y EPOC para reducir el consumo de tabaco. Celebrar este Año SEPAR 2015-2016 dedicándolo a la EPOC y al tabaco es una apuesta de futuro.</p>
+<p>Una apuesta de futuro para nuestros jóvenes. Asumimos la responsabilidad de la concienciación sobre el tabaco, que es una droga adictiva. Deben saberlo. Debemos decírselo y repetírselo hasta que lo sepan, se lo crean y nos hagan caso. Los jóvenes españoles prueban el cigarrillo a los 13 años. Son niños y niñas que todavía cursan estudios secundarios.</p>
+<p>Una apuesta de futuro para todas aquellas personas que fuman, para convencerles de que acudan a su médico, porque si quieren, les podemos ayudar a dejar de fumar. Un esfuerzo clave está en los pacientes de EPOC que todavía fuman. A ellos más que a nadie debemos ayudarles porque en su caso no hablamos de futuro, hablamos del presente de la enfermedad. Hablamos de que su vida, hablamos de que su vida ahora depende de que abandonen el tabaco.</p>
+<p>Un apuesta de futuro en el diagnóstico temprano de la EPOC. Sin duda, si concienciamos a la opinión pública de que la EPOC existe, lograríamos diagnosticar a ese 73% de población que los estudios nos dicen que sufren EPOC y no lo saben. Podrían ser un millón y medio de españoles. Con el diagnóstico temprano conseguiríamos además controlar de un modo más eficaz la enfermedad de nuestros pacientes y ofrecerles una mucho mejor calidad de vida.</p>
+<p>Nuestra apuesta de futuro es trabajar para una mejor salud pública y que la mejor asistencia a nuestros pacientes guíe nuestros pasos y para ello contamos con todos los profesionales de la salud respiratoria en España.</p>
+<p><br />Dra. Inmaculada Alfageme<br />Presidenta de <a href="http://www.separ.es/" target="_blank">SEPAR</a>, Sociedad Española de Neumología y Cirugía Torácica</p>
+<p>&nbsp;</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/respiratory-world-wide/dra. inmaculada alfagemeweb2.jpg]]></file>
+          <title><![CDATA[Professor Jørgen Vestbo]]></title>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[209]]></width>
+          <height><![CDATA[200]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/respiratory-world-wide/dra. inmaculada alfagemeweb2.jpg]]></file>
+          <title><![CDATA[Professor Jørgen Vestbo]]></title>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[209]]></width>
+          <height><![CDATA[200]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="how-much-further-could-a-national-society-go">
+      <name><![CDATA[How much further could a national society go?]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-12-08 12:09:58]]></created>
+      <modified><![CDATA[2016-01-08 09:35:11]]></modified>
+      <hits><![CDATA[2053]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2015-12-08 12:09:58]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Sylvia]]></author>
+      <categories>
+        <category primary="true"><![CDATA[general]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value><![CDATA[The demarcation of a respiratory society]]></value>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>The Turkish Thoracic Society (TTS) is a national, professional and scientific non-profit organisation of specialists in respiratory medicine, founded in 1992.</p>
+<p>Our main objectives include: postgraduate education, scientific research, preventive and therapeutic patient care, awareness and advocacy around national policies for the improvement of lung health, cooperation with regional and global organisations. These objectives lead us in our aim of improving the national lung health in Turkey.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>Respect for human life, patient rights and environment, solidarity, cooperation, transparency, accountability, scientific and evidence-based medicine and coherence to ethical codes frame all our activities.</p>
+<p>This is a broad remit, but we are constantly trying to expand our activities. We know that respiratory diseases are very closely linked with the social determinants of health such as tobacco use, indoor and outdoor pollution, environmental and occupational exposure, vaccination, nutrition, birthweight (maternal malnutrition), maternal smoking, physical activity and gender.</p>
+<p>As a respiratory society, we know we should also be involved with tackling these social determinants, rather than just focusing on medical treatment. Without this, we cannot achieve our aim of improving national lung health. The question is, how can we expand, while also tackling these social determinants?</p>
+<p>Hundreds of millions of people suffer and 4 million die prematurely from respiratory diseases but most of them are avoidable.</p>
+<p>TTS preventive activities against these social determinants include:&nbsp;</p>
+<ul>
+<li><img src="images/stories/TTS_website.png" width="200" height="113" alt="TTS website" style="margin: 10px; float: right;" /><span style="font-size: 12.16px; line-height: 1.3em;">TTS has been conducting Turkish Ministry of Health National Control Program on Chronic airway diseases together with 60 parties (GOs, NGOs, Universities). One of these working groups of this program is mainly dealing with&nbsp; primary and secondary prevention of these diseases</span></li>
+<li><span>Many anti-tobacco activities have been undergoing successfully</span></li>
+<li><span>Two studies conducted in Soma Mine region after the accident and an educational meeting series in 6 mining cities of Turkey</span></li>
+<li><span>MECOR Course aiming to reduce healthcare inequities worldwide in its 8th year in collaboration with ATS</span></li>
+<li><span>Public website for awareness.</span></li>
+</ul>
+<p><span>
+<table>
+<tbody>
+<tr>
+<td><img src="images/stories/clean_air.png" width="125" height="166" alt="clean air" style="font-size: 12.16px; line-height: 15.808px; margin: 10px; float: left;" /></td>
+<td>We are passionate about tackling clean air. An indoor and outdoor task group has been established, a workshop has been organised and a position paper has been published. A strong collaboration with Greenpeace and HEAL has been started. We believe clean air is health and clean air is justice.</td>
+</tr>
+<tr>
+<td><img src="images/stories/turkish_parliament.png" width="125" height="125" alt="turkish parliament" style="margin: 10px; float: left;" /></td>
+<td>Many awareness activities have also been organised in the Turkish Parliament, with major journalists.</td>
+</tr>
+<tr>
+<td><img src="images/stories/public_campaigns.png" width="150" height="67" alt="public campaigns" style="margin: 10px; float: left;" /></td>
+<td>We also instigate campaigns aimed at reaching the public. A COPD awareness campaign has recently reached 25 million people.</td>
+</tr>
+</tbody>
+</table>
+</span></p>
+<p><span style="font-size: 12.16px; line-height: 1.3em;">With respiratory health covering such wide ranging topics, we are struggling to expand our boundaries to acheive or aim. There are many social determinants of health that need tackling and we aim to do this alongside all our scientific activities, congresses, global partnership work and publications. It is a challenge but one we are dedicated to.</span></p>
+<p>&nbsp;*****</p>
+<h3>The Turkish Thoracic Society&nbsp;</h3>
+<h4>An important national and global actor enlarging the boundaries each day</h4>
+<p>With 4,500 members, 15 branches, 81 province representatives throughout the country and 18 scientific assemblies, &nbsp;TTS is the largest specialist organisation in the area of respiratory medicine in Turkey.</p>
+<p><strong style="font-size: 12.16px; line-height: 1.3em;">Scientific activities</strong></p>
+<p><strong style="font-size: 12.16px; line-height: 1.3em;"></strong>Annual congresses give us the opportunity to present the latest developments. The number of congress participants and presented abstracts are increasing every year and reached approximately to 2,000.</p>
+<p><strong>Educational activities</strong></p>
+<p><strong></strong>TTS School organises postgraduate courses during the Annual Congress. TTS School is also responsible for managing the postgraduate educational policies and a number of other activities:</p>
+<ul>
+<li><strong style="font-size: 12.16px; line-height: 1.3em;">Winter School:&nbsp;</strong><span style="font-size: 12.16px; line-height: 1.3em;">held annually in January to update the knowledge and skills of clinicians.</span></li>
+<li><strong>Professional Development Courses: </strong>targeted to pulmonologists working in the field and aim to improve their level of daily practice.</li>
+<li><strong>Regional Courses: </strong>joint meetings for the continuous postgraduate education.</li>
+<li style="text-align: left;"><strong>E-learning facilities</strong><strong>: </strong>online postgraduate information including case discussion modules and consultation services.</li>
+</ul>
+<p style="text-align: left;">International Autumn Symposia aims to increase the level of the academicians.&nbsp;Each year one particular topic is selected and discussed in details. World reknown scientists are invited as the faculty to these Symposia.</p>
+<p>TTS views world awareness days as important opportunities for creating awareness in public and among healthcare workers.</p>
+<p><strong>National Collaborations</strong></p>
+<p>TTS collaborates with the Turkish Ministry of Health under the frame of the Control Program of the Chronic Respiratory Diseases in Turkey (GARD Turkey project).</p>
+<p>TTS has made extensive contributions in the establishment of the Turkish Board of Pneumology and close collaboration with the Turkish Medical Association and with other respiratory and non-respiratory specialtist societies in Turkey.</p>
+<p><strong>International collaborations</strong></p>
+<p><img src="images/stories/congress_leadership-cropped.jpg" width="300" height="163" alt="congress leadership-cropped" style="margin: 10px; float: right;" />TTS is aware of the fact that causes and solutions of the national lung health problems should be considered on a global scale.</p>
+<p>TTS has been collaborating with ERS and has just started a joint membership programme with 2,250 TTS members becoming part of the ERS membership.</p>
+<ul>
+<li>WHO- GARD (Global Alliance against Respiratory Diseases)</li>
+<li>Forum of European Respiratory Societies (FERS)</li>
+<li>Global Initiative for Asthma (GINA)</li>
+<li>American Thoracic Society (ATS) (Sister Society)
+<ul>
+<li>TTS and ATS have been organizing MECOR (Methods in Epidemiologic, Clinical and Operations Research) courses&nbsp;<span style="font-size: 12.16px; line-height: 1.3em;">with great success.</span></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>A leader in MEA region&nbsp;</li>
+</ul>
+<p><img src="images/stories/MEA_region.png" width="300" height="162" alt="MEA region" style="margin: 10px; float: right;" /></p>
+<p>&nbsp;</p>
+<p><strong>Publications</strong></p>
+<ul>
+<li>Turkish Thoracic Journal,</li>
+<li>Thorax Monographs,</li>
+<li>TTS Educational Book Series,</li>
+<li>Toraks Bulletin</li>
+<li>Guidelines</li>
+<li>Online library</li>
+<li>Patient educational handbooks</li>
+<li>Public website and social media</li>
+</ul>
+<p><strong>Arzu Yorgancıoğlu</strong><br /><strong>President of the Turkish Thoracic Society</strong></p>
+<p>
+<table style="background-color: #e0e0e0;">
+<tbody>
+<tr>
+<td>
+<p><strong>Are you an MD specialised in asthma or COPD?</strong> You may be interested in the new <a href="ers-funding/fellowships/ers-fellowships-in-industry/item/5095-ers-fellowship-in-industry.html">ERS Fellowship in Industry</a>, offering new opportunities to MDs, young scientists and researchers to gain experience in the European respiratory pharmaceutical industry.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/picture1.png]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[700]]></width>
+          <height><![CDATA[923]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/picture1.png]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[700]]></width>
+          <height><![CDATA[923]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles">
+          <item><![CDATA[year-of-separ]]></item>
+          <item><![CDATA[advancing-towards-a-common-goal]]></item>
+        </relateditems>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="meeting-with-journalists-about-smoking-from-theory-to-public">
+      <name><![CDATA[Meeting with journalists: "About smoking: from theory to the public"]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2016-01-11 11:25:02]]></created>
+      <modified><![CDATA[2016-01-13 13:36:29]]></modified>
+      <hits><![CDATA[1803]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2016-01-11 11:25:02]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Dawn]]></author>
+      <categories>
+        <category primary="true"><![CDATA[general]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value><![CDATA[By Professor Florin Mihălțan, chairman of the Romanian Society of Pulmonology]]></value>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: black;"><span style="font-family: Calibri; font-size: small;" face="Calibri" size="3">Smoke-free law enforcement is one of the major priorities on the Romanian Society of Pulmonology agenda. </span></span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: black;"><span style="font-family: Calibri; font-size: small;" face="Calibri" size="3">&nbsp;</span></span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">Our mission is to have a comprehensive smoke-free law, which can not only be accepted but also be applied and monitored. Furthermore, we need educational packages, higher taxes on tobacco and high-impact pictograms, in order to drastically reduce tobacco consumption among Romanians</span></p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>&nbsp;</p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: black;"><span style="font-family: Calibri; font-size: small;" face="Calibri" size="3">The Romanian Society of Pulmonology, an organisation that has been involved for several years in the implementation of a smoke-free law, brought together important opinion leaders in the field of pulmonology and cardiology, public health professionals, authorities, social life representatives and journalists, in order to introduce a mutual goal: an accurate and more effective communication of topics regarding smoking in Romania.</span></span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: black;"><span style="font-family: Calibri; font-size: small;" face="Calibri" size="3">&nbsp;</span></span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="font-family: Calibri;" face="Calibri"><span style="font-size: small;" size="3"><span style="color: #000000;" color="#000000">The Romanian Society of </span><span style="color: black;">Pulmonology’s </span></span><span style="color: #000000; font-size: small;" size="3" color="#000000">steps for implementing legislation that prohibits smoking in public places, as well as for reducing the number of smokers, represent actions intended to align Romania to global health policy. Since last year, the action plan was founded on a solid partnership between the Romanian Society of </span><span style="color: black;"><span style="font-size: small;" size="3">Pulmonology</span></span><span style="color: #000000; font-size: small;" size="3" color="#000000"> and the Romanian Society of Cardiology. </span></span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;">&nbsp;</p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">The implementation of smoke-free law and the attempt to change social behaviour are slow and difficult, therefore the initiative requires partnerships. The cardiologists who attended the meeting highlighted the importance of partnerships between medical societies involved in combating smoking, in order to have a deeper impact at the social level. </span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">&nbsp;</span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">These actions are all the more pressing since the risk of myocardial infarction in young smokers is high in Romania. Another important topic the experts approached was education as an important element in terms of raising awareness regarding the risks of smoking.</span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">&nbsp;</span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">The representatives of the authorities admitted that, unfortunately, Romania is the only country in the European Union which has not adopted legislation to ban smoking in enclosed public places, emphasising that Romania should reach the European standards. However, there is an optimistic attitude regarding the adoption of smoke-free law and the hope that the lawmakers will reach a consensus in applying the law, which will also bring a beneficial change at the community level. </span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">&nbsp;</span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">The civil society representatives argued that the implementation of the smoke-free law protects the rights of non-smokers and helps them to enjoy the fresh air in public spaces. They also pointed out the long term repercussions that tobacco consumption has on the economy. If we do a cost-benefit analysis, it would show that, if there is not a responsible intervention the costs associated with hospitalisation, workplace absenteeism, loss of productivity etc., will grow. </span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">&nbsp;</span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">In terms of trying to change the behaviour of smokers, specialists rely heavily on reverse psychology, communication more about the positive effects of quitting smoking and less on the negative effects of nicotine addiction. The impact of the meeting was positive in terms of media representation. The event had a good coverage on Romanian TV channels, radio and online media. </span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><span style="font-family: Calibri;" face="Calibri"><span style="background: white; color: black; font-size: 10pt;">&nbsp;</span></span></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><i><span><span style="color: #000000; font-family: Calibri; font-size: small;" face="Calibri" size="3" color="#000000">Acknowledgement for event management: Sănătatea Press Group, your expert in medical communication. </span></span></i></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/prof.-florin-mihaltan.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[500]]></width>
+          <height><![CDATA[362]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/prof.-florin-mihaltan.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[500]]></width>
+          <height><![CDATA[362]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="the-challenge-of-tb-for-the-peruvian-society-of-pneumology">
+      <name><![CDATA[The challenge of TB for the Peruvian Society of Pneumology]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2016-02-09 14:52:17]]></created>
+      <modified><![CDATA[2016-02-11 09:52:34]]></modified>
+      <hits><![CDATA[1978]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2016-02-09 14:52:17]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Dawn]]></author>
+      <categories>
+        <category primary="true"><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value><![CDATA[Dr Alfredo Guerreros, Peruvian Society of Pneumology]]></value>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><span lang="EN-US">The Peruvian Society of Pneumology is the oldest scientific community of physicians dedicated to respiratory medicine in South America. It is an 80-year-old institution. It starts fighting against tuberculosis (TB) - an ancestral disease that everyone could see in the mummies of the ancient Paracas culture.</span></p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><strong>Our origins:</strong></p>
+<p>In that way, the old Phthisiologist (referring to a person who treats Phthisis pulmonalis) became in the modern Pneumologist or Pulmologist that worked in more and more fields in this area. Peru is an important mining country, and therefore the field of occupational medicine is a highly valuable one. We also experience an incredibly high prevalence of asthma, showed in the International Study of Asthma and Allergies in Childhood (ISAAC) Study. Our Society is organised in compliance of regulations from the Medical College of Peru. It has some different characteristics from the others societies, for example we have a Past-President Council that is called on for some special situations; and the Ladies Committee and Social Support that do extraordinary caring work with poor and at-risk people.</p>
+<p><strong>Our mission:</strong></p>
+<p>The objective of the Society has been directed to Continuing Medical Education (CME), knowledge diffusion, and medical research and to meet these aims, we organise several activities that attract pulmonologists and others medical specialists also.</p>
+<p><strong>The fight against TB:</strong></p>
+<p>In accordance with the creation of our Society, TB is the disease that distinguishes the Peruvian pneumologist. We have many activities to help fight against it. TB has a high mobility: 101 positive smear per 100,000 habitants.&nbsp; The failure to primary scheme treatment is 4%. There were 500 cumulative cases of extensively drug-resistant tuberculosis (XDR-TB) up until 2014.&nbsp;</p>
+<p>We make intensive efforts to find information and do research on this disease. The uptake of the old pneumology training programme was inefficient and poor. There are new programmes, however, the 400 specialists who work on this topic are largely based in Lima and these numbers are not sufficient for 33 million people&nbsp; living in Peru.</p>
+<p>Our Society works together with the National Strategy TB Team of the Secretary for Health of Peru in the dissemination of knowledge to the professionals working to fight TB through different methods, such as journals, research, meetings, and more.</p>
+<p>The society has planned courses and workshops to share the best knowledge in the field and to aid the work of the current and future pulmonologist. We have come a long way already but actually, there are still enormous challenges ahead of us.</p>
+<p><a href="eu-affairs/item/5198-tb-policy-developments-.html.html">Read more about TB policy developments/ERS TB focused projects</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/dr. alfredo guerreros-cropped.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[2018]]></width>
+          <height><![CDATA[1789]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/dr. alfredo guerreros-cropped.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[2018]]></width>
+          <height><![CDATA[1789]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="smoking-cessation-in-argentina-our-position-on-e-cigarettes">
+      <name><![CDATA[Smoking cessation in Argentina: our position on e-cigarettes]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2016-03-22 11:47:11]]></created>
+      <modified><![CDATA[2016-03-23 09:17:36]]></modified>
+      <hits><![CDATA[1225]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2016-03-22 11:47:11]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Dawn]]></author>
+      <categories>
+        <category primary="true"><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value><![CDATA[By Dr Juan Manuel Ossés, President of the Argentinean Association of Respiratory Medicine]]></value>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>Smoking is a risk factor for six out of eight leading causes of death, so nearly six million premature deaths occur annually worldwide. In recent decades, the shift of the epidemic to less developed countries and to those with weak tobacco products regulations has consolidated this tendency.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>Argentinean mortality rates from this cause amounts to more than 40,000 people each year, moreover, the loss of 824,804 years of healthy life. The above mentioned is reflected in higher health costs (about 15% of health spending on health), higher than the revenues from tobacco taxes.</p>
+<p>The cigarette-smoking drop in a population between 18 and 65 years old has been steady (44% in 1999, 33.4% in 2005 and 30.1% in 2009) in the last years. However, the daily cigarette consumption per inhabitant in Ciudad Autónoma de Buenos Aires is higher than in other Latin American capital cities.</p>
+<p>Smoking cessation treatments have had a constant development in our country, especially in recent years, although its publicity is low, perhaps due to its recent or partial inclusion in the curricula of postgraduate courses.</p>
+<p>Since electronic cigarette introduction in 2004, its popularity has increased worldwide; it is used for smoking cessation and in public areas where there is a smoking ban.</p>
+<p>There are no long-term studies that show if e-cigarette use might affect health, whether in the short term or in the long run, but it is known that the youth may develop a nicotine addiction through the use of e-cigarettes.</p>
+<p>The World Health Organization has expressed that e-cigarettes should not be recommend as tobacco substitutes until new information about its safety and efficacy appears.</p>
+<p>The Argentinean National Administration of Drugs, Food and Medical Technology (A.N.M.A.T.) has not approved the importation, distribution, marketing and advertising of any form of electronic cigarette (Act 3226/2011), so these devices are not legally available in Argentina, though illegally introduced and sold without any sanitary control.</p>
+<p>The regulation of the National Tobacco Control, Act 26687, sanctioned in 2011, bans the use of electronic cigarettes indoors as well as their promotion, advertising and sponsorship.Therefore, the Argentinean Association of Respiratory Medicine, in agreement with the above, does not recommend the use of electronic cigarettes until more evidence about its safety and efficacy exists, and calls on health professionals in general and in particularly those working in smoking cessation to refrain from prescribe them for that purpose.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li>Bruni, J.M. Costos directos de la atención médica de las enfermedades atribuibles al consumo de tabajo en argentina Buenos Aires: Ministerio de Salud de la Nación, 2007.</li>
+<li>Programa Nacional de Control del Tabaco. Guía Nacional de Tratamientos de la Adicción al Tabaco Buenos Aires: Ministerio de Salud y Ambiente de la Nación, 2005.</li>
+</ul>
+<p>&nbsp;</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/dr osses.png]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[419]]></width>
+          <height><![CDATA[458]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/dr osses.png]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[419]]></width>
+          <height><![CDATA[458]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="the-dutch-collaboration">
+      <name><![CDATA[The Dutch collaboration]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2016-04-04 10:26:09]]></created>
+      <modified><![CDATA[2016-04-06 15:24:51]]></modified>
+      <hits><![CDATA[834]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2016-03-22 11:47:11]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Lauren]]></author>
+      <categories>
+        <category primary="true"><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value><![CDATA[By Dr Eric van Haren (President of the Dutch Thoracic Society (NVALT)) and Dr Peter Wijkstra (Netherlands Respiratory Society (NRS))]]></value>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>We would like to share with readers of the column the launch of a new initiative in the Netherlands that brings together all medical specialities. The new collaboration is an important national actor in relation to the government, public health care and medical community.&nbsp; We feel that this unique collaboration and new initiative will help ensure powerful activities and joined practice for respiratory and all specialities on a national and global level.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>The Dutch Association of Physicians in Chest Medicine and Tuberculosis (NVALT) is the national, professional and scientific organisation of specialists in respiratory medicine and tuberculosis. An important new issue in this field is the recent launch of the Dutch Association of Medical Specialists (Federatie Medisch Specialisten: FMS), an overarching national organisation in which all certified scientific associations of medical specialists are represented.</p>
+<p>De FMS has 20,000 (!) members, all of them medical specialists. It is the collaborative platform in the field of professional interests, quality policy, training and education, science and innovation. To ensure that we are working towards a common goal, four Boards are formed within this national FMS and this is where the NVALT meets the other scientific organisations of medical specialists at a practical level for sharing policy and vision. The insight of the NVALT leaders at this level will ultimately lead to change in the respiratory field.</p>
+<p>The Board of Quality is the task force for evaluation, reflection, accountability, transparency and innovation in specialised medicine, including the respiratory field. Multidisciplinary guidelines are developed to improve quality and efficiency of care and to reduce variations in pulmonary practice.</p>
+<p>The Board of Professional Interests covers the area of accessibility of specialised respiratory and oncologic medicine, the position of medical specialists, the conditions of employment and issues of declaration and reimbursement. The implementation of new and expensive drugs e.g. for the treatment of lung cancer, pulmonary fibrosis and severe asthma has much attention.</p>
+<p>The Board of Training ensures the tuning of content and structure of the certified training of medical specialists in relation to the need of specialised medicine in the Netherlands. Training e.g. in respiratory medicine demands special skills from the supervising chest physicians and support is given by this platform of societies.</p>
+<p>The Board of Research and Innovation has just started in January 2016. A member of the Dutch NRS has joined the executive board of the NVALT and will hold the portfolio of respiratory research at a national level.</p>
+<p>Due to the fact that a platform for collaborative research in the pulmonary field was needed the National Respiratory Society (NRS) was set up. The NRS started in 2009 with a mission: “To optimise prevention and treatment of the diseases of the airways and the lungs we want to improve quality and attention for respiratory research and to empower its (inter)national position.” The NRS is a network organisation that brings all relevant parties – researchers, organisers, policymakers, financiers and patients– together and tries to connect them. The main role of the NRS is to initiate, facilitate and to support the field of (transdisciplinary) lung research in the Netherlands. Their main focus is to strengthen collaborative research efforts in the Netherlands and to improve the outlook of affected patients. Research activities are being coordinated by the NRS. In 2016, the NRS will organise for the 8th time the Young Investigator Symposium where young researchers can meet each other and can present their research.</p>
+<p><img src="images/stories/Dutch_collaboration.png" width="197" height="131" alt="Dutch collaboration" style="float: right;" /></p>
+<p>Already for the 6th time in 2016 the Animal symposium will be organised, where basic researchers with different backgrounds, i.e. biologists, pharmacologists, and clinicians meet each other. In April this year a big meeting will be organised for all physicians, patients and researchers being all related to pulmonary diseases. Last year more than 1000 people attended this meeting, which is a another step in developing new collaborative networks including patients and so raising more attention for pulmonary diseases.&nbsp;</p>
+<p>The biggest recent effort brought by the NRS was initiating a National Program Lung Research entitled ‘Lifelong Lungs’, to improve collaborative efforts in the Netherlands. It started by identifying 12 pulmonary areas: allergy, asthma, bronchopulmonary dysplasia and primary ciliary dyskinesia, cystic fibrosis (CF), COPD, interstitial lung diseases, infections, intensive care, lung transplantation, lung cancer, pulmonary hypertension and sleep apnoea.</p>
+<p>Relevant data were collected and a SWOT analyses was performed. The 12 teams were also asked to identify opportunities for challenging collaborative research with each of the other 11 fields. Afterwards all fields were judged by international experts regarding several research and organisational aspects. A final step was to identify missing links to further improve Dutch lung research. At the end we defined 6 goals for bringing pulmonary research further with the ultimate goal of developing a National Program Lung Research. This was a bottom-up procedure inviting professional/scientific and patient associations, charities, governmental and pharmaceutical bodies, and industrial organisations. A 2 /1/2 days meeting was organised to get an answer to the following questions:</p>
+<p>1. What are the main questions regarding lung health?<br />2. Which questions can provide solutions for multiple diseases?<br />3. As a consequence, which areas of research should be focussed on in the coming 5-10 years?</p>
+<p>Currently we are discussing the results of this meeting with the goal to identify 5 priorities for research in the Netherlands. The leaders of the NRS feel that this project is a key event for the further development of respiratory research in the Netherlands.</p>
+<p><strong>About the NVALT and NRS</strong></p>
+<p>The NVALT was founded in 1908 and has a long history in the national and international respiratory field. Over 800 Dutch chest physicians enjoy a combined membership of both NVALT or NRS with the ERS. Annual national meetings give us the opportunity to enlarge our boundaries, discuss new developments and share opinions on pulmonary medicine and research. The ultimate goal of both the NVALT and the NRS is to improve national lung health. The synergistic collaboration ensures true cross-fertilization.&nbsp;</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/dutch collaboration.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[989]]></width>
+          <height><![CDATA[634]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/dutch collaboration.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[989]]></width>
+          <height><![CDATA[634]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="tackling-smoking-in-a-country-with-the-highest-adult-tobacco-consumption-in-the-americas">
+      <name><![CDATA[Tackling smoking in a country with the highest adult tobacco consumption in the Americas]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2016-05-09 12:36:33]]></created>
+      <modified><![CDATA[2016-05-09 12:46:54]]></modified>
+      <hits><![CDATA[243]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2016-05-09 12:36:33]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Dawn]]></author>
+      <categories>
+        <category primary="true"><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value><![CDATA[By Francisco Arancibia M.D. (President of the Chilean Respiratory Society)]]></value>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>Last year, we celebrated the 85th anniversary of the Chilean Respiratory Society (SER). It was founded in 1930 by 11 visionary medical doctors dedicated to respiratory diseases, mainly tuberculosis at that time. Among them, were Dr Héctor Orrego Puelma and Dr Sótero del Rio Gudian, both distinguished professors from the faculty of Medicine at the University of Chile.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>
+<p>In recent decades, epidemiological changes have occurred in Chile and the mortality from respiratory diseases has declined significantly. However, the current mortality and morbidity for chronic respiratory diseases associated with smoking is still very high. In fact, the smoking rates remain extremely high in our country. The last national health survey, conducted in 2010, found an estimated tobacco smoking prevalence of 40.6%, among adults older than 15 years, with almost no difference between women and men. Among the youngest group (aged 13 to 15 years), the prevalence of tobacco use was 35.1%. It was regrettable to learn from the report on the Control of Tobacco of the PAHO (2011), that Chile had the highest prevalence of adults that consumed tobacco in the region of the Americas.</p>
+<p>Tobacco is a major common risk factor for the principal non-communicable chronic diseases and still being among the main specific causes of preventable mortality and morbidity. According to the PLATINO study, the prevalence rate of COPD among adults ≥ 40 years and older was 16·% in Santiago city. The Chilean Health Ministry data found that COPD is a growing cause of death and mortality in 2012 was 19.8 per 100,000 populations. Lung cancer mortality is also increasing every year, and in 2012 was 16.4 per 100,000 populations.</p>
+<p>The Chilean Respiratory Society has a commitment to tobacco control. Members of our society are in charge of promoting this issue, in this way; our society, associated with the Health Ministry, was involved in the preparation, negotiation and adoption by Chile of the WHO Framework Convention on Tobacco Control. We also had an active participation in the enactment of smoke-free law. Recently, in a public statement, the European Respiratory Society (ERS), ALAT (Latin American Thoracic Society) and Chilean respiratory society, pledged their support for new Tobacco control measures (ban additives in Tobacco and adoption of plain generic packaging for tobacco products). This was adopted by the Chilean Senate.</p>
+<p>Now, we are in the process of making the guidelines for smoking cessation. We will continue to work in order to reduce tobacco consumption among Chileans and in particular, among young people.</p>
+</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/francisco arancibia.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[3128]]></width>
+          <height><![CDATA[3240]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/francisco arancibia.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[3128]]></width>
+          <height><![CDATA[3240]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+  </items>
+</export>

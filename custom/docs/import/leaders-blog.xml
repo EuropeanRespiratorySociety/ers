@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export>
+  <categories>
+    <category id="the-allied-health-professional-perspective">
+      <name><![CDATA[The allied health professional perspective ]]></name>
+      <parent><![CDATA[general-2]]></parent>
+      <published><![CDATA[1]]></published>
+      <description/>
+      <ordering><![CDATA[1]]></ordering>
+    </category>
+    <category id="bloggers">
+      <name><![CDATA[The bloggers]]></name>
+      <parent><![CDATA[_root]]></parent>
+      <published><![CDATA[1]]></published>
+      <description/>
+      <ordering><![CDATA[1]]></ordering>
+    </category>
+    <category id="general-2">
+      <name><![CDATA[General]]></name>
+      <parent><![CDATA[_root]]></parent>
+      <published><![CDATA[1]]></published>
+      <description/>
+      <ordering><![CDATA[2]]></ordering>
+    </category>
+    <category id="the-clinician-s-perspective">
+      <name><![CDATA[The clinician’s perspective ]]></name>
+      <parent><![CDATA[general-2]]></parent>
+      <published><![CDATA[1]]></published>
+      <description/>
+      <ordering><![CDATA[2]]></ordering>
+    </category>
+    <category id="the-scientist-s-perspective">
+      <name><![CDATA[The scientist’s perspective ]]></name>
+      <parent><![CDATA[general-2]]></parent>
+      <published><![CDATA[1]]></published>
+      <description/>
+      <ordering><![CDATA[3]]></ordering>
+    </category>
+    <category id="_root">
+      <name><![CDATA[Root]]></name>
+      <description><![CDATA[<p><img alt="ERS Blog DEF VEC 635x200 v2" src="images/stories/experts-blog/ERS_Blog_DEF_VEC_635x200_v2.jpg" height="200" width="635" /></p>
+<h1>Respiratory matters: the experts’ blog</h1>
+<p>Welcome to the new blog from ERS designed to give you an insight into the lives of respiratory leaders across the world.</p>
+<p>Three bloggers will discuss different areas of respiratory health to give you an insight into the worlds of a <a href="leadersblog/bloggers/item/sylvia-hartl.html?category_id=173">clinician</a>, a <a href="leadersblog/bloggers/item/peter-sterk.html?category_id=173">scientist</a> and an <a href="leadersblog/bloggers/item/thierry-troosters.html?category_id=173">allied health professional</a>.</p>
+<p><a href="index.php?option=com_zoo&amp;view=category&amp;Itemid=715">View our bloggers</a></p>
+<div style="margin: 10px 0; border: 1px solid #cecece; background: #eee; padding: 10px;">
+<p style="text-align: center; margin: 0;"><a href="index.php?option=com_rsform&amp;view=rsform&amp;Itemid=714"><span>Subscribe to receive the latest updates</span></a><a href="index.php?option=com_rsform&amp;view=rsform&amp;Itemid=709"><span> </span></a></p>
+</div>]]></description>
+    </category>
+  </categories>
+  <items name="Article">
+    <item id="take-the-active-option">
+      <name><![CDATA[Take the active option]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-10-23 13:17:02]]></created>
+      <modified><![CDATA[2015-10-29 15:16:15]]></modified>
+      <hits><![CDATA[2594]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2015-10-23 13:17:02]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[anna]]></author>
+      <categories>
+        <category primary="true"><![CDATA[the-allied-health-professional-perspective]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author">
+          <item><![CDATA[thierry-troosters]]></item>
+        </relateditems>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value/>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><img src="images/stories/pedometers_take_the_active_option.jpg" width="200" height="164" alt="pedometers take the active option" style="margin: 5px; float: left;" />For the duration of the ERS conference, Amsterdam was invited to think about the consequences of physical inactivity. Pedometers were given away to delegates to make them sensitive to their own activity level. Being active is important for all of us and in order to provide good advice one needs to be conscious of the concept. In that respect the #ERS10Ksteps campaign was surely a success. Step counts were buzzing among the 23,000 participants and many internal competitions or challenges were on-going. I won mine against Professor Stefano Aliberti, Head of Assembly 10. He probably had too many meetings on Sunday, the day of our challenge.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>Time at conferences and just our daily life, is often too inactive. We feel important sitting for hours in meetings, trying to change our world, while harming our own health. Inactive time should be broken by physical activity bouts. Long meetings should have a mandatory activity break of 10 minutes. The European Respiratory Society, but also societies like the World Health Organization Health Enhancing Physical Activity (WHO HEPA) network, or the European Society of Cardiology can advocate for this and can try to lead by example. Knowledge of appropriate physical activity levels is low among healthcare providers.</p>
+<p>The benchmark for smoking is an easy one to remember… ZERO cigarettes…The healthy levels of physical activity are more difficult to get a grip on. 30 minutes of moderate-intense activity (activity that increases your breathing and may make patients somewhat out of breath) on five days per week is typically advised.</p>
+<p>A more practical way of monitoring this is to use the 10,000 steps benchmark for healthy people. A normal working day in a sedentary job (also mine…) accumulates around 7,000 steps. When you walk, your walking pace is around 100 steps per minute. Thirty minutes equals roughly 3,000 steps. 7,000 + 3,000 and you have the ‘magic’ 10K steps. There is slightly more science behind it, luckily, but it is an easy benchmark to remember and it is easy to measure with unsophisticated step counters.</p>
+<p>For patients it becomes slightly more complex. If they average 7,000 steps a day, the patient has an inactive lifestyle. When the figure is less than 5,000 steps per day as an average over a few days, this is frank sedentarism.</p>
+<p>The importance of physical activity as a biomarker for ‘health’ is being picked up and it is exciting to see the efforts of our Society and the European Lung Foundation with the Healthy Lungs for Life campaign. Equally important is the publication of an ERS statement around physical activity in COPD by Dr Watz and his team of experts in 2014. In 2009 the first Innovative Medicines Initiative (IMI) project in COPD was launched around the topic of developing tools to measure physical activity and develop interventions that may help clinicians to do so.</p>
+<p>The <a target="_blank" href="http://www.proactivecopd.com">‘PROactive’ COPD</a> project delivered two patient reported outcomes, developed a telecoaching application that turned out to be extremely successful to stimulate physical activity and, perhaps the most important outcome; engaged the pharmaceutical industry in the physical activity problem and its solutions. Treatment to enhance physical activity does not come in a puff… Isn’t it nice to see that pharma companies are nowadays setting up studies that try to embed pharmacotherapy in optimised physical activity management?</p>
+<p><img src="images/stories/pedometer.jpg" width="200" height="120" alt="pedometer showing a step count of 11256" style="margin: 5px; float: right;" />The PROactive projected has surely contributed to get the interest of pharmaceutical companies in this therapeutic dilemma. In addition good guidance is available on to how to organise pulmonary rehabilitation from the statement of the American Thoracic Society and the European Respiratory Society on pulmonary rehabilitation. This statement will very soon be flanked by a policy statement written by Drs Rochester and Vogiatzis, which asks the question: why does a very effective therapy, such as rehabilitation, have such poor uptake?</p>
+<p>There are too few centres of excellence available in most countries. In my opinion, pulmonary rehabilitation should be an affordable treatment option for all patients. The indication for further rehabilitation assessment should be known to all chest physicians. In such a landscape the more potent pharmacotherapy that is (being) developed will be able to see its full potential.</p>
+<p>Rest assured, it will be a long and windy road to full deployment of pulmonary rehabilitation and physical activity programs. Resistance can be expected from payers and from patients. With better public knowledge of the benefits of rehabilitation and physical activity that resistance can perhaps be reduced. Programs should perhaps also be offered taking into account patient preferences. That is our –my- responsibility.</p>
+<p>One golden tip in the present state of affairs: ask patients to use a pedometer that picks up slow walking and provide them with a step count goal they see feasible to achieve. If you do not have the time or expertise to do so, perhaps look for a physiotherapist or a rehabilitation program around your practice that can help (the ERS directory of group 9.2 or 1.2 may be helpful). Just like you would refer for external smoking cessation counseling if you lack time or expertise to follow-up on it. Make sure you ask your patient at every encounter about their physical activity levels. I have stolen the phrase from Dr Zu Wallack (Conneticut, US): stop asking your patients ‘How do you do?’… Instead ask them ‘What do you do’? If you want to be more precise… you can use good and affordable activity monitors.</p>
+<p>Knowledge on physical activity and exercise should be embedded in a personal health culture and hygiene. Practice what you preach… or at least have personal knowledge on what you preach. In that respect the ‘Take the active option’ campaign is surely an important step. There are many steps to follow! I think I may have been convinced that it is also for me <em>‘time to take the active option’</em>.</p>
+<p>Read on:</p>
+<p><a href="http://www.proactivecopd.com">www.proactivecopd.com</a></p>
+<p><a href="http://erj.ersjournals.com/content/44/6/1521">Watz et al ERS statement on physical activity in COPD Eur Respir J 2014</a></p>
+<p><a href="http://www.ers-education.org/lrMedia/2013/pdf/234079.pdf">Spruit et al ATS and ERS statement on pulmonary rehabilitation Am J Respir Crit Care Med</a> 2013</p>
+<p><a href="http://www.respiratory-research.com/content/14/1/115">Troosters et al Improving physical activity in COPD: towards a new paradigm. Respir Res 2013<br /><br />U</a>pcoming:&nbsp;Troosters T. Should European Respiratory Society meetings come with a health warning? Breathe 2015 DOI: 10.1183/20734735.009615.</p>
+<table style="background-color: #fafafa; width: 100%;" border="0" cellpadding="0" cellspacing="20">
+<tbody>
+<tr>
+<td>
+<p><strong>An example of the lack of ‘penetration’ of Pulmonay rehabilitation for patients with COPD:</strong></p>
+<p>I was invited to speak in a seminar sponsored by a pharmaceutical company in a European country. With other speakers, we discussed in much detail the importance of physical activity in lung disease and muscular dysfunction. The next morning three case reports were presented extensively. The questions asked to and by the audience were all geared to pharmacologic treatment. ‘Yes’ or ‘No’ to inhaled corticosteroids, which long acting bronchodilator, other available therapies, ‘Azythromycine’ as long term treatment etc. Discussion was interesting and took a fair amount of time. At the end of the discussion – I was a member of the audience then – I asked why pulmonary rehabilitation was not considered as a treatment option. One of the patients had clear symptoms upon exercise, suffered from osteoporosis and had cachexia, based on BMI, another patient had suffered from repeated exacerbations. For the third patient I could not really judge on the indication for rehabilitation based on the presented data. Exercise training and pulmonary rehabilitation were not mentioned once in the whole discussion. The silence after asking the question was a bit annoying. It turned out that rehabilitation was not available but sometimes a nurse was asked to do some exercises. It sounded to me like offering Salbutamol to a patients in GOLD stage IV. This sets the scene for the ERS-ATS policy statement on pulmonary rehabilitation.</p>
+</td>
+</tr>
+</tbody>
+</table>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file/>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file/>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="the-dynamics-of-respiratory-science-towards-4d-research">
+      <name><![CDATA[The dynamics of respiratory science: towards 4D research]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-11-30 09:37:56]]></created>
+      <modified><![CDATA[2015-12-03 16:37:21]]></modified>
+      <hits><![CDATA[1769]]></hits>
+      <access/>
+      <priority><![CDATA[2]]></priority>
+      <publish_up><![CDATA[2015-12-02 14:50:03]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Sylvia]]></author>
+      <categories>
+        <category primary="true"><![CDATA[the-scientist-s-perspective]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value/>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><a href="respiratorymatters/bloggers/item/peter-sterk.html?category_id=173">Peter Sterk</a>: I am sure I am not the only one experiencing episodic excitement in science. We are not just robots, shifting protocols and papers, based on entirely predictable grants, experiments and data. Science is not a stable machine. Politicians tend to believe that and are expecting predictable scientific outcomes based on pre-defined (financial) input. They cannot appreciate or even envisage the scientific arena as an unstable field by definition, in which the unexpected is the grace! Scientists need to get inspired by colleagues, experimental failure, a bit of success and particularly the unexpected. To put it scientifically: politicians are trying to govern the world linearly, whereas scientists are accepting the world as being essentially non-linear. Hence, let us embrace the dynamics of our field, our minds, our hypotheses and our output.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<h3>The secret of science: homeokinesis</h3>
+<p>The scientific arena more or less resembles ‘life’ itself. They are both highly complex, not well understood, a real joy, and… extremely vital! Hence, let us for a moment postulate that the secret of science can be derived from the secret of life. Here we enter solid grounds that were prepared by no less than Erwin Schrödinger himself. Yes, the Nobelist on quantum mechanics! Physicists have always been ahead of biologists and have been living comfortably with uncertainties during the past 100 years.&nbsp;</p>
+<p>Just for a change, Schrödinger wrote a monograph in 1944 called: “What is life?” that can be downloaded online. Be aware, DNA had still to be discovered at that time. He describes life as a self-organising, open system, which is non-linear, fluctuating and occasionally emergent. Late Peter Macklem, the big respiratory physiologist and frequent contributor to the ERS Congresses, framed the term homeokinesis as opposed to homeostasis, in order to describe the essence of a living organism. Compare this with our scientific world: self-organising, open, non-linear, kinetic, fluctuating and emergent. There are worse analogies….</p>
+<h3>Signal or noise?</h3>
+<p><em></em>How about the dynamics and fluctuations in our body during health and disease, for instance in symptoms, lung function, cellular composition, behavior and molecular networks? At the ERS Congress in Amsterdam this was elegantly addressed and presented by Edgar Delgado-Eckert and Delphine Girard from the group of Urs Frey in Basel, also in collaboration with Sven-Erik Dahlen from the BioAir consortium. A refreshing view on disease! It appears from their preliminary data that clustering asthma (and also COPD) based on the fluctuations of lung function provides new and relevant phenotypes of disease. And remarkably, even fluctuation-based clustering of symptoms enables categorizing patients. This is right on! It uses the basic principles of life and translates this to the dynamics of diseased organisms.</p>
+<h3>Dynamics of biology?</h3>
+<p>Now it is emerging that fluctuations in lung function or symptoms are capturing disease phenotypes, could any ‘diseased’ dynamics be traced into the underlying biology? That would be the final step to comprehensively describe health and disease as different dynamic states of a living organism in terms of homeokinesis. Again, ERS has taken this up, by awarding an ERS RESPIRE2 Marie Curie fellowship to the Indian postdoc Dr Anirban Sinha who is working on this exact area in Amsterdam and Basel. <br />Such study requires highly frequent assessments of biologic parameters for measuring the fluctuations in multiple cellular and molecular components. As you may expect, this is a strain for the patients requested to volunteer for it. How can this be solved? In fact, it more or less becomes an additional day job for patients, which may be appealing to asthmatic students (shall we boost recruitment by asking all of them to write their bachelor thesis on the topic and to co-author the eventual paper…?).</p>
+<p>&nbsp;</p>
+<h3><em><img src="images/stories/Mapping_collaborative_networks_in_the_public-private_IMI_project_U-BIOPRED.jpg" width="400" height="339" alt="Mapping collaborative networks in the public-private IMI project U-BIOPRED" style="margin: 10px; float: right;" /></em>Dynamic collaborations</h3>
+<p>Such projects would not exist without all kinds of inspiring collaborations of scientists, in which each of them finds her/his own reasons to be excited about the objectives. This is where biologists and physicians meet physicists and mathematicians. Where the oldies meet the youngsters. And where scientists really meet patients (because it takes a whole lot of communication to explain the rationale and value of the study). And again, collaborations are dynamic, which is its joy and effectiveness. <br />I have never got a better view on the dynamics of collaboration than in the EU/IMI project U-BIOPRED (www.ubiopred.eu). This included academics, pharmaceutical scientists, patients, SME’s and charities. Everyone was linking up to everyone, in various constellations and varying with time. The funny story here is that entirely opposite to the anticipation by our pharma colleagues, the academics represented the stable factor in the project whilst our friends from pharma industry dynamically switched positions, companies, and interests easily.</p>
+<p>The U-BIOPRED collaborative, public-private networking has in fact been quantified by Scott Wagers from BioSci by calculating time series of: who works how intensively with whom in which work packages during which episode in the project. This signature of the project not only delivers the evidence of effective collaboration, but also very elegantly shows the healthy dynamics of science.</p>
+<h3>Message</h3>
+<p>What is the dynamic message here?</p>
+<ol>
+<li>Start doing 4D research, in which the dynamics of the 3D patient or disease model is being monitored over time.</li>
+<li>Jump into collaborations with colleagues of your colleague’s colleagues;</li>
+<li>Academic friends, once every often be brave and take the risk of embarking on new challenges or new universities</li>
+</ol>
+<p>This will be as healthy as life can be!</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/experts-blog/4d research image.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[914]]></width>
+          <height><![CDATA[758]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/experts-blog/4d research image.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[914]]></width>
+          <height><![CDATA[758]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="the-changing-face-of-lung-cancer-treatment">
+      <name><![CDATA[The changing face of lung cancer treatment]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-12-16 09:18:11]]></created>
+      <modified><![CDATA[2016-01-08 09:28:26]]></modified>
+      <hits><![CDATA[1766]]></hits>
+      <access/>
+      <priority><![CDATA[3]]></priority>
+      <publish_up><![CDATA[2015-12-16 09:18:11]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Sylvia]]></author>
+      <categories>
+        <category primary="true"><![CDATA[the-clinician-s-perspective]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value/>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><a href="respiratorymatters/bloggers/item/sylvia-hartl.html?category_id=173">Sylvia Hartl:</a> As Head of a respiratory department in Austria, I care for patients suffering from lung cancer. In my country, the respiratory physician is the case manager of lung cancer, responsible for diagnostic procedures and treatment of any kind. Around 30–40% of our consultations are due to lung cancer treatment.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>After years of a bleak outlook for treatment options, including failure of early diagnosis, a limited spectrum of chemotherapies available, the rate of response and the toxic side effects, exciting innovations in therapeutic concepts from research into clinical practice are evolving.&nbsp;</p>
+<p>These innovations have led to changes in clinical treatment standards:</p>
+<ul>
+<li>More biopsy material is required for cancer immune profiling in every patient before therapy decisions.</li>
+<li>Specialists need to be informed about the latest evidence.</li>
+<li>Palliative innovative methods like endoscopic thermic tumour reduction, repetitive bronchoscopic laser coagulation and stent implantation are now offered to stabilise the health status of patients in the advanced stages of the disease who are excluded from surgery.</li>
+</ul>
+<p>In Austria, we have decided to form the Austrian Lung Cancer Group (ALCG), affiliated to the Austrian Respiratory Society, aiming to raise the quality standards in all respiratory departments dealing with lung cancer treatment.</p>
+<p>The first step was to commit every lung cancer centre to participate in a lung cancer audit to assess treatment standards. From these results, each centre could evaluate its potential for improvement. Some of the centres committed themselves to collaborate to create educational standards for trainee nurses and to raise awareness via the ALCG amongst the public about how we can avoid inequality of care in the future.</p>
+<p>In a small country like Austria, such alliances of lung cancer centres will help to influence decisions on regulation of access to therapy via our outcome data.</p>
+<p>Every cancer patient is a multidisciplinary challenge: thoracic oncology boards of all specialists involved in potential therapy options have to be implemented to guarantee the optimum handling of the patient and avoid inefficient cost explosions.</p>
+<p>Concerns have been raised about the evolving costs of lung cancer treatments in the light of economic constraints. Innovative therapy, especially immune therapy, increases the costs per patient substantially. So far, only small, specific groups of patients at an advanced disease stage are eligible for such drugs, but other drugs will follow and the numbers of eligible patients will rapidly increase. European healthcare regulation might even be overruling country policies regarding cost effectiveness of lung cancer treatment, which could introduce the threat of medicine tourism of EU citizens.</p>
+<p>The role of the European Respiratory Society in defending respiratory oncology and its quality is crucial as it can act as a backbone to support local respiratory societies. ERS has published a HERMES syllabus and several position papers on the role of the respiratory physician in oncology to strengthen the voice of respiratory specialists in Europe.</p>
+<p>In Austria, the number of bronchial carcinoma patients is still growing, therefore, the role of respiratory specialists is now very prominent in oncology - a role that we hope to share with many European countries!</p>
+<p>Suggested reading:</p>
+<p><a href="http://erj.ersjournals.com/content/36/6/1227" target="_blank">Thoracic oncology in Europe: the ERS action plan by the Thoracic Oncology Assembly J-P. Sculier, J. Vansteenkiste, N. Schönfeld, A. Scherpereel. <em>Eur Respir J</em> 2010; 36: 1227–1228</a></p>
+<p class="caption"><strong>
+<table border="0" style="background-color: #e4e2e2;">
+<tbody>
+<tr>
+<td><strong style="font-size: 12.16px; line-height: 15.808px;">Are you an MD specialised in asthma or COPD?</strong><span style="font-size: 12.16px; line-height: 15.808px;">&nbsp;You may be interested in the new&nbsp;</span><a href="component/flexicontent/119.html" style="font-size: 12.16px; line-height: 15.808px;">ERS Fellowship in Industry</a><span style="font-size: 12.16px; line-height: 15.808px;">,&nbsp;</span><span style="font-size: 12.16px; line-height: 15.808px; color: #4d4d4d; font-family: Helvetica, Arial, sans-serif;">offering new opportunities to MDs, young scientists and researchers to gain experience in the European respiratory pharmaceutical industry.</span></td>
+</tr>
+</tbody>
+</table>
+</strong></p>
+<p class="caption"><span style="font-size: 12.16px; line-height: 1.3em;">&nbsp;</span></p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/rigid bronchoscopy 1.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[740]]></width>
+          <height><![CDATA[352]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/rigid bronchoscopy 1.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[740]]></width>
+          <height><![CDATA[352]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="a-proposal-for-delayed-new-years-resolution-make-use-of-pulmonary-rehabilitation-for-patients-who-need-it">
+      <name><![CDATA[A proposal for a delayed New Years’ resolution: make use of pulmonary rehabilitation for patients who need it.]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2016-02-02 12:33:12]]></created>
+      <modified><![CDATA[2016-02-03 16:17:45]]></modified>
+      <hits><![CDATA[2006]]></hits>
+      <access/>
+      <priority><![CDATA[4]]></priority>
+      <publish_up><![CDATA[2016-02-02 12:33:12]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Dawn]]></author>
+      <categories>
+        <category primary="true"><![CDATA[the-allied-health-professional-perspective]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value/>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><span style="font-family: tahoma, arial, helvetica, sans-serif;"><span style="color: #000000;" color="#000000"><span style="line-height: 115%; font-size: 11pt;"><span style="line-height: 115%; font-size: 11pt;"><span color="#000000"><span style="font-size: 10pt;"><a href="respiratorymatters/bloggers/item/thierry-troosters.html?category_id=173"><span style="color: #000000;">Thierry Troosters</span></a>: The turning of the year comes with New Year resolutions. In the United States the most frequently reported resolution was ‘Enjoy life at the fullest’, which was particularly popular among seniors<sub>1</sub>. Other popular resolutions were related to lifestyle and body weight management. And what if our patients with respiratory diseases wanted to ‘enjoy life at the fullest’? What could we offer them?</span></span></span></span></span>&nbsp;</span></p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>&nbsp;</p>
+<p><img width="300" height="143" style="margin: 10px; float: right;" alt="pulmonary-rehab" src="images/stories/pulmonary-rehab.jpg" />Perhaps one of our resolutions could be to help our patients achieve this goal. A way to do so is to refer more patients to pulmonary rehabilitation programmes. Over the past few decades pulmonary rehabilitation has grown from an ‘art’ to a ‘science’ and has opened up from being restricted to patients suffering from stable chronic obstructive pulmonary disease (COPD), to virtually any patient with respiratory conditions admitted to intensive care units, and to patients with early disease stages. The scientific evidence (grade A) for pulmonary rehabilitation has been summarised in several excellent and internationally endorsed statements<sub>2</sub> and offering pulmonary rehabilitation to those patients who need it is a priority according to the National Institute for Health and Clinical Excellence (NICE) and&nbsp; the Global Initiative for Chronic Obstructive Lung Disease (GOLD).</p>
+<p>The 2016 GOLD strategy document literally states : ‘All patients who get short of breath when walking on their own pace on level ground should be offered rehabilitation; it can improve symptoms, quality of life, and physical and emotional participation in everyday activities’. Despite these firm guidelines and all the knowhow on the provision of pulmonary rehabilitation the proportion of ‘candidate-patients’ that are offered rehabilitation remains intolerably low. This is particularly shocking in countries where other expensive medical treatment finds its way to patients relatively easily. In fact pulmonary rehabilitation is one of the most cost effective interventions that can be offered to patients with chronic respiratory diseases. In this case (and contrary to very cheap interventions with some effectiveness that are also called cost-effective) the benefit relies in a perceived improvement with relevant clinical consequences at a reasonable cost to a modern health care system. It was therefore timely that the American Thoracic Society and the European Respiratory Society (ERS) joined forces to draft a policy statement around getting rehabilitation to the people with pulmonary disease, rather than to summarise the evidence for it, yet again. We are now at a time where even the Cochrane Library has taken the rare decision to stop updating the systematic review on the effectiveness of pulmonary rehabilitation in COPD as conclusive evidence is present of its effectiveness<sub>3</sub>.</p>
+<p>The burning question remains ‘how do we get people to receive this intervention and maintain its benefits’? In the policy statement<sub>4</sub> several barriers to the implementation are identified. These lie within the patients themselves, who sometimes lack the motivation to participate, who received no, or contradicting information on the effectiveness of rehabilitation or who have simply never heard of it. Another –and perhaps easier- barrier to overcome is the accessibility of current programs in terms of travel distance or capacity and associated waiting lists. The policy statement makes a clear call to enhance the number of rehabilitation programmes, but also to investigate the effectiveness of innovative forms of delivering rehabilitation and bring it closer to patient communities or even patients’ homes.</p>
+<p>A third source of barriers lies in the reimbursement of pulmonary rehabilitation. It is sad to see that in many countries no proper reimbursement is foreseen for rehabilitation programmes and reimbursement criteria are sometimes based on criteria that lack evidence base (such as lung function impairment). Isn’t it surprising that it takes only a few months of tough negotiations to find reimbursement schemes for new drug treatment (sometimes of borderline efficacy), whereas rehabilitation programs remain poorly funded? Perhaps this is a call to action for patient associations. These stakeholders should realise that their policymakers are withholding an effective and relatively easy to administer therapy. On the other hand, rehabilitation programmes need to provide transparent processes of care using benchmarking outcomes<sub>5</sub> that can convince local health authorities that the best possible care is offered to patients referred to rehabilitation.</p>
+<p>In Belgium, a formal trial was set-up under the thriving force of Professor Marc Decramer and other dedicated rehabilitation experts of the Belgian Society for Pneumology. We worked with the health authorities and shared all data from a standardised multidisciplinary rehabilitation program of several centres for a period of three years with the authorities. This showed to the authorities in a transparent way that pulmonary rehabilitation did lead to short and long-term benefits, similar (or even better) than those obtained in clinical trials. Although discussion remains on the number of centres in Belgium, authorities were convinced of the effectiveness of the intervention and the cost was justified. Perhaps this can serve as a model for negotiations in other regions and –why not- now that ERS has regional reach, they can help facilitating this in several countries at the same time.</p>
+<p>Lastly, barriers also lie in the lack of knowledge of general practitioners (who are often the closest (trusted) healthcare provider around a patient and his/her family), and even specialists. In fact it is amazing to see how little in the curriculum of educational tracks of general medicine and even pulmonology, or internal medicine, is dedicated to pulmonary rehabilitation. The European Respiratory Society (ERS) does well as the <a href="http://www.ers-education.org/publications/handbook-series/ers-handbook-of-respiratory-medicine.aspx">ERS Handbook of Respiratory Medicine</a> spends nine pages on pulmonary rehabilitation (1.5% of the volume). It’s a start. In addition the ERS has a well-functioning Pulmonary rehabilitation group (1.2) and allied health professionals group that can help with the dissemination.</p>
+<p>Through the more intimate links that exist now between national respiratory societies, efforts can hopefully reach all regional healthcare workers in all lines of healthcare so everybody around the potential candidate can provide a similar message. With the help of patient organisations, I’m hopeful that we can provide our best care, including pulmonary rehabilitation to the largest amount of beneficiaries. This policy statement is a great kick off of efforts to achieve this mission. It has concrete suggestions for the future and provides a roadmap to achieving success. Perhaps 2016 can be a year where this New Year resolution can be carried forward.</p>
+<p>Reference List</p>
+<ol>
+<li>Kirkham, E. Enjoying Life to the Fullest' Is 2016's Top New Year's Resolution, Survey Finds.&nbsp; 2016. <a href="http://www.gobankingrates.com/personal-finance/enjoying-life-2016s-top-new-years-resolution-survey/">http://www.gobankingrates.com/personal-finance/enjoying-life-2016s-top-new-years-resolution-survey/</a> accessed on 24-1-2016.</li>
+<li>Spruit, M. A., S. J. Singh, C. Garvey, R. ZuWallack, L. Nici, C. Rochester, K. Hill, A. E. Holland, S. C. Lareau, W. D. Man, et al.&nbsp; 2013. An official American Thoracic Society/European Respiratory Society statement: key concepts and advances in pulmonary rehabilitation. Am.J.Respir.Crit Care Med. 188:e13-e64.</li>
+<li>Lacasse, Y., C. J. Cates, B. McCarthy, and E. J. Welsh. 2015. This Cochrane Review is closed: deciding what constitutes enough research and where next for pulmonary rehabilitation in COPD. Cochrane.Database.Syst.Rev. 11:ED000107.</li>
+<li>Rochester, C. L., I. Vogiatzis, A. E. Holland, S. C. Lareau, D. D. Marciniuk, M. A. Puhan, M. A. Spruit, S. Masefield, R. Casaburi, E. M. Clini, et al.&nbsp; 2015. An Official American Thoracic Society/European Respiratory Society Policy Statement: Enhancing Implementation, Use, and Delivery of Pulmonary Rehabilitation. Am.J.Respir.Crit Care Med. 192:1373-1386.</li>
+<li>Spruit, M. A., I. Vanderhoven-Augustin, P. P. Janssen, and E. F. Wouters. 2008. Integration of pulmonary rehabilitation in COPD. Lancet 371:12-13.</li>
+</ol>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/pulmonary-rehab.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[742]]></width>
+          <height><![CDATA[353]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file/>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="have-you-submitted-your-ers-abstract-did-you-feel-the-fever">
+      <name><![CDATA[Have you submitted your ERS abstract?  Did you feel the fever?]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2016-02-12 13:54:55]]></created>
+      <modified><![CDATA[2016-02-17 08:49:08]]></modified>
+      <hits><![CDATA[2190]]></hits>
+      <access/>
+      <priority><![CDATA[5]]></priority>
+      <publish_up><![CDATA[2016-02-12 13:54:55]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Dawn]]></author>
+      <categories>
+        <category primary="true"><![CDATA[the-scientist-s-perspective]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value/>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><strong style="font-size: 12.16px; line-height: 1.3em;">Scientific spring?</strong></p>
+<p>February always brings the first glance of spring, and….. the ERS Congress abstract deadline. This forces all of us as scientists in the field to stand back and to make up our mind. Have we been able to generate sufficient data on the research questions that we are working on? Would our findings be relevant to others in the respiratory field? And do we merely submit are our most solid and entirely crystalised data or is the ERS Congress also meant to share work in progress? One thing was obvious this month: the only way to really participate in the scientific melting pot of London 2016 was meeting the abstract deadline.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><strong style="font-size: 12.16px; line-height: 1.3em;">Pan-European temperature rise</strong></p>
+<p><img src="images/stories/P_Sterk.png" width="275" height="245" alt="P Sterk" style="margin: 10px; float: right;" />At ERS meetings we are all exchanging enthusiasm, data and ideas during the posters sessions and oral communications. This is the best moment of the year for our scientific community. But what we are hardly sharing is how we came to submitting our abstract in the first place. Let us have a look in the kitchen….. Also this year, it must have been a pan-European or even global temperature rise when all the authors of those &gt;6,000 abstracts (let us say around 30,000 people in total) are analysing, discussing, preparing, writing, rewriting, shortening, further shortening, uploading, submitting (or eventually not submitting…) the definitive 1,810 characters by February 15, 12:59 Central European Time. The buzzing of these 30,000 scientific honey bees seems to be an even larger activity than the actual congress itself. Nevertheless, my impression is that we are hardly talking about this amongst colleagues. To what extent are we sharing our kitchen habits in science? Should we not do so?</p>
+<p>The time interval between the deadline and the congress does not help in this. While I would like to acknowledge (from experience) the enormous work to be done for reviewing the abstracts and building the programme, it seems to be somewhat outdated to require submission of scientific developments in the 21st century more than 6 months ahead… We are all peaking twice each year, is that the purpose of the meeting? It could be.</p>
+<p><strong>How are you actually handling abstract fever?</strong></p>
+<p>When were you starting to prepare your abstract? Every year we intend to start early (weeks ahead), in order to adequately digest the data before submission. Sound scientists would not do otherwise, would they…? What happened to us (again) this year? The final 48 hours or less were needed to produce the definitive data and the best wording for the abstract. You may argue that the deadline forces us to provide top quality work. Would that really be true? And are we the only ones here? Or are we all rushing into abstract fever that eventually boils down to compromises in relation to our original ambitious plans, leading to consider submitting a so-called rescue-abstract…?<br />When attending the congress all abstracts and presentations seem to be based on solid, well thought-through concepts and messages. Or were you also pressed by last minute decisions when submitting it? And more importantly, would that be wrong? Or is an abstract meant to reflect our excitement about the most recent data and to test the waters on those observations during the congress in September? The latter seems to be reasonable. But what if continuation of the study between the deadline and the congress (e.g. increasing the sample size in case of submitting preliminary data from an observational or in vitro study) has changed the data? What will you be presenting?</p>
+<p><strong>Who is going to submit and present?</strong></p>
+<p>There are two approaches for stimulating young scientists to attend big meetings, such as the ERS Congress. One of them is: “Well Dr Smith, when you have gathered all your data close to the end of your project, we will certainly support you in attending a big international congress, so that you can show the world the exciting outcome of our study”. This is the attitude that emphasises ‘transmitting’ messages at congresses.</p>
+<p>The alternative approach is:&nbsp;“Well Dr Smith, you will mostly benefit from going to a big international meeting as soon as possible, to present your first, preliminary findings and to learn from all the feedback and interaction at your own and other presentations”. This is the attitude that promotes ‘receiving’ messages at the congress. What is best? How have you been handling this, this year? You may already have gathered that I am favouring the latter approach, in order to educate and to train young colleagues and to promote open and intensive exchange with colleagues in the field.</p>
+<p><strong>Hiding data?</strong></p>
+<p>In some areas of respiratory research colleagues apparently are not willing to share their data at meetings such as the ERS Congress. What is their reason? First, this can be driven by competitive thinking: why should I show my exciting results to my direct competitors, who may rapidly copy and publish the study...? This may be an understandable point of view, even though fundamentally it does not fly. Research is a collective enterprise and we should be able to ensure our own original contribution in relation to others. I learnt this from Freddy Hargreave, who told me to focus on doing original things properly and not to be defensive. Second, there might be square commercial reasons for not sharing data at meetings. This is regrettable and should be limited to the bare minimum where this is inevitable and based on the primary objective of the study (e.g. at particular stages of drug development).</p>
+<p>However, it is remarkable that more and more honest researchers are undesirably dreaming (or have been told to keep dreaming) of patenting some of their findings to the benefit of themselves or their institutes. In my field this is, for instance, illustrated by unjustified attempts towards patenting exhaled volatile organic compounds (VOCs). These are metabolites that could qualify for biomarkers, which should be exchanged and validated between research groups for the benefit of patient diagnostics and management. We have got really off track when we are trying to make money in this respect as opposed to moving the field forward. It impedes research, does not make real money and does not benefit any individual or institute. It is our duty to silence our patent-officers and to play our part in our scientific community. Please educate your research fellows in this respect!</p>
+<p><strong>Message</strong></p>
+<p>Yes, submitting abstracts is a joy and a responsible activity. It is the glue that binds us together. Again this year, the collective fever and chaos close to the deadline must have led to pearls of scientific progress…. See you in London!</p>
+<p>&nbsp;</p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/p sterk.png]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[337]]></width>
+          <height><![CDATA[300]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file/>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="noninvasive-ventilation-from-acute-to-chronic-intervention">
+      <name><![CDATA[Noninvasive ventilation: from acute to chronic intervention]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2016-03-01 14:23:05]]></created>
+      <modified><![CDATA[2016-03-03 15:30:12]]></modified>
+      <hits><![CDATA[1770]]></hits>
+      <access/>
+      <priority><![CDATA[6]]></priority>
+      <publish_up><![CDATA[2016-03-01 14:23:05]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Dawn]]></author>
+      <categories>
+        <category primary="true"><![CDATA[the-clinician-s-perspective]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value/>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><a href="respiratorymatters/bloggers/item/sylvia-hartl.html?category_id=173">Sylvia Hartl</a>:&nbsp;The method of noninvasive ventilatory support (NIV) was established as a new standard treatment for ventilatory failure nearly 30 years ago. Respiratory specialists very quickly adopted NIV to counterbalance the burden of air trapping in acute respiratory failure in asthma and COPD. The development of pressure support in small home ventilators soon led to the use of NIV outside of ICUs. Today, respiratory care units, as step down units of ICUs, are part of respiratory departments and the European curriculum recommendations from the HERMES programme define NIV as a standard skill of trainees.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p><span style="font-size: 12.16px; line-height: 1.3em;">Nevertheless, the European COPD Audit for the treatment standards of acute exacerbation on hospital admission of COPD (1) still revealed a huge inhomogeneity in the provision of NIV throughout Europe. It seems that many of our colleagues in emergency departments are quite reluctant to do blood gas analysis on admission and to establish triage criteria for the use of NIV in acute hypercapnia. We need arterial blood gas analysis to detect respiratory failure with respiratory acidosis and PCO2 elevation.</span></p>
+<p>On the other hand, even in cases of respiratory failure, the COPD Audit showed that on many occasions, staff took a decision against ventilator support. This might be for good reasons in well-known patients, but we only found a few refusals patients themselves.</p>
+<p>For me as a clinician, it seems difficult to have to take an end of life decision (EOLD) in the situation of acute admission. We would rather give a trial of the ventilator than withhold ventilatory support, as withdrawal of the ventilator in non-responders is easier to decide. Patients with chronic diseases, where the lifespan is difficult to predict, often fail to accept an EOLD. We have far more patients with amyotrophic lateral sclerosis taking an EOLD than patients with COPD taking one.</p>
+<p>The first step to establish NIV as a standard therapy in acute respiratory failure is to implement technical equipment of NIV as well as trained staff in all acute settings.</p>
+<p>Strong support for COPD standards of care is still needed. When we look at a comparison with chronic heart failure, all methods that could potentially keep patients in better performance status are actively encourages and considered - chronic respiratory insufficiency is no less challenging for COPD patients! <br /> <br />Moreover, units running an ICU admitting patients with COPD, like my own Department, increasingly use NIV as a bridging method for chronic care at home for patients who cannot be weaned after an acute ventilation episode. We avoid a lot of tracheotomies by weaning to NIV and we are able to discharge patients earlier to home care.<br /> <br />We have results from a European landmark study (2) showing that the addition of non-invasive positive pressure ventilation can reduce mortality in specific patients substantially, but we still lack clear selection criteria besides chronic hypercapnia. My experience is that the clinical relief during the acute ventilation period is a good guide to predicting the long-term benefit: in patients without substantial air trapping due to predominant emphysema we do not measure intrinsic PEEP and therefore we cannot expect a lot of reduction on work load and we are at risk of increase of hyperinflation by NIV. This might be reflected in a reduced benefit detected by the patient.<br /> <br />However NIV in the home is no longer costly (in Austria we can rent NIV maintenance for roughly €25 per month) and it is at least worth trialling this to prevent readmission to ICU and to try a new option for rehabilitation under the protection of NIV.</p>
+<p>I think we still have to spread the expertise and to encourage the use of NIV for the group of chronic hypercapnia COPD patients. I believe it would be very valuable to have a European register of chronic hypercapnia to learn about the prevalence and the course of the chronic respiratory failure.</p>
+<p>I am looking forward to your comments and thoughts on this important topic!</p>
+<p><strong>Extra reading:</strong></p>
+<ol style="font-size: 12.16px; line-height: 15.808px;">
+<li>Hartl.S, Lopez-Campos.J L, F P, Roberts.M. Risk of death and readmission of hospital admitted COPD exacerbations: European COPD Audit European Respiratory Journal Jan 2016,47(1)113-121</li>
+<li>Kohnlein T, Windisch W, Kohler D, Drabik A, Geiseler J, Hartl S, et al. Non-invasive positive pressure ventilation for the treatment of severe stable chronic obstructive pulmonary disease: a prospective, multicentre, randomised, controlled clinical trial. The Lancet Respiratory Medicine, July 2014.</li>
+</ol>
+<p><strong>Other resources:<br data-mce-bogus="1" /></strong></p>
+<p><a href="education/courses/item/5219-niv-basic.html"><span>Read more/register for the ERS course on noninvasive ventilation:basic concepts</span></a></p>
+<p><span>Purchase the ERS Ptactical Handbook of Noninvasive Ventilation.&nbsp;<a href="http://www.erspublications.com/content/ers-practical-handbook-of-noninvasive-ventilation" target="_blank" style="color: #005291;">Electronic</a>&nbsp;and&nbsp;<a href="http://www.ersbookshop.com/ers-practical-handbook-of-noninvasive-ventilation-226-p.asp" target="_blank" style="color: #005291;">printed</a>&nbsp;versions available</span></p>
+<p><a href="education/courses/item/5219-niv-basic.html" style="color: #0000cc; text-decoration: underline; font-size: 12.16px; line-height: 15.808px;"><span style="color: #333333; font-size: 12.16px; line-height: 1.3em;">&nbsp;</span></a></p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/nivbasic.png]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[1487]]></width>
+          <height><![CDATA[1116]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/nivbasic.png]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[1487]]></width>
+          <height><![CDATA[1116]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="harmonising-respiratory-knowledge-throughout-europe-and-beyond">
+      <name><![CDATA[Harmonising respiratory knowledge throughout Europe (and beyond)]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2016-04-12 08:36:23]]></created>
+      <modified><![CDATA[2016-04-14 14:29:28]]></modified>
+      <hits><![CDATA[717]]></hits>
+      <access/>
+      <priority><![CDATA[7]]></priority>
+      <publish_up><![CDATA[2016-04-12 08:36:23]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[Dawn]]></author>
+      <categories>
+        <category primary="true"><![CDATA[the-allied-health-professional-perspective]]></category>
+        <category><![CDATA[_root]]></category>
+      </categories>
+      <data>
+        <relateditems identifier="fc5a6788-ffae-41d9-a812-3530331fef64" name="Author"/>
+        <text identifier="08795744-c2dc-4a68-8252-4e21c4c4c774" name="Subtitle">
+          <value/>
+        </text>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>Even although this blog should be about the vision of an allied health professional on the respiratory field it is hard to start it without a reflection on the events in Brussels in the week before Easter. 32 people were killed and many injured in blind attacks at the heart of Europe. Bombs exploded in an airport where many of us have passed through in the past and hopefully will continue to pass by in the future, as well as in the city centre of Brussels, a stone’s throw away from the European Respiratory Society’s Brussels office.</p>]]></value>
+        </textarea>
+        <textarea identifier="2e3c9e69-1f9e-4647-8d13-4e88094d2790" name="Text">
+          <value><![CDATA[<p>It was amazing to see how –within minutes- people on the streets as well as big hospital facilities joined forces to ensure the best care for the people injured in body and mind. It is fitting to pay tribute to all these healthcare workers who changed their Easter holiday plans to ensure the best care in days that are traditionally dedicated to family gatherings packed with chocolate (this is Belgium…) or short holiday breaks. We hope that Belgium recovers quickly and that you will all continue to travel confident that you’ll make it home safely. Only then we’ll be able to turn the page and move on, without forgetting both the events, but especially the unforgettable reaction of our crisis managers in hospitals and all those healthcare workers that gave everything in the #brusselsattacks.</p>
+<p>All those healthcare workers are very well trained, but it is sometimes challenging to find properly trained staff in healthcare. A growing number of healthcare workers from all over Europe take part in our healthcare system and the same happens in and outside Europe. A legal framework for such mobility is created in Europe through directive 2005/36/EC. The legal framework, however, does not assure that knowledge, skills and attitudes of such health workers can blend in well with an existing healthcare system.</p>
+<p>Here is where the European Respiratory Society does an excellent job. Programmes for harmonised medical education in the respiratory field have been build, under the HERMES program (Harmonised Education in Respiratory Medicine for European Medicine). HERMES is a suitable acronym as Hermes, son of Zeus in Greek mythology, is a god of transitions, boundaries and travelers. Over the last few years several HERMES programs have been developed that are suited for medical doctors as well as allied health professionals (see hermes.ersnet.org). Putting together international ‘standards’ for education is a challenge in itself, and this is particularly true for allied health professionals. Two initiatives under the HERMES umbrella are geared specifically towards allied health professionals. A first initiative, which proved to be a huge success, has been the Spirometry Driver’s License. This project fills the need for standardised training in spirometry, one of the basic assessments in pulmonary medicine. Despite the existence of international guidelines in how to perform spirometry the technical and skills training of professionals actually doing the work could surely be further harmonised across the EU, and beyond. The HERMES Spirometry project has surely filled that gap by training more than 140 experts that can subsequently deliver training courses in their regions all over the world. I’ve been told that the first spirometry training course is being planned in Latin America, so HERMES flies further than Europe, that’s obvious!</p>
+<p>A second project, currently underway is the “Respiratory physiotherapy” project. I have the privilege to share this working group together with Prof Fabio Pitta. In this project we have surely been faced with the difficulties of setting up a ‘harmonised’ post-graduate formation. Three main hurdles need to be taken. First, there is a very large variety in basic professional training for physiotherapists in Europe. According to a survey conducted by the working group this varies from less than 3 years of professional training up to more than 4 years of academic (MSc) training. Needless to say that the starting point in terms of knowledge, but also the type of education, varies enormously across European countries and the world. This is surely a challenge when designing post-graduate formation. At the same time it underpins the need for such an education to allow mobility. A second hurdle is the need for proof of postgraduate formation in order to be professionally active. In most countries, physiotherapy is a ‘general’ degree and no further requirements are needed in order to be legally allowed to work with respiratory patients. Once somebody is registered as a physiotherapist in a country, that person is typically allowed to work with any kind of patients, provided that he or she is not conducting ‘illegal medical acts’. This leads to a last hurdle and that is the fact that the ‘tasks’ attributed to physiotherapists are very different across European countries. Other allied health professionals (nurses, technicians) may face very similar challenges. A last hurdle for the respiratory physiotherapy project is the wide variety of patients that are seen by respiratory physiotherapists. Patients can be receiving care by a respiratory physiotherapist from the neonatal respiratory intensive care unit all the way to the geriatric palliative care unit. Respiratory physiotherapists are involved in the care provided to acute patients and those with chronic stable disease. This would make a harmonised education very broad and almost impossible, in particular, when practical skills also need to be taught.</p>
+<p>Nevertheless the task force has managed to find a way to ‘make it happen’. Two tracks are constructed and several modules are proposed (some of which are optional). We hope that this will help in the future to make mobility possible or also to further improve the physiotherapy care provided to specific populations (acute or stable and children or adults). It is important to note that, despite the broad spectrum of professional/academic formation it was relatively easy to come to consensus with a large group of participants on the content of a syllabus for respiratory physical therapy. Once the curriculum is finalised (and we are close to that) this can perhaps serve as a blueprint to local policymakers to outline the tasks for respiratory physiotherapists and to implement local and perhaps European postgraduate formation.</p>
+<p>I’m sure that the European Respiratory Society will continue to support the capacity building of allied health professionals well-trained in knowledge skills and attitudes to take care of our patients. In the meantime it has been a joy to work with the dedicated team of ERS-HERMES staff: Sharon Mitchell and Alexandra Niculescu, but also with a number of experts from all over the world that dedicated much of their time to help developing the syllabus and the curriculum under the wings of ERS. It has to be said, much of the advances in the field of education, harmonisation and dissemination are done by clinicians and researchers who dedicate their scarce free time to these developments. A BIG thank you to all those that have contributed in the working groups of the HERMES programs. I’m convinced (and many with me) that these harmonised programmes are paving the way into a more harmonised 21th century where healthcare workers will end up being more mobile. That is, off course, if reckless radicalism does not preclude us from taking the plane, boat or train without being worried, and this brings me back to where this blog started.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li>Mitchell S, Fabio P, and Thierry T. 2013. “Standardised Education and Training for Respiratory Physiotherapists.” Breathe 9 (3): 171–74. <a href="http://breathe.ersjournals.com/content/9/3/171">doi:10.1183/20734735.001013</a>.</li>
+<li>Pitta F, Mitchell S, Chatwin M, Clini E, Emtner M, Gosselink R, Grant K, et al. 2014. “A Core Syllabus for Post-Graduate Training in Respiratory Physiotherapy.” Breathe 10 (3): 220–28. <a href="http://breathe.ersjournals.com/content/10/3/220%20">doi:10.1183/20734735.007614.</a></li>
+<li>Development of a syllabus for postgraduate respiratory physiotherapy education: the Respiratory Physiotherapy HERMES project. Troosters T, Pitta F, Oberwaldner B, Lewko A, Inal-Ince D, Grant K, Gosselink R, Burtin C, Emtner M, Clini E, Chatwin M, Mitchell S. Eur Respir J. 2015 May;45(5):1221-3. <a href="http://erj.ersjournals.com/content/45/5/1221">doi: 10.1183/09031936.00037215.</a></li>
+</ul>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<p><strong>You may also be interested in:</strong></p>
+<p><strong>Spirometry HERMES project:&nbsp;</strong>The aim of the Spirometry HERMES project is to train health professionals to produce high quality spirometry tests and be awarded the ERS Spirometry Driving Licence. The course is designed for healthcare professionals who perform spirometry including nurses, physiotherapists, clinical researchers, general practitioners, doctors, technicians and scientists as well as any other individuals using spirometry in their practice. For more information about the Spirometry Training Programme and to find courses in your country, visit the HERMES website: <a href="http://hermes.ersnet.org/spirometry.html">http://hermes.ersnet.org/spirometry.html</a></p>
+<p><a href="http://hermes.ersnet.org/spirometry.html"></a><em style="font-size: 10.6667px; line-height: 15.808px;">The Spirometry HERMES Project Group:</em></p>
+<p>&nbsp;<img src="images/stories/hermes_sPIRO3.PNG" width="400" height="162" alt="hermes sPIRO3" style="margin: 10px; vertical-align: bottom;" /></p>
+<p><span style="font-size: 12.16px; line-height: 1.3em;"><strong>Physiotherapy HERMES project:</strong> The aim of the Physiotherapy HERMES project is to develop post-graduate respiratory physiotherapy programme with a specific training period defined by task force members. The project will closely follow the development strategy for educational standards defined through HERMES. The course is designed for those who have completed postgraduate training in respiratory physiotherapy as well as allied health professionals working in this field. For more information about this project, please visit the HERMES website: <a href="http://hermes.ersnet.org/projects/respiratory-physiotherapy.html">http://hermes.ersnet.org/projects/respiratory-physiotherapy.html</a></span><a href="http://hermes.ersnet.org/projects/respiratory-physiotherapy.html"></a></p>
+<p><em><span style="font-size: 8pt;">The HERMES Respiratory Physiotherapy Task Force group in Leuven working towards the completion of a Physiotherapy Curriculum (March 2016):</span></em></p>
+<p><span style="font-size: 12.16px; line-height: 1.3em;"><img src="images/stories/HERMES_Physio.jpg" width="400" height="300" alt="HERMES Physio" style="margin: 10px; vertical-align: bottom;" /></span></p>]]></value>
+        </textarea>
+        <image identifier="cdce6654-4e01-4a7f-9ed6-0407709d904c" name="Teaser Image">
+          <file><![CDATA[images/stories/prof trooster photo zouhri ers copyright_202.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[2362]]></width>
+          <height><![CDATA[3484]]></height>
+        </image>
+        <image identifier="c26feca6-b2d4-47eb-a74d-b067aaae5b90" name="Image">
+          <file><![CDATA[images/stories/prof trooster photo zouhri ers copyright_202.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[2362]]></width>
+          <height><![CDATA[3484]]></height>
+        </image>
+        <video identifier="ff1ed5b5-4365-457e-98bb-026366028bd7" name="Video">
+          <file/>
+          <url/>
+          <width/>
+          <height/>
+          <autoplay/>
+        </video>
+        <socialbookmarks identifier="6af341e4-f0e9-4605-b2a5-60d7a3525a96" name="Social Bookmarks">
+          <value><![CDATA[1]]></value>
+        </socialbookmarks>
+        <relateditems identifier="65b7851d-199f-4ac6-95a7-409ad1bca488" name="Related Articles"/>
+        <link identifier="fdcbebaa-e61a-462d-963e-aff74ff95499" name="External Related Articles">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+  </items>
+  <items name="Author">
+    <item id="thierry-troosters">
+      <name><![CDATA[Thierry Troosters: the allied health professional's perspective ]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-10-23 12:56:59]]></created>
+      <modified><![CDATA[2015-12-17 17:40:15]]></modified>
+      <hits><![CDATA[1022]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2015-10-23 12:56:59]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[anna]]></author>
+      <categories>
+        <category primary="true"><![CDATA[bloggers]]></category>
+      </categories>
+      <data>
+        <text identifier="83caa4d8-f1f4-4634-9f0c-14c1262929f7" name="Subtitle">
+          <value/>
+        </text>
+        <image identifier="ffefb4ed-8d5d-452a-8794-ea82c013384e" name="Image">
+          <file><![CDATA[images/stories/leaders-blog/prof-trooster-200x200.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[200]]></width>
+          <height><![CDATA[200]]></height>
+        </image>
+        <textarea identifier="14c0dd9f-ae3c-4eb2-8e22-4e9294ad3120" name="Description">
+          <value><![CDATA[<p>Thierry Troosters studied Physiotherapy at the Katholieke Universiteit Leuven where he also conducted his PhD work, guided by Profs Decramer and Gosselink. A one year post-doctoral stay at the Hospital Clinic in Barcelona, funded through a long-term fellowship of the European Respiratory Society, further guided his research career.</p>]]></value>
+        </textarea>
+        <textarea identifier="14c0dd9f-ae3c-4eb2-8e22-4e9294ad3120" name="Description">
+          <value><![CDATA[<p>&nbsp;</p>
+<p>Along with the Respiratory Division at the University Hospitals in Leuven, he investigates the devastating non-respiratory consequences lung diseases, often induced by physical inactivity or exacerbations of COPD. With his group he also is looking at optimizing exercise training strategies for patients with lung disease as well as strategies to enhance physical activity.</p>
+<p>With their research laboratory they pioneered on investigating the impact of physical inactivity patients with COPD and other respiratory conditions including cystic fibrosis and lung transplantation. They showed that patients with COPD become inactive already early in the disease even before the diagnosis of COPD is established. Professor Troosters currently leads a consortium of European investigators and 7 of the major pharmaceutical companies to develop a sensitive Patient Reported Outcome tool to assess the dimensions of physical activity, relevant to patients with COPD.</p>
+<p>Professor Troosters received the honor of becoming a Fellow of the European Respiratory Society (FERS) in 2014. He has published over 140 peer reviewed papers (ISI H-index 40). He served on the Editorial Boards of the American Journal of Respiratory and Critical Care Medicine, Thorax and Journal Chronic Respiratory Disease and COPD. Since 2008, Professor Troosters has been a full Professor in the Faculty of Kinesiology and Rehabilitation Sciences at the University of Leuven, Belgium. He led the Assembly of Allied Health Professionals of the European Respiratory Society until September 2015.</p>
+<p>
+<p>Read Professor' <span style="font-size: 12.16px; line-height: 15.808px;">Troosters' article in <em>Breathe:<a href="http://breathe.ersjournals.com/content/11/4/279">&nbsp;'Should European Respiratory Society meetings come with a health warning?'</a></em></span><br /><br /></p>
+</p>]]></value>
+        </textarea>
+        <email identifier="ac84af6f-ec56-4228-b421-ba3981399abe" name="E-Mail">
+          <value/>
+          <text/>
+          <subject/>
+          <body/>
+        </email>
+        <link identifier="4d431350-4f70-45cc-9922-a973ce0fa61f" name="Website">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+        <relateditems identifier="d6540bb8-d194-4bb0-879f-86e07c3f7a17" name="Article">
+          <item><![CDATA[take-the-active-option]]></item>
+        </relateditems>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="sylvia-hartl">
+      <name><![CDATA[Sylvia Hartl: the clinician’s perspective]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-10-23 13:13:08]]></created>
+      <modified><![CDATA[2015-12-16 09:39:16]]></modified>
+      <hits><![CDATA[798]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2015-10-23 13:13:08]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[anna]]></author>
+      <categories>
+        <category primary="true"><![CDATA[bloggers]]></category>
+      </categories>
+      <data>
+        <text identifier="83caa4d8-f1f4-4634-9f0c-14c1262929f7" name="Subtitle">
+          <value/>
+        </text>
+        <image identifier="ffefb4ed-8d5d-452a-8794-ea82c013384e" name="Image">
+          <file><![CDATA[images/stories/leaders-blog/hartl_200x200.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[200]]></width>
+          <height><![CDATA[200]]></height>
+        </image>
+        <textarea identifier="14c0dd9f-ae3c-4eb2-8e22-4e9294ad3120" name="Description">
+          <value><![CDATA[<p>Dr Sylvia Hartl is Head of the Respiratory Department at the Otto Wagner Hospital in Vienna, Austria and Past President of the Austrian Society of Pneumology (ÖGP).</p>]]></value>
+        </textarea>
+        <textarea identifier="14c0dd9f-ae3c-4eb2-8e22-4e9294ad3120" name="Description">
+          <value><![CDATA[<p>&nbsp;</p>
+<p>Dr Hartl began studying medicine at the University of Vienna in 1976. She received her doctorate in 1982 and became a Specialist for Pneumology in 1990. Prior to her promotion, she was a research assistant in the "Myocardial Depressant Factor Research Group" at the Institute of Physiology at the University of Vienna.</p>
+<p>Dr Hartl has been involved in numerous scientific projects with her specialist focus on chronic obstructive pulmonary disease (COPD). This included playing an instrumental role in the ERS COPD Audit Steering Board. Her scientific work is primarily focused on pulmonary epidemiology. Dr Hartl is Deputy Executive Director of the Austrian LEAD Study: an epidemiological study of the natural course of lung health in Vienna. Dr Hartl’s institute is part of the Ludwig Boltzmann Society of research. The LEAD study is a longitudinal cohort study investigating spirometry and bodyplethysmographie of 10,000 Austrians of an inhabitant register cohort. The first cross sectional results will be finalised in 2016.</p>
+<p>Dr Hartl has held several key roles with the European Respiratory Society and the Austrian Society of Pneumology (ASP) including Secretary General of the ASP and Congress Chair for the ERS’s International Congress in Vienna, 2012</p>
+<p>&nbsp;</p>]]></value>
+        </textarea>
+        <email identifier="ac84af6f-ec56-4228-b421-ba3981399abe" name="E-Mail">
+          <value/>
+          <text/>
+          <subject/>
+          <body/>
+        </email>
+        <link identifier="4d431350-4f70-45cc-9922-a973ce0fa61f" name="Website">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+        <relateditems identifier="d6540bb8-d194-4bb0-879f-86e07c3f7a17" name="Article">
+          <item><![CDATA[the-changing-face-of-lung-cancer-treatment]]></item>
+        </relateditems>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+    <item id="peter-sterk">
+      <name><![CDATA[Peter Sterk: the scientist’s perspective]]></name>
+      <searchable><![CDATA[1]]></searchable>
+      <state><![CDATA[1]]></state>
+      <created><![CDATA[2015-10-23 13:15:14]]></created>
+      <modified><![CDATA[2015-12-02 14:55:33]]></modified>
+      <hits><![CDATA[933]]></hits>
+      <access/>
+      <priority/>
+      <publish_up><![CDATA[2015-10-23 13:15:14]]></publish_up>
+      <publish_down><![CDATA[0000-00-00 00:00:00]]></publish_down>
+      <author><![CDATA[anna]]></author>
+      <categories>
+        <category primary="true"><![CDATA[bloggers]]></category>
+      </categories>
+      <data>
+        <text identifier="83caa4d8-f1f4-4634-9f0c-14c1262929f7" name="Subtitle">
+          <value/>
+        </text>
+        <image identifier="ffefb4ed-8d5d-452a-8794-ea82c013384e" name="Image">
+          <file><![CDATA[images/stories/leaders-blog/peter-sterk_200x200.jpg]]></file>
+          <title/>
+          <link/>
+          <target/>
+          <rel/>
+          <lightbox_image/>
+          <width><![CDATA[200]]></width>
+          <height><![CDATA[200]]></height>
+        </image>
+        <textarea identifier="14c0dd9f-ae3c-4eb2-8e22-4e9294ad3120" name="Description">
+          <value><![CDATA[<p>Peter Sterk is a clinical physiologist with a life-long interest in respiratory health and disease. He has professorship at the Department of Respiratory Medicine in the Academic Medical Centre (AMC) of the University of Amsterdam, where he is steering and supervising translational research projects in chronic airways diseases. He is also vice-dean of Graduate Studies, coordinating postgraduate education and training of PhD-fellows in AMC.</p>]]></value>
+        </textarea>
+        <textarea identifier="14c0dd9f-ae3c-4eb2-8e22-4e9294ad3120" name="Description">
+          <value><![CDATA[<p>He became MD at Leiden University in 1976, after which he decided to pursue an entirely scientific rather than a clinical career. He joined the Laboratory of Physiology in Leiden and graduated as PhD in 1981 on studies examining small airways function in asthma and COPD.</p>
+<p>His research interests include mechanisms and interventions for allergen- and virus-induced exacerbations and on sub-phenotyping asthma and COPD by using clinical, functional and cellular characteristics. In 2005 he delivered the ERS Sadoul Lecture on the usage of complex biomarker signatures in asthma and COPD.</p>
+<p>He received the opportunity of switching academic environment in 2007 by moving to the Department of Respiratory Medicine at the Academic Medical Centre of the University of Amsterdam. This promoted his research on integrating biomarkers in clinical diagnostics, phenotyping and management, by using a so-called ‘systems medicine’ approach. This approach was embedded in a public-private grant U-BIOPRED (2009-2015) by the Innovative Medicines Initiative (IMI) of which Peter was the coordinator.</p>
+<p>An exciting part of bio-clinical phenotyping in respiratory health and disease is breathomics: the metabolomics of exhaled air. Peter’s group is validating this approach in the diagnosis and phenotyping of e.g. asthma, COPD, respiratory infections and lung cancer.</p>
+<p>&nbsp;</p>]]></value>
+        </textarea>
+        <email identifier="ac84af6f-ec56-4228-b421-ba3981399abe" name="E-Mail">
+          <value/>
+          <text/>
+          <subject/>
+          <body/>
+        </email>
+        <link identifier="4d431350-4f70-45cc-9922-a973ce0fa61f" name="Website">
+          <value/>
+          <text/>
+          <target/>
+          <custom_title/>
+          <rel/>
+        </link>
+        <relateditems identifier="d6540bb8-d194-4bb0-879f-86e07c3f7a17" name="Article">
+          <item><![CDATA[the-dynamics-of-respiratory-science-towards-4d-research]]></item>
+        </relateditems>
+      </data>
+      <metadata>
+        <description/>
+        <keywords/>
+        <robots/>
+        <author/>
+      </metadata>
+    </item>
+  </items>
+</export>
