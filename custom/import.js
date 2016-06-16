@@ -26,6 +26,7 @@ var options = cli_args([
     {name: 'replace', alias: 'r', type: Boolean, description: 'replace type definitions if found'},
     {name: 'branch', alias: 'b', type: String, description: 'branch to write content to. branch id or "master". Default is "master"'},
     {name: 'simulate', alias: 's', type: Boolean, description: 'don\'t actually send anything to cloud cms'},
+    {name: 'deleteNodes', alias: 'd', type: Boolean, description: 'delete all the nodes from any previous import of the same file'},
 ]);
 
 var TYPES_PATH = "./docs/types";
@@ -48,6 +49,13 @@ var propertyNames = options["property-name"];
 var propertyValues = options["property-value"];
 var simulate = options["simulate"] || false;
 var category = options["category"];
+var deleteNodes = options["deleteNodes"];
+
+var deleteQuery = {
+    "_type": importTypeName,
+    "imported": true,
+    "importSource": csvPath || xmlPath
+};
 
 var homeDirectory = function()
 {
@@ -129,13 +137,34 @@ if (csvPath && importType) {
             // connect and import content
             util.getBranch(gitanaConfig, branchId, function(err, branch) {
 
-                // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
-                util.createNodes(branch, nodes, function(err) {
-                    if (err) {
-                        console.log("error creating nodes: " + err);
-                    }
-                    return;
-                });
+                if (deleteNodes)
+                {
+                    util.deleteNodes(branch, deleteQuery, function(err) {
+                        if (err) {
+                            console.log("error deleting nodes: " + err);
+                        }
+
+                        // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                        util.createNodes(branch, nodes, function(err) {
+                            if (err) {
+                                console.log("error creating nodes: " + err);
+                            }
+                            return;
+                        });
+                            
+                        return;
+                    });
+                }
+                else
+                {
+                    // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
+                    util.createNodes(branch, nodes, function(err) {
+                        if (err) {
+                            console.log("error creating nodes: " + err);
+                        }
+                        return;
+                    });
+                }
             });
             
         }
