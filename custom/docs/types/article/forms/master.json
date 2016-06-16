@@ -23,14 +23,7 @@
             "label": "Tags",
             "required": false,
             "items": {
-                "type": "object",
-                "fields": {
-                    "text": {
-                        "type": "text",
-                        "label": "Tag",
-                        "required": true
-                    }
-                }
+                "type": "text"
             }
         },
         "contentType": {
@@ -77,7 +70,8 @@
             },
             "dependencies": {
                 "contentType": [
-                    "event_course"
+                    "event_course",
+                    "event_fellowship"
                 ]
             }
         },
@@ -89,7 +83,6 @@
                 "contentType": [
                     "event_course",
                     "event_seminar",
-                    "event_fellowship",
                     "event_award",
                     "event_grant",
                     "event_crc"
@@ -104,7 +97,6 @@
                 "contentType": [
                     "event_course",
                     "event_seminar",
-                    "event_fellowship",
                     "event_award",
                     "event_grant",
                     "event_crc"
@@ -180,7 +172,6 @@
                 "contentType": [
                     "event_course",
                     "event_seminar",
-                    "event_fellowship",
                     "event_award",
                     "event_grant",
                     "event_crc"
@@ -203,7 +194,6 @@
                 "contentType": [
                     "event_course",
                     "event_seminar",
-                    "event_fellowship",
                     "event_award",
                     "event_grant",
                     "event_crc"
@@ -218,7 +208,6 @@
                 "contentType": [
                     "event_course",
                     "event_seminar",
-                    "event_fellowship",
                     "event_award",
                     "event_grant",
                     "event_crc"
@@ -352,7 +341,6 @@
                 "contentType": [
                     "event_course",
                     "event_seminar",
-                    "event_fellowship",
                     "event_award",
                     "event_grant",
                     "event_crc"
@@ -488,7 +476,6 @@
                 "contentType": [
                     "event_course",
                     "event_seminar",
-                    "event_fellowship",
                     "event_award",
                     "event_grant",
                     "event_crc"

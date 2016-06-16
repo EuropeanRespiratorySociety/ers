@@ -50,8 +50,10 @@
             "enum": [
                 "ERS Course",
                 "ERS Online Course",
-                "Short Term Fellowship",
-                "e-learning"
+                "e-learning",
+                "Short Term",
+                "Long Term",
+                "News"
             ],
             "default": ""
         },
@@ -364,7 +366,7 @@
             "properties": {
                 "text": {
                     "title": "Text",
-                    "default": "A limited number of bursaries are available which provide either full financial support to attend the course or cover the cost of the registration fee. To be eligible to apply you must be:\r\n\r\n* Under 40 years old.\r\n* A member of ERS.\r\n* From an eligible country.\r\n\r\nPlease note that only one bursary can be allocated per person per calendar year.\r\n\r\nSelection from the pool of applicants will be made by the organising committee based on the submission of:\r\n\r\n* Curriculum vitae\r\n* A one-page personal statement explaining how you would apply the knowledge gained from this course.",
+                    "default": "A limited number of bursaries are available which provide either full financial support to attend the course or cover the cost of the registration fee. To be eligible to apply you must be:\r\n\r\n* Under 40 years old.\r\n* A member of ERS.\r\n* From an [eligible country](pdf/education/List_of_bursary_countries.pdf).\r\n\r\nPlease note that only one bursary can be allocated per person per calendar year.\r\n\r\nSelection from the pool of applicants will be made by the organising committee based on the submission of:\r\n\r\n* Curriculum vitae\r\n* A one-page personal statement explaining how you would apply the knowledge gained from this course.",
                     "type": "string"
                 },
                 "deadline": {
@@ -451,7 +453,7 @@
         "venue": [
             "contentType"
         ],
-        "suggestedAccomodation": [
+        "suggestedAccommodation": [
             "contentType"
         ],
         "registerButton": [
