@@ -51,7 +51,7 @@ var simulate = options["simulate"] || false;
 var category = options["category"];
 var deleteNodes = options["deleteNodes"];
 
-var deleteQuery = {
+var DELETE_QUERY = {
     "_type": importTypeName,
     "imported": true,
     "importSource": csvPath || xmlPath
@@ -70,8 +70,6 @@ gitanaConfig.password = rootCredentials.password;
 
 if (csvPath && importType) {
     // import list of nodes from rows of a csv file
-    var nodes = [];
-    var headers = [];
     util.loadCsvFile(csvPath, function(err, data){
         // import records from a CSV file directly into Cloud CMS
         
@@ -86,168 +84,7 @@ if (csvPath && importType) {
         }
 
         // prepare node list from csv records
-        
-        // expect the first row to define header names. use these as property names
-        var bodyIndex = -1;
-        for(var i = 0; i < data[0].length; i++) {
-            if (data[0][i] === "text")
-            {
-                // "text" field becomes "body" in the new content model
-                headers.push("body");
-                bodyIndex = i;
-            }
-            else
-            {
-                headers.push(camel(data[0][i]));
-            }
-        }
-
-        for(var i = 1; i < data.length; i++) {
-            var node = newArticleNode(importTypeName, {
-                "importSource": csvPath
-            });
-
-            if (propertyNames) {
-                for(var j = 0; j < propertyNames.length; j++) {
-                    node[propertyNames[j]] = propertyValues[j] || "";
-                }
-            }
-            
-            for(var j = 0; j < headers.length; j++) {
-                if (j === bodyIndex)
-                {
-                    // clean up the body field before import
-                    node[headers[j]] = cleanText(data[i][j]);;
-                    // node[headers[j]] = md(data[i][j]);
-                }
-                else
-                {
-                    node[headers[j]] = data[i][j];
-                }
-            }
-
-            // console.log("adding node: " + JSON.stringify(node));
-            nodes.push(node);
-        }
-        // console.log(JSON.stringify(nodes));
-        console.log("creating nodes. count: " + nodes.length);
-        
-        if (!simulate)
-        {
-            // connect and import content
-            util.getBranch(gitanaConfig, branchId, function(err, branch) {
-
-                if (deleteNodes)
-                {
-                    util.deleteNodes(branch, deleteQuery, function(err) {
-                        if (err) {
-                            console.log("error deleting nodes: " + err);
-                        }
-
-                        // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
-                        util.createNodes(branch, nodes, function(err) {
-                            if (err) {
-                                console.log("error creating nodes: " + err);
-                            }
-                            return;
-                        });
-                            
-                        return;
-                    });
-                }
-                else
-                {
-                    // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
-                    util.createNodes(branch, nodes, function(err) {
-                        if (err) {
-                            console.log("error creating nodes: " + err);
-                        }
-                        return;
-                    });
-                }
-            });
-            
-        }
-    });
-}
-else if (xmlPath && importType)
-{
-    // import list of nodes from records in an xml file
-    var nodes = [];
-    var headers = [];
-    util.parseXMLFile(xmlPath, function(err, data){
-        if (err) {
-            console.log("error loading xml " + err);
-            return;
-        }
-
-// console.log("data: \n" + JSON.stringify(data));
-        if (Gitana.isArray(data.export.items))
-        {
-            data = data.export.items[0].item
-        }
-        else
-        {
-            data = data.export.items.item
-        }
-        
-        for(var i = 1; i < data.length; i++) {
-            var node = newArticleNode(importTypeName, {
-                "title": data[i].name,
-                "slug": data[i].id,
-                "id": data[i].id,
-                "importSource": xmlPath
-            });
-            
-            if (propertyNames) {
-                for(var j = 0; j < propertyNames.length; j++) {
-                    node[propertyNames[j]] = propertyValues[j] || "";
-                }
-            }
-            
-            if (data[i].data.text && data[i].data.text.name == "Subtitle")
-            {
-                node.subTitle = data[i].data.text.value;
-            }
-
-            if (data[i].data.text && data[i].data.textarea)
-            {
-                if (data[i].data.textarea[0])
-                {
-                    // first textarea is the leadParagraph
-
-                    // node.leadParagraph = md(sanitizeHtml(data[i].data.textarea[0].value));
-                    // node.leadParagraph = md(data[i].data.textarea[0].value);
-                    node.leadParagraph = cleanText(data[i].data.textarea[0].value);
-                }
-
-                if (data[i].data.textarea[1])
-                {
-                    // second textarea is the body
-
-                    // node.body = md(sanitizeHtml(data[i].data.textarea[1].value));
-                    // node.body = md(data[i].data.textarea[1].value);
-                    node.body = cleanText(data[i].data.textarea[1].value);
-                    // node.originalImageURL = extractImagePath(node.body) || "";
-                }
-
-                if (data[i].data.image)
-                {
-                    // grab image path
-                    for(var j = 0; j < data[i].data.image.length; j++)
-                    {
-                        if (data[i].data.image[j] && data[i].data.image[j].name === "Image")
-                        {
-                            node.originalImageURL = data[i].data.image[j].file || "";
-                        }
-                    }
-                }
-            }
-
-            // console.log("adding node: " + JSON.stringify(node));
-            console.log("adding node: " + JSON.stringify(node.id));
-            nodes.push(node);
-        }
+        var nodes = prepareCsvNodes(data);
 
         // console.log(JSON.stringify(nodes));
         if (nodes.length==0)
@@ -260,77 +97,34 @@ else if (xmlPath && importType)
         
         if (!simulate)
         {
-            // connect and import content
-            util.getBranch(gitanaConfig, branchId, function(err, branch) {
-                if (err) {
-                    console.log("error connecting to Cloud CMS: " + JSON.stringify(err));
-                    return;
-                }
+            createNodes(branchId, nodes, category, deleteNodes);
+        }
+    });
+}
+else if (xmlPath && importType)
+{
+    // import list of nodes from records in an xml file
+    var headers = [];
+    util.parseXMLFile(xmlPath, function(err, data){
+        if (err) {
+            console.log("error loading xml " + err);
+            return;
+        }
 
-                // if there was a category then find or create the category node
-                if (category)
-                {
-                    var categoryNode = null;
-                    branch.subchain(branch).then(function() {
-                        branch.queryOne({
-                            "_type": TYPE_QNAME__CATEGORY,
-                            "title": category
-                        }).trap(function(err) {
-                            console.log("Could not create category node: " + category + ". err: " + JSON.stringify(err));
-                        }).then(function() {
-                            var categoryNode = this;
-                            if (categoryNode)
-                            {
-                                for(var i = 0; i < nodes.length; i++)
-                                {
-                                    nodes[i]["category"] = referenceFromNode(categoryNode);
-                                }
+        var nodes = prepareXmlNodes(data);
 
-                                // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
-                                util.createNodes(branch, nodes, function(err) {
-                                    if (err) {
-                                        console.log("error creating nodes: " + err);
-                                    }
-                                    return;
-                                });
-                            }
-                            else
-                            {
-                                // create category
-                                branch.subchain(branch).then(function() {
-                                    branch.createNode(newCatNode(TYPE_QNAME__CATEGORY, {"title": category}))
-                                    .trap(function(err) {
-                                        console.log("Could not create category node: " + category + ". err: " + JSON.stringify(err));
-                                    }).then(function(categoryNode) {
-                                        for(var i = 0; i < nodes.length; i++)
-                                        {
-                                            nodes[i]["category"] = referenceFromNode(categoryNode);
-                                        }
+        // console.log(JSON.stringify(nodes));
+        if (nodes.length==0)
+        {
+            console.log("No nodes found to import");
+            return;
+        }
 
-                                        // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
-                                        util.createNodes(branch, nodes, function(err) {
-                                            if (err) {
-                                                console.log("error creating nodes: " + err);
-                                            }
-                                            return;
-                                        });
-                                    });
-                                });
-                            }
-                        });
-                    });
-                }
-                else
-                {
-                    // util.createNodesInTransaction(Gitana, branch, nodes, function(err) {
-                    util.createNodes(branch, nodes, function(err) {
-                        if (err) {
-                            console.log("error creating nodes: " + err);
-                        }
-                        return;
-                    });
-                }
-            });
+        console.log("creating nodes. count: " + nodes.length);
+        
+        if (!simulate)
+        {
+            createNodes(branchId, nodes, category, deleteNodes);
         }        
     });
 }
@@ -395,16 +189,236 @@ else
     return;    
 }
 
-function referenceFromNode(node) {
-    return {
-        "id": node._doc,
-        "reference": "node://" + [
-            node.getBranch().getPlatformId(),
-            node.getBranch().getRepositoryId(),
-            node.getBranch().getId(),
-            node._doc,
-        ].join('/')
+function createNodes(branchId, nodes, category, deleteNodes) {
+
+    var context = {
+        useBulk: false,
+        branchId: branchId,
+        branch: null,
+        nodes: nodes,
+        category: category,
+        categoryNode: null,
+        categoryNodeRef: null,
+        deleteNodes: deleteNodes,
+        deleteQuery: DELETE_QUERY
     }
+
+    async.waterfall([
+        async.apply(async.ensureAsync(getBranch), context),
+        async.ensureAsync(getCategory),
+        async.ensureAsync(deleteExistingNodes),
+        async.ensureAsync(writeNodes)
+    ], function (err, context) {
+        if (err)
+        {
+            console.log("Error creating nodes " + err);
+        }
+        else
+        {
+            console.log("Nodes have been imported succesfully");
+        }
+    });
+
+    return;
+}
+
+function getBranch(context, callback) {
+    var branchId = context.branchId;
+
+    // console.log("getBranch() " + JSON.stringify(context));
+    console.log("getBranch()");
+
+    util.getBranch(gitanaConfig, branchId, function(err, branch) {
+        if (err) {
+            console.log("error connecting to Cloud CMS: " + JSON.stringify(err));
+        }
+
+        context.branch = branch;
+
+        callback(err, context);
+    });    
+}
+
+function getCategory(context, callback) {
+    var branch = context.branch;
+    var category = context.category;
+    var query = {
+        "_type": TYPE_QNAME__CATEGORY,
+        "title": category
+    };
+
+    // console.log("getCategory() " + JSON.stringify(context));
+    console.log("getCategory()");
+
+    if (!category)
+    {
+        context.categoryNode = null;
+        return callback(null, context);
+    }
+
+    util.findOrCreateNode(branch, query, newCatNode({"title": category, "slug": ""+category.toLowerCase()}), function(err, categoryNode) {
+        if (err)
+        {
+            return callback(err);
+        }
+
+        context.categoryNode = categoryNode;
+        context.categoryNodeRef = util.refFromNode(categoryNode);
+        console.log("getCategory() findOrCreateNode() " + JSON.stringify(categoryNode));
+
+        return callback(null, context);
+    })    
+}
+
+function deleteExistingNodes(context, callback) {
+    var branch = context.branch;
+    var deleteNodes = context.deleteNodes;
+    var deleteQuery = context.deleteQuery;
+
+    // console.log("deleteExistingNodes() " + JSON.stringify(context));
+    console.log("deleteExistingNodes()");
+
+    if (!deleteNodes)
+    {
+        return callback(null, context);
+    }
+
+    util.deleteNodes(branch, deleteQuery, function(err) {
+        return callback(err, context);
+    });
+}
+
+function writeNodes(context, callback) {
+    var branch = context.branch;
+
+    // console.log("writeNodes() " + JSON.stringify(context));
+    console.log("writeNodes()");
+
+    callback(null, context);
+}
+
+function prepareXmlNodes(data) {
+    var nodes = [];
+
+    // console.log("data: \n" + JSON.stringify(data));
+    if (Gitana.isArray(data.export.items))
+    {
+        data = data.export.items[0].item
+    }
+    else
+    {
+        data = data.export.items.item
+    }
+    
+    for(var i = 1; i < data.length; i++) {
+        var node = newArticleNode(importTypeName, {
+            "title": data[i].name,
+            "slug": data[i].id,
+            "id": data[i].id,
+            "importSource": xmlPath
+        });
+        
+        if (propertyNames) {
+            for(var j = 0; j < propertyNames.length; j++) {
+                node[propertyNames[j]] = propertyValues[j] || "";
+            }
+        }
+        
+        if (data[i].data.text && data[i].data.text.name == "Subtitle")
+        {
+            node.subTitle = data[i].data.text.value;
+        }
+
+        if (data[i].data.text && data[i].data.textarea)
+        {
+            if (data[i].data.textarea[0])
+            {
+                // first textarea is the leadParagraph
+
+                // node.leadParagraph = md(sanitizeHtml(data[i].data.textarea[0].value));
+                // node.leadParagraph = md(data[i].data.textarea[0].value);
+                node.leadParagraph = cleanText(data[i].data.textarea[0].value);
+            }
+
+            if (data[i].data.textarea[1])
+            {
+                // second textarea is the body
+
+                // node.body = md(sanitizeHtml(data[i].data.textarea[1].value));
+                // node.body = md(data[i].data.textarea[1].value);
+                node.body = cleanText(data[i].data.textarea[1].value);
+                // node.originalImageURL = extractImagePath(node.body) || "";
+            }
+
+            if (data[i].data.image)
+            {
+                // grab image path
+                for(var j = 0; j < data[i].data.image.length; j++)
+                {
+                    if (data[i].data.image[j] && data[i].data.image[j].name === "Image")
+                    {
+                        node.originalImageURL = data[i].data.image[j].file || "";
+                    }
+                }
+            }
+        }
+
+        // console.log("adding node: " + JSON.stringify(node));
+        console.log("adding node: " + JSON.stringify(node.id));
+        nodes.push(node);
+    }
+
+    return nodes;
+}
+
+function prepareCsvNodes(data) {
+    var nodes = [];
+    var headers = [];
+
+    // expect the first row to define header names. use these as property names
+    var bodyIndex = -1;
+    for(var i = 0; i < data[0].length; i++) {
+        if (data[0][i] === "text")
+        {
+            // "text" field becomes "body" in the new content model
+            headers.push("body");
+            bodyIndex = i;
+        }
+        else
+        {
+            headers.push(camel(data[0][i]));
+        }
+    }
+
+    for(var i = 1; i < data.length; i++) {
+        var node = newArticleNode(importTypeName, {
+            "importSource": csvPath
+        });
+
+        if (propertyNames) {
+            for(var j = 0; j < propertyNames.length; j++) {
+                node[propertyNames[j]] = propertyValues[j] || "";
+            }
+        }
+        
+        for(var j = 0; j < headers.length; j++) {
+            if (j === bodyIndex)
+            {
+                // clean up the body field before import
+                node[headers[j]] = cleanText(data[i][j]);;
+                // node[headers[j]] = md(data[i][j]);
+            }
+            else
+            {
+                node[headers[j]] = data[i][j];
+            }
+        }
+
+        // console.log("adding node: " + JSON.stringify(node));
+        nodes.push(node);
+    }
+
+    return nodes;    
 }
 
 function cleanText(text) {
@@ -447,9 +461,9 @@ function newArticleNode(typeName, defaults) {
     return node;
 }
 
-function newCatNode(typeName, defaults) {
+function newCatNode(defaults) {
     var node = {
-        "_type": typeName,
+        "_type": TYPE_QNAME__CATEGORY,
         "title": "",
         "slug": "",
         "id": "",

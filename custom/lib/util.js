@@ -13,6 +13,22 @@ module.exports = function() {
 
     var r = {};
 
+    var refFromNode = r.refFromNode = function(node)
+    {
+        return {
+            "id": node._doc,
+            "ref": "node://" + [
+                node.getBranch().getPlatformId(),
+                node.getBranch().getRepositoryId(),
+                node.getBranch().getId(),
+                node._doc,
+            ].join('/')
+            // "title": node.title,
+            // "qname": node._qname,
+            // "typeQName": node._type
+        }
+    };
+
     /**
      * connect to Cloud CMS and retrieve branch
      * 
@@ -40,6 +56,38 @@ module.exports = function() {
         });
     };
     
+    var findOrCreateNode = r.findOrCreateNode = function(branch, query, json, callback) {
+        var node = null;
+        Chain(branch).queryNodes(query).trap(function(err) {
+            return callback(err);
+        }).keepOne().then(function() {
+            node = this;
+            console.log(".then() " + JSON.stringify(node));
+
+            if(!node || !node._doc)
+            {
+                branch.subchain(branch).createNode(json).trap(function(err){
+                    return callback(err);
+                }).then(function(){
+                    node = this;
+                    
+                    if(!node || !node._doc)
+                    {
+                        return callback("Node not created");
+                    }
+
+                    // console.log("Created node " + JSON.stringify(this));
+                    console.log("Created node " + node._doc);
+                    return callback(null, node);
+                });
+            }
+            else
+            {
+                return callback(null, node);
+            }
+        });
+    }
+
     var deleteNodes = r.deleteNodes = function(branch, deleteQuery, callback)
     {
         console.log("Deleting nodes " + JSON.stringify(deleteQuery));
@@ -115,14 +163,6 @@ module.exports = function() {
             "mergeAttrs": true,
             "preserveChildrenOrder": true,
             "normalizeTags": true,
-            // "explicitChildren": true,
-            // "childkey": "$children",
-            // "valueProcessors": [
-            //     function (value){
-            //         return value;
-            //     }
-            // ],
-            // "tagNameProcessors": [xml2jsProcessors.stripPrefix],
             "async": true
         });
 
