@@ -13,6 +13,15 @@ module.exports = function() {
 
     var r = {};
 
+    var slugifyText = r.slugifyText = function(value)
+    {
+        var _regexWhitespace = new RegExp("\\\s+", "g");
+
+        value = value.replace(_regexWhitespace, '-');
+        value = value.toLowerCase();
+        return value;
+    };
+
     var refFromNode = r.refFromNode = function(node)
     {
         return {

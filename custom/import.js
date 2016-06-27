@@ -256,7 +256,7 @@ function getCategory(context, callback) {
         return callback(null, context);
     }
 
-    util.findOrCreateNode(branch, query, newCatNode({"title": category, "slug": ""+category.toLowerCase()}), function(err, categoryNode) {
+    util.findOrCreateNode(branch, query, newCatNode({"title": category, "slug": util.slugifyText(category)}), function(err, categoryNode) {
         if (err)
         {
             return callback(err);
@@ -324,7 +324,7 @@ function prepareXmlNodes(data) {
     for(var i = 1; i < data.length; i++) {
         var node = newArticleNode(importTypeName, {
             "title": data[i].name,
-            "slug": data[i].id,
+            "slug": util.slugifyText(data[i].id),
             "id": data[i].id,
             "importSource": xmlPath
         });
