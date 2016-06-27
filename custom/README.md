@@ -30,16 +30,20 @@ node import -x ./docs/import/respiratory-worldwide-column.xml -t "ers:article" -
 
 "news archive" articles
 ./docs/import/news-archive.csv
-node import -c ./docs/import/news-archive.csv -t "ers:article" -p contentType -v article -p type -v News --category News -d
+
+    node import -c ./docs/import/news-archive.csv -t "ers:article" -p contentType -v article -p type -v News --category News -d
 
 "EU policy" articles
 ./docs/import/ERS-andEU-policy-development).csv
-node import -c ./docs/import/ERS-andEU-policy-development.csv -t "ers:article" -p contentType -v article --category "EU Affairs" -d
+
+    node import -c ./docs/import/ERS-andEU-policy-development.csv -t "ers:article" -p contentType -v article --category "EU Affairs" -d
 
 "leaders" blog:
 ./docs/import/leaders-blog.xml
-node import -x ./docs/import/leaders-blog.xml -t "ers:article" -p contentType -v article -p type -v News --category "Respiratory Matters" -d
+
+    node import -x ./docs/import/leaders-blog.xml -t "ers:article" -p contentType -v article -p type -v News --category "Respiratory Matters" -d
 
 "respiratory world wide" articles:
 ./docs/import/respiratory-worldwide-column.xml
-node import -x ./docs/import/respiratory-worldwide-column.xml -t "ers:article" -p contentType -v article -p type -v News --category "Respiratory World Wide" -d
+
+    node import -x ./docs/import/respiratory-worldwide-column.xml -t "ers:article" -p contentType -v article -p type -v News --category "Respiratory World Wide" -d
