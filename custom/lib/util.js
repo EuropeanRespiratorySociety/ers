@@ -58,15 +58,15 @@ module.exports = function() {
     
     var findOrCreateNode = r.findOrCreateNode = function(branch, query, json, callback) {
         var node = null;
-        Chain(branch).queryNodes(query).trap(function(err) {
+        Chain(branch).trap(function(err) {
             return callback(err);
-        }).keepOne().then(function() {
+        }).queryNodes(query).keepOne().then(function() {
             node = this;
             console.log(".then() " + JSON.stringify(node));
 
             if(!node || !node._doc)
             {
-                branch.subchain(branch).createNode(json).trap(function(err){
+                Chain(branch).createNode(json).trap(function(err){
                     return callback(err);
                 }).then(function(){
                     node = this;
@@ -113,13 +113,17 @@ module.exports = function() {
     {
         // console.log("Creating node " + JSON.stringify(nodes[0]));
 
-        branch.subchain(branch).then(function() {
+        Chain(branch).trap(function(err) {
+            return callback(err);
+        }).then(function() {
             for(var i = 0; i < nodes.length; i++)
             {
                 branch.createNode(nodes[i]);
             }
             
-            callback();
+            branch.then(function(){
+                return callback();
+            });
         });
     }
     

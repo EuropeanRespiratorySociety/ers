@@ -266,6 +266,15 @@ function getCategory(context, callback) {
         context.categoryNodeRef = util.refFromNode(categoryNode);
         console.log("getCategory() findOrCreateNode() " + JSON.stringify(categoryNode));
 
+        if (categoryNode)
+        {
+            var ref = util.refFromNode(categoryNode);
+            for(var i = 0; i < context.nodes.length; i++)
+            {
+                context.nodes[i].category = ref;
+            }
+        }
+
         return callback(null, context);
     })    
 }
@@ -294,7 +303,9 @@ function writeNodes(context, callback) {
     // console.log("writeNodes() " + JSON.stringify(context));
     console.log("writeNodes()");
 
-    callback(null, context);
+    util.createNodes(branch, context.nodes, function(err) {
+        return callback(err, context);
+    });
 }
 
 function prepareXmlNodes(data) {
