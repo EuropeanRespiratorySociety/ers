@@ -5,7 +5,7 @@
     "title": "Homepage Availability",
     "description": "Makes website content available on the home page",
     "properties": {
-        "available": {
+        "availableOnHomepage": {
             "type": "boolean",
             "title": "Manage this content's availability on the website home page",
             "default": false
